@@ -1,0 +1,10 @@
+#pet-container {
+  margin: auto 10px auto 10px; }
+  #pet-container .panel .panel-heading img {
+    height: 20px;
+    width: 20px;
+    position: relative;
+    top: -1;
+    border-radius: 50%; }
+
+/*# sourceMappingURL=pet.css.map */

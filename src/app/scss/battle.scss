@@ -1,0 +1,17 @@
+$icon-radius: 20px;
+
+#battle-container {
+    margin: auto 10px auto 10px;
+    
+    .panel {
+        .panel-heading {
+            img {
+                height: $icon-radius;
+                width: $icon-radius;
+                position: relative;
+                top: -1;
+                border-radius: 50%;
+            }
+        }
+    }
+}

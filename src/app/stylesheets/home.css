@@ -1,0 +1,52 @@
+#home-container {
+  margin: auto 10px auto 10px; }
+  #home-container .panel .panel-heading img {
+    height: 20px;
+    width: 20px;
+    position: relative;
+    top: -1;
+    border-radius: 50%; }
+  #home-container .panel-default {
+    border-color: #E2D3FF; }
+    #home-container .panel-default .panel-heading {
+      background-color: #E2E1FF;
+      border-color: #E2D3FF;
+      color: #B63CFF; }
+  #home-container .panel-primary {
+    border-color: #C2F8FF; }
+    #home-container .panel-primary .panel-heading {
+      background-color: #f0f8ff;
+      border-color: #C2F8FF;
+      color: #6495ED; }
+  #home-container #special1 {
+    border-color: #FFA1B2; }
+    #home-container #special1 .panel-heading {
+      background-color: #FFCED8;
+      border-color: #FFA1B2;
+      color: #FF5573;
+      text-align: center; }
+    #home-container #special1 .panel-body .row img {
+      height: 100px;
+      width: 100px;
+      position: relative;
+      border-radius: 50%;
+      top: 10px; }
+    #home-container #special1 .panel-body .row .caption h3 {
+      text-align: center; }
+  #home-container #special2 {
+    border-color: #C8DFFF; }
+    #home-container #special2 .panel-heading {
+      background-color: #E3EDFF;
+      border-color: #C8DFFF;
+      color: #68BDFF;
+      text-align: center; }
+    #home-container #special2 .panel-body .row img {
+      height: 100px;
+      width: 100px;
+      position: relative;
+      border-radius: 50%;
+      top: 10px; }
+    #home-container #special2 .panel-body .row .caption h3 {
+      text-align: center; }
+
+/*# sourceMappingURL=home.css.map */

@@ -1,0 +1,99 @@
+$icon-radius: 20px;
+$panel-default-background-color: #E2E1FF;
+$panel-default-border-color: #E2D3FF;
+$panel-default-text-color: #B63CFF;
+$panel-primary-background-color: #f0f8ff;
+$panel-primary-border-color: #C2F8FF;
+$panel-primary-text-color: #6495ED;
+$panel-special1-background-color: #FFCED8;
+$panel-special1-border-color: #FFA1B2;
+$panel-special1-text-color: #FF5573;
+$panel-special2-background-color: #E3EDFF;
+$panel-special2-border-color: #C8DFFF;
+$panel-special2-text-color: #68BDFF;
+
+#home-container {
+    margin: auto 10px auto 10px;
+
+    .panel {
+        .panel-heading {
+            img {
+                height: $icon-radius;
+                width: $icon-radius;
+                position: relative;
+                top: -1;
+                border-radius: 50%;
+            }
+        }
+    }
+
+    .panel-default {
+        border-color: $panel-default-border-color;
+        .panel-heading {
+            background-color: $panel-default-background-color;
+            border-color: $panel-default-border-color;
+            color: $panel-default-text-color;
+        }
+    }
+
+    .panel-primary {
+        border-color: $panel-primary-border-color;
+        .panel-heading {
+            background-color: $panel-primary-background-color;
+            border-color: $panel-primary-border-color;
+            color: $panel-primary-text-color;
+        }
+    }
+
+    #special1 {
+        border-color: $panel-special1-border-color;
+        .panel-heading {
+            background-color: $panel-special1-background-color;
+            border-color: $panel-special1-border-color;
+            color: $panel-special1-text-color;
+            text-align: center;
+        }
+        .panel-body {
+            .row {
+                img {
+                    height: 100px;
+                    width: 100px;
+                    position: relative;
+                    border-radius: 50%;
+                    top: 10px;
+                }
+                .caption {
+                    h3 {
+                        text-align: center;
+                    }
+                }
+            }
+        }
+    }
+
+    #special2 {
+        border-color: $panel-special2-border-color;
+        .panel-heading {
+            background-color: $panel-special2-background-color;
+            border-color: $panel-special2-border-color;
+            color: $panel-special2-text-color;
+            text-align: center;
+        }
+        .panel-body {
+            .row {
+                img {
+                    height: 100px;
+                    width: 100px;
+                    position: relative;
+                    border-radius: 50%;
+                    top: 10px;
+                }
+                .caption {
+                    h3 {
+                        text-align: center;
+                    }
+                }
+            }
+        }
+    }
+}

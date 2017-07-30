@@ -15,6 +15,19 @@ $panel-special2-text-color: #68BDFF;
 #home-container {
     margin: auto 10px auto 220px;
     min-width: 900px;
+    //font-family: "Hiragino Sans GB", "Microsoft YaHei", sans-serif;
+    font-family: "ff-tisa-web-pro-1","ff-tisa-web-pro-2","Lucida Grande","Hiragino Sans GB","Hiragino Sans GB W3",serif;
+    font-weight: bold;
+    
+    h3 {
+        font-family: "ff-tisa-web-pro-1","ff-tisa-web-pro-2","Lucida Grande","Hiragino Sans GB","Hiragino Sans GB W3",serif;
+        font-weight: bold;
+    }
+    
+    .label {
+        font-size: 12px;
+        padding-bottom: 1px;
+    }
     
     .panel {
         .panel-heading {

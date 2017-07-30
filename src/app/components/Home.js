@@ -27,18 +27,27 @@ export class Home extends React.Component {
                                                 <h3>皇家证明</h3>
                                                 <hr />
                                                 <p>
-                                                    每日获得<br />
-                                                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;钻石 x100<br />
-                                                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;荣誉 x50<br />
-                                                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;商城免费购买zeny x1<br />
-                                                    持续特权<br />
-                                                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;挂机收益 +5%<br />
-                                                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;解除所有玩法的次数购买上限<br />
-                                                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;新增快速探险功能<br />
-                                                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;探险任务经验 +15%<br />
-                                                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;可发送全频道广播<br />
-                                                    价格<br />
-                                                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;￥28/30天
+                                                    <span className="label label-default">每日获得</span><br />
+                                                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                                                    <i className="fa fa-chevron-right" aria-hidden="true"></i>&nbsp;钻石 x100<br />
+                                                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                                                    <i className="fa fa-chevron-right" aria-hidden="true"></i>&nbsp;荣誉 x50<br />
+                                                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                                                    <i className="fa fa-chevron-right" aria-hidden="true"></i>&nbsp;商城免费购买zeny x1<br />
+                                                    <span className="label label-default">持续特权</span><br />
+                                                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                                                    <i className="fa fa-chevron-right" aria-hidden="true"></i>&nbsp;挂机收益 +5%<br />
+                                                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                                                    <i className="fa fa-chevron-right" aria-hidden="true"></i>&nbsp;解除所有玩法的次数购买上限<br />
+                                                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                                                    <i className="fa fa-chevron-right" aria-hidden="true"></i>&nbsp;新增快速探险功能<br />
+                                                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                                                    <i className="fa fa-chevron-right" aria-hidden="true"></i>&nbsp;探险任务经验 +15%<br />
+                                                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                                                    <i className="fa fa-chevron-right" aria-hidden="true"></i>&nbsp;可发送全频道广播<br />
+                                                    <span className="label label-default">价格</span><br />
+                                                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                                                    <i className="fa fa-chevron-right" aria-hidden="true"></i>&nbsp;￥28/30天
                                                 </p>
                                             </div>
                                         </div>
@@ -50,25 +59,40 @@ export class Home extends React.Component {
                                                 <h3>皇家纹章</h3>
                                                 <hr />
                                                 <p>
-                                                    每日获得<br />
-                                                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;钻石 x100<br />
-                                                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;荣誉 x50<br />
-                                                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;商城免费购买zeny x1<br />
-                                                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;熔炼值 x2000<br />
-                                                    每五天获得<br />
-                                                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;时装币 x1<br />
-                                                    持续特权<br />
-                                                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;挂机收益 +5%<br />
-                                                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;战斗跟随宠物经验 +50%<br />
-                                                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;随意进入爆满聊天室<br />
-                                                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;探险任务上限 +2<br />
-                                                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;解锁所有玩法的次数购买上限<br />
-                                                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;新增快速探险功能<br />
-                                                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;探险任务经验 +15%<br />
-                                                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;可发送全频道广播<br />
-                                                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;螺旋塔免费连续调整<br />
-                                                    价格<br />
-                                                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;￥118/90天
+                                                    <span className="label label-default">每日获得</span><br />
+                                                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                                                    <i className="fa fa-chevron-right" aria-hidden="true"></i>&nbsp;钻石 x100<br />
+                                                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                                                    <i className="fa fa-chevron-right" aria-hidden="true"></i>&nbsp;荣誉 x50<br />
+                                                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                                                    <i className="fa fa-chevron-right" aria-hidden="true"></i>&nbsp;商城免费购买zeny x1<br />
+                                                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                                                    <i className="fa fa-chevron-right" aria-hidden="true"></i>&nbsp;熔炼值 x2000<br />
+                                                    <span className="label label-default">每五天获得</span><br />
+                                                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                                                    <i className="fa fa-chevron-right" aria-hidden="true"></i>&nbsp;时装币 x1<br />
+                                                    <span className="label label-default">持续特权</span><br />
+                                                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                                                    <i className="fa fa-chevron-right" aria-hidden="true"></i>&nbsp;挂机收益 +5%<br />
+                                                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                                                    <i className="fa fa-chevron-right" aria-hidden="true"></i>&nbsp;战斗跟随宠物经验 +50%<br />
+                                                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                                                    <i className="fa fa-chevron-right" aria-hidden="true"></i>&nbsp;随意进入爆满聊天室<br />
+                                                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                                                    <i className="fa fa-chevron-right" aria-hidden="true"></i>&nbsp;探险任务上限 +2<br />
+                                                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                                                    <i className="fa fa-chevron-right" aria-hidden="true"></i>&nbsp;解锁所有玩法的次数购买上限<br />
+                                                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                                                    <i className="fa fa-chevron-right" aria-hidden="true"></i>&nbsp;新增快速探险功能<br />
+                                                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                                                    <i className="fa fa-chevron-right" aria-hidden="true"></i>&nbsp;探险任务经验 +15%<br />
+                                                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                                                    <i className="fa fa-chevron-right" aria-hidden="true"></i>&nbsp;可发送全频道广播<br />
+                                                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                                                    <i className="fa fa-chevron-right" aria-hidden="true"></i>&nbsp;螺旋塔免费连续调整<br />
+                                                    <span className="label label-default">价格</span><br />
+                                                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                                                    <i className="fa fa-chevron-right" aria-hidden="true"></i>&nbsp;￥118/90天
                                                 </p>
                                             </div>
                                         </div>
@@ -89,16 +113,23 @@ export class Home extends React.Component {
                                                 <h3>宠物大师证明</h3>
                                                 <hr />
                                                 <p>
-                                                    每日获得<br />
-                                                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;高级探险经验药水 x2<br />
-                                                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;高级战斗经验药水 x2<br />
-                                                    持续特权<br />
-                                                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;探险任务经验 +30%<br />
-                                                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;战斗跟随宠物经验 +30%<br />
-                                                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;解锁探险‘一键领取’功能<br />
-                                                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;宠物进化所需碎片 -12.5%<br />
-                                                    价格<br />
-                                                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;280礼物币(￥28)/30天
+                                                    <span className="label label-default">每日获得</span><br />
+                                                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                                                    <i className="fa fa-chevron-right" aria-hidden="true"></i>&nbsp;高级探险经验药水 x2<br />
+                                                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                                                    <i className="fa fa-chevron-right" aria-hidden="true"></i>&nbsp;高级战斗经验药水 x2<br />
+                                                    <span className="label label-default">持续特权</span><br />
+                                                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                                                    <i className="fa fa-chevron-right" aria-hidden="true"></i>&nbsp;探险任务经验 +30%<br />
+                                                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                                                    <i className="fa fa-chevron-right" aria-hidden="true"></i>&nbsp;战斗跟随宠物经验 +30%<br />
+                                                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                                                    <i className="fa fa-chevron-right" aria-hidden="true"></i>&nbsp;解锁探险‘一键领取’功能<br />
+                                                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                                                    <i className="fa fa-chevron-right" aria-hidden="true"></i>&nbsp;宠物进化所需碎片 -12.5%<br />
+                                                    <span className="label label-default">价格</span><br />
+                                                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                                                    <i className="fa fa-chevron-right" aria-hidden="true"></i>&nbsp;280礼物币(￥28)/30天
                                                 </p>
                                             </div>
                                         </div>
@@ -110,15 +141,21 @@ export class Home extends React.Component {
                                                 <h3>佣兵公会证明</h3>
                                                 <hr />
                                                 <p>
-                                                    每日获得<br />
-                                                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;荣誉 x300<br />
-                                                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;熔炼 x8000<br />
-                                                    持续特权<br />
-                                                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;挂机收益 +10%<br />
-                                                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;每日道场次数 +2<br />
-                                                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;荣誉获得 +5%<br />
-                                                    价格<br />
-                                                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;280礼物币(￥28)/30天
+                                                    <span className="label label-default">每日获得</span><br />
+                                                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                                                    <i className="fa fa-chevron-right" aria-hidden="true"></i>&nbsp;荣誉 x300<br />
+                                                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                                                    <i className="fa fa-chevron-right" aria-hidden="true"></i>&nbsp;熔炼 x8000<br />
+                                                    <span className="label label-default">持续特权</span><br />
+                                                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                                                    <i className="fa fa-chevron-right" aria-hidden="true"></i>&nbsp;挂机收益 +10%<br />
+                                                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                                                    <i className="fa fa-chevron-right" aria-hidden="true"></i>&nbsp;每日道场次数 +2<br />
+                                                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                                                    <i className="fa fa-chevron-right" aria-hidden="true"></i>&nbsp;荣誉获得 +5%<br />
+                                                    <span className="label label-default">价格</span><br />
+                                                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                                                    <i className="fa fa-chevron-right" aria-hidden="true"></i>&nbsp;280礼物币(￥28)/30天
                                                 
                                                 </p>
                                             </div>
@@ -131,19 +168,29 @@ export class Home extends React.Component {
                                                 <h3>卢恩商会证明</h3>
                                                 <hr />
                                                 <p>
-                                                    每日获得<br />
-                                                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;卢恩商会补给 x1<br />
-                                                    持续特权<br />
-                                                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;背包负重 +50<br />
-                                                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;黑市初始幸运 +400%<br />
-                                                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;刷新黑市消耗 -12.5%<br />
-                                                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;黑市必出折扣道具<br />
-                                                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;可购买卢恩商会专属时装<br />
-                                                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;波利狂宴每日购买门票 +3<br />
-                                                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;股市默认投资上限 +100000<br />
-                                                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;股市转生投资上限 +50000<br />
-                                                    价格<br />
-                                                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;280礼物币(￥28)/30天
+                                                    <span className="label label-default">每日获得</span><br />
+                                                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                                                    <i className="fa fa-chevron-right" aria-hidden="true"></i>&nbsp;卢恩商会补给 x1<br />
+                                                    <span className="label label-default">持续特权</span><br />
+                                                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                                                    <i className="fa fa-chevron-right" aria-hidden="true"></i>&nbsp;背包负重 +50<br />
+                                                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                                                    <i className="fa fa-chevron-right" aria-hidden="true"></i>&nbsp;黑市初始幸运 +400%<br />
+                                                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                                                    <i className="fa fa-chevron-right" aria-hidden="true"></i>&nbsp;刷新黑市消耗 -12.5%<br />
+                                                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                                                    <i className="fa fa-chevron-right" aria-hidden="true"></i>&nbsp;黑市必出折扣道具<br />
+                                                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                                                    <i className="fa fa-chevron-right" aria-hidden="true"></i>&nbsp;可购买卢恩商会专属时装<br />
+                                                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                                                    <i className="fa fa-chevron-right" aria-hidden="true"></i>&nbsp;波利狂宴每日购买门票 +3<br />
+                                                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                                                    <i className="fa fa-chevron-right" aria-hidden="true"></i>&nbsp;股市默认投资上限 +100000<br />
+                                                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                                                    <i className="fa fa-chevron-right" aria-hidden="true"></i>&nbsp;股市转生投资上限 +50000<br />
+                                                    <span className="label label-default">价格</span><br />
+                                                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                                                    <i className="fa fa-chevron-right" aria-hidden="true"></i>&nbsp;280礼物币(￥28)/30天
                                                 </p>
                                             </div>
                                         </div>
@@ -162,19 +209,25 @@ export class Home extends React.Component {
                             </div>
                             <div className="panel-body">
                                 <div className="row">
-                                    <div className="col-sm-5">
+                                    <div className="col-sm-6">
                                         <p>
-                                            分享二维码/链接给朋友获得奖励<br />
+                                            分享二维码/链接获得奖励<br />
                                             获得积分方法：<br />
-                                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;点击链接或扫二维码<br />
-                                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;创建角色<br />
-                                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;通过苏克拉特100<br />
-                                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;角色一转职<br />
-                                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;角色二转职<br />
-                                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;角色一转生
+                                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                                            <i className="fa fa-dot-circle-o" aria-hidden="true"></i>&nbsp;点击链接或扫二维码<br />
+                                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                                            <i className="fa fa-circle-o" aria-hidden="true"></i>&nbsp;创建角色<br />
+                                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                                            <i className="fa fa-dot-circle-o" aria-hidden="true"></i>&nbsp;通过苏克拉特100<br />
+                                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                                            <i className="fa fa-circle-o" aria-hidden="true"></i>&nbsp;角色一转职<br />
+                                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                                            <i className="fa fa-dot-circle-o" aria-hidden="true"></i>&nbsp;角色二转职<br />
+                                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                                            <i className="fa fa-circle-o" aria-hidden="true"></i>&nbsp;角色一转生
                                         </p>
                                     </div>
-                                    <div className="col-sm-7">
+                                    <div className="col-sm-6">
                                         <div className="panel panel-default">
                                             <div className="panel-heading">奖励列表</div>
                                             <table className="table table-striped table-condensed">
@@ -219,10 +272,14 @@ export class Home extends React.Component {
                                                 {"  "}首次充值
                                             </div>
                                             <div className="panel-body">
-                                                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;时装 波利帽 x1<br />
-                                                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Zeny x10000<br />
-                                                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;属性洗点书 x1<br />
-                                                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;技能重置棒 x1
+                                                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                                                <i className="fa fa-heart-o" aria-hidden="true"></i>&nbsp;时装 波利帽 x1<br />
+                                                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                                                <i className="fa fa-heart" aria-hidden="true"></i>&nbsp;Zeny x10000<br />
+                                                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                                                <i className="fa fa-heart-o" aria-hidden="true"></i>&nbsp;属性洗点书 x1<br />
+                                                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                                                <i className="fa fa-heart" aria-hidden="true"></i>&nbsp;技能重置棒 x1
                                             </div>
                                         </div>
                                     </div>
@@ -233,10 +290,14 @@ export class Home extends React.Component {
                                                 {"  "}绑定奖励
                                             </div>
                                             <div className="panel-body">
-                                                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;钻石 x200<br />
-                                                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;时装币 x1<br />
-                                                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;zeny x10000<br />
-                                                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;榴莲 x10
+                                                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                                                <i className="fa fa-heart-o" aria-hidden="true"></i>&nbsp;钻石 x200<br />
+                                                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                                                <i className="fa fa-heart" aria-hidden="true"></i>&nbsp;时装币 x1<br />
+                                                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                                                <i className="fa fa-heart-o" aria-hidden="true"></i>&nbsp;zeny x10000<br />
+                                                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                                                <i className="fa fa-heart" aria-hidden="true"></i>&nbsp;榴莲 x10
                                             </div>
                                         </div>
                                     </div>

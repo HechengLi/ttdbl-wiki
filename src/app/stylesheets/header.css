@@ -1,21 +1,24 @@
-.navbar .container .navbar-header .navbar-brand {
-  -webkit-user-select: none;
-  -moz-user-select: none;
-  -ms-user-select: none;
-  -o-user-select: none;
-  user-select: none;
-  cursor: default; }
-.navbar .container .navbar-header .navbar-brand img {
-    height: 25px;
-    width: 25px;
+#header-container {
+  margin: auto auto auto auto;
+  min-width: 1000px; }
+  #header-container .navbar .container .navbar-header .navbar-brand {
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    -o-user-select: none;
+    user-select: none;
+    cursor: default; }
+    #header-container .navbar .container .navbar-header .navbar-brand img {
+      height: 25px;
+      width: 25px;
+      position: relative;
+      top: -2.5px;
+      border-radius: 50%; }
+  #header-container .navbar .container ul li img {
+    height: 20px;
+    width: 20px;
     position: relative;
-    top: -2.5px;
+    top: -1px;
     border-radius: 50%; }
-.navbar .container ul li img {
-  height: 20px;
-  width: 20px;
-  position: relative;
-  top: -1px;
-  border-radius: 50%; }
 
 /*# sourceMappingURL=header.css.map */

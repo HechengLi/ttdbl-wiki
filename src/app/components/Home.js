@@ -2,6 +2,7 @@ import React from "react";
 import { BrowserRouter as Router, Route, Link } from "react-router-dom";
 
 import "../stylesheets/home.css"
+//import "../stylesheets/font-awesome.min.css"
 
 export class Home extends React.Component {
     render() {
@@ -19,7 +20,7 @@ export class Home extends React.Component {
                             </div>
                             <div className="panel-body">
                                 <div className="row">
-                                    <div className="col-sm-4 col-xs-offset-2">
+                                    <div className="col-sm-4 col-sm-offset-2">
                                         <div className="thumbnail">
                                             <img src={"app/icons/Placeholder.jpg"} />
                                             <div className="caption">
@@ -140,7 +141,7 @@ export class Home extends React.Component {
                                                     &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;可购买卢恩商会专属时装<br />
                                                     &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;波利狂宴每日购买门票 +3<br />
                                                     &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;股市默认投资上限 +100000<br />
-                                                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;股市每次转生投资上限 +50000<br />
+                                                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;股市转生投资上限 +50000<br />
                                                     价格<br />
                                                     &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;280礼物币(￥28)/30天
                                                 </p>
@@ -152,27 +153,98 @@ export class Home extends React.Component {
                         </div>
                     </div>
                 </div>
+                <div className="row">
+                    <div className="col-sm-6">
+                        <div className="panel panel-primary">
+                            <div className="panel-heading">
+                                <span><img src={"app/icons/Placeholder.jpg"} /></span>
+                                {"  "}领时装币
+                            </div>
+                            <div className="panel-body">
+                                <div className="row">
+                                    <div className="col-sm-5">
+                                        <p>
+                                            分享二维码/链接给朋友获得奖励<br />
+                                            获得积分方法：<br />
+                                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;点击链接或扫二维码<br />
+                                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;创建角色<br />
+                                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;通过苏克拉特100<br />
+                                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;角色一转职<br />
+                                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;角色二转职<br />
+                                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;角色一转生
+                                        </p>
+                                    </div>
+                                    <div className="col-sm-7">
+                                        <div className="panel panel-default">
+                                            <div className="panel-heading">奖励列表</div>
+                                            <table className="table table-striped table-condensed">
+                                                <thead>
+                                                    <tr>
+                                                        <th>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;积分</th>
+                                                        <th>奖励</th>
+                                                    </tr>
+                                                </thead>
+                                                <tbody>
+                                                    <tr>
+                                                        <td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;20</td>
+                                                        <td>时装币 x1</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;40</td>
+                                                        <td>荣誉 x100</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;???</td>
+                                                        <td>??? x?</td>
+                                                    </tr>
+                                                </tbody>
+                                            </table>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div className="col-sm-6">
+                        <div className="panel panel-success">
+                            <div className="panel-heading">
+                                <span><img src={"app/icons/Placeholder.jpg"} /></span>
+                                {"  "}精彩活动
+                            </div>
+                            <div className="panel-body">
+                                <div className="row">
+                                    <div className="col-sm-6">
+                                        <div className="panel panel-default">
+                                            <div className="panel-heading">
+                                                {"  "}首次充值
+                                            </div>
+                                            <div className="panel-body">
+                                                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;时装 波利帽 x1<br />
+                                                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Zeny x10000<br />
+                                                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;属性洗点书 x1<br />
+                                                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;技能重置棒 x1
+                                            </div>
+                                        </div>
+                                    </div>
 
-                <div className="panel panel-primary">
-                    <div className="panel-heading">
-                        <span><img src={"app/icons/Placeholder.jpg"} /></span>
-                        {"  "}领时装币
-                    </div>
-                    <div className="panel-body">
-                        XXXXXX
+                                    <div className="col-sm-6">
+                                        <div className="panel panel-default">
+                                            <div className="panel-heading">
+                                                {"  "}绑定奖励
+                                            </div>
+                                            <div className="panel-body">
+                                                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;钻石 x200<br />
+                                                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;时装币 x1<br />
+                                                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;zeny x10000<br />
+                                                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;榴莲 x10
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </div>
-            
-                <div className="panel panel-success">
-                    <div className="panel-heading">
-                        <span><img src={"app/icons/Placeholder.jpg"} /></span>
-                        {"  "}精彩活动
-                    </div>
-                    <div className="panel-body">
-                        XXXXXX
-                    </div>
-                </div>
-            
                 <div className="panel panel-info">
                     <div className="panel-heading">
                         <span><img src={"app/icons/Placeholder.jpg"} /></span>

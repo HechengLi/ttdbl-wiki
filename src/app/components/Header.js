@@ -24,7 +24,7 @@ export class Header extends React.Component {
     render() {
         return(
             <Router>
-                <div>
+                <div id="header-container">
                     <nav className="navbar navbar-default">
                         <div className="container">
                             <div className="navbar-header">

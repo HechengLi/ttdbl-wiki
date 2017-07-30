@@ -13,8 +13,9 @@ $panel-special2-border-color: #C8DFFF;
 $panel-special2-text-color: #68BDFF;
 
 #home-container {
-    margin: auto 10px auto 10px;
-
+    margin: auto 10px auto 220px;
+    min-width: 900px;
+    
     .panel {
         .panel-heading {
             img {
@@ -23,6 +24,15 @@ $panel-special2-text-color: #68BDFF;
                 position: relative;
                 top: -1;
                 border-radius: 50%;
+            }
+        }
+        .panel-body {
+            .panel {
+                .panel-body {
+                    .row {
+                        
+                    }
+                }
             }
         }
     }
@@ -43,8 +53,22 @@ $panel-special2-text-color: #68BDFF;
             border-color: $panel-primary-border-color;
             color: $panel-primary-text-color;
         }
-    }
+        .panel-body {
+            ul {
+                padding: -10px 0px 0px 0px;
+                margin: 0px 0px 0px 0px;
 
+                .list-group-item {
+                    padding: 3px 10px;
+                }
+                
+                .active {
+                    padding: 5px 10px;
+                }
+            }
+        }
+    }
+    
     #special1 {
         border-color: $panel-special1-border-color;
         .panel-heading {
@@ -55,6 +79,9 @@ $panel-special2-text-color: #68BDFF;
         }
         .panel-body {
             .row {
+                align-content: center;
+                align-items: center;
+                align-self: center;
                 img {
                     height: 100px;
                     width: 100px;

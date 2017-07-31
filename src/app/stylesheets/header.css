@@ -1,6 +1,5 @@
-#header-container {
-  margin: auto auto auto auto;
-  min-width: 1000px; }
+#header-container .navbar {
+  margin-bottom: 0px; }
   #header-container .navbar .container .navbar-header .navbar-brand {
     -webkit-user-select: none;
     -moz-user-select: none;
@@ -20,5 +19,14 @@
     position: relative;
     top: -1px;
     border-radius: 50%; }
+#header-container .nav-tabs img {
+  height: 20px;
+  width: 20px;
+  position: relative;
+  top: -1px;
+  border-radius: 50%; }
+#header-container .jumbotron {
+  padding-left: 20px;
+  width: auto; }
 
 /*# sourceMappingURL=header.css.map */

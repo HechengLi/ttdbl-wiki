@@ -2,9 +2,8 @@ $icon-radius-brand: 25px;
 $icon-radius-tag: 20px;
 
 #header-container {
-    margin: auto auto auto auto;
-    min-width: 1000px;
     .navbar {
+        margin-bottom: 0px;
         .container {
             .navbar-header {
                 .navbar-brand {
@@ -35,6 +34,22 @@ $icon-radius-tag: 20px;
                     }
                 }
             }
+            
         }
+    }
+    
+    .nav-tabs {
+        img {
+            height: $icon-radius-tag;
+            width: $icon-radius-tag;
+            position: relative;
+            top: -1px;
+            border-radius: 50%;
+        } 
+    }
+            
+    .jumbotron {
+        padding-left: 20px;
+        width: auto;
     }
 }

@@ -34,34 +34,16 @@ export class Header extends React.Component {
                                 </a>
                             </div>
                             <ul className="nav navbar-nav" id="header-nav">
-                                <li className={(this.state.activeTab === "home")?"active":""}>
-                                    <Link to="/home" id="home" onClick={this.activate.bind(this)}>
+                                <li className="active">
+                                    <Link to="/" id="gameinfo">
                                         <span><img src={"app/icons/Placeholder.jpg"} /></span>
-                                        {"  "}主城
+                                        {"  "}游戏资料
                                     </Link>
                                 </li>
-                                <li className={(this.state.activeTab === "inventory")?"active":""}>
-                                    <Link to="/inventory" id="inventory" onClick={this.activate.bind(this)}>
+                                <li>
+                                    <Link to="/" id="contact">
                                         <span><img src={"app/icons/Placeholder.jpg"} /></span>
-                                        {"  "}背包
-                                    </Link>
-                                </li>
-                                <li className={(this.state.activeTab === "battle")?"active":""}>
-                                    <Link to="/battle" id="battle" onClick={this.activate.bind(this)}>
-                                        <span><img src={"app/icons/Placeholder.jpg"} /></span>
-                                        {"  "}战斗
-                                    </Link>
-                                </li> 
-                                <li className={(this.state.activeTab === "character")?"active":""}>
-                                    <Link to="/character" id="character" onClick={this.activate.bind(this)}>
-                                        <span><img src={"app/icons/Placeholder.jpg"} /></span>
-                                        {"  "}人物
-                                    </Link>
-                                </li> 
-                                <li className={(this.state.activeTab === "pet")?"active":""}>
-                                    <Link to="/pet" id="pet" onClick={this.activate.bind(this)}>
-                                        <span><img src={"app/icons/Placeholder.jpg"} /></span>
-                                        {"  "}宠物
+                                        {"  "}联系我们
                                     </Link>
                                 </li>
                             </ul>
@@ -73,39 +55,45 @@ export class Header extends React.Component {
                         <p>以后再写</p>
                         <p><a className="btn btn-primary btn-lg" href="#" role="button">按钮</a></p>
                     </div>
-                      
-                    <ul className="nav nav-tabs nav-justified">
-                        <li role="presentation" className={(this.state.activeTab === "home")?"active":""}>
-                            <Link to="/home" id="home" onClick={this.activate.bind(this)}>
-                                <span><img src={"app/icons/Placeholder.jpg"} /></span>
-                                {"  "}主城
-                            </Link>
-                        </li>
-                        <li role="presentation" className={(this.state.activeTab === "inventory")?"active":""}>
-                            <Link to="/inventory" id="inventory" onClick={this.activate.bind(this)}>
-                                <span><img src={"app/icons/Placeholder.jpg"} /></span>
-                                {"  "}背包
-                            </Link>
-                        </li>
-                        <li role="presentation" className={(this.state.activeTab === "battle")?"active":""}>
-                            <Link to="/battle" id="battle" onClick={this.activate.bind(this)}>
-                                <span><img src={"app/icons/Placeholder.jpg"} /></span>
-                                {"  "}战斗
-                            </Link>
-                        </li> 
-                        <li role="presentation" className={(this.state.activeTab === "character")?"active":""}>
-                            <Link to="/character" id="character" onClick={this.activate.bind(this)}>
-                                <span><img src={"app/icons/Placeholder.jpg"} /></span>
-                                {"  "}人物
-                            </Link>
-                        </li> 
-                        <li role="presentation" className={(this.state.activeTab === "pet")?"active":""}>
-                            <Link to="/pet" id="pet" onClick={this.activate.bind(this)}>
-                                <span><img src={"app/icons/Placeholder.jpg"} /></span>
-                                {"  "}宠物
-                            </Link>
-                        </li>
-                    </ul>
+                    
+                    <div className="row">
+                        <div className="col-sm-2">
+                        </div>
+                        <div className="col-sm-10">
+                            <ul className="nav nav-tabs nav-justified">
+                                <li role="presentation" className={(this.state.activeTab === "home")?"active":""}>
+                                    <Link to="/home" id="home" onClick={this.activate.bind(this)}>
+                                        <span><img src={"app/icons/Placeholder.jpg"} /></span>
+                                        {"  "}主城
+                                    </Link>
+                                </li>
+                                <li role="presentation" className={(this.state.activeTab === "inventory")?"active":""}>
+                                    <Link to="/inventory" id="inventory" onClick={this.activate.bind(this)}>
+                                        <span><img src={"app/icons/Placeholder.jpg"} /></span>
+                                        {"  "}背包
+                                    </Link>
+                                </li>
+                                <li role="presentation" className={(this.state.activeTab === "battle")?"active":""}>
+                                    <Link to="/battle" id="battle" onClick={this.activate.bind(this)}>
+                                        <span><img src={"app/icons/Placeholder.jpg"} /></span>
+                                        {"  "}战斗
+                                    </Link>
+                                </li> 
+                                <li role="presentation" className={(this.state.activeTab === "character")?"active":""}>
+                                    <Link to="/character" id="character" onClick={this.activate.bind(this)}>
+                                        <span><img src={"app/icons/Placeholder.jpg"} /></span>
+                                        {"  "}人物
+                                    </Link>
+                                </li> 
+                                <li role="presentation" className={(this.state.activeTab === "pet")?"active":""}>
+                                    <Link to="/pet" id="pet" onClick={this.activate.bind(this)}>
+                                        <span><img src={"app/icons/Placeholder.jpg"} /></span>
+                                        {"  "}宠物
+                                    </Link>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
                         
                     <Switch>
                         <Route path="/home" component={Home} />

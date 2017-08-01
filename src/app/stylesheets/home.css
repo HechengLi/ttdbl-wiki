@@ -1,6 +1,9 @@
 #home-container {
   font-family: "ff-tisa-web-pro-1","ff-tisa-web-pro-2","Lucida Grande","Hiragino Sans GB","Hiragino Sans GB W3",serif;
   font-weight: bold; }
+  #home-container #collapseBtn {
+    float: right;
+    margin-top: 3px; }
   #home-container h3 {
     font-family: "ff-tisa-web-pro-1","ff-tisa-web-pro-2","Lucida Grande","Hiragino Sans GB","Hiragino Sans GB W3",serif;
     font-weight: bold; }
@@ -11,8 +14,30 @@
     height: 20px;
     width: 20px;
     position: relative;
-    top: -1;
+    top: -2px;
     border-radius: 50%; }
+  #home-container .panel .panel-heading .panel-title a {
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    -o-user-select: none;
+    user-select: none;
+    cursor: default;
+    text-decoration: none; }
+    #home-container .panel .panel-heading .panel-title a i {
+      -webkit-transform: rotate(90deg);
+      -moz-transform: rotate(90deg);
+      -o-transform: rotate(90deg);
+      -ms-transform: rotate(90deg);
+      transform: rotate(90deg);
+      cursor: pointer; }
+    #home-container .panel .panel-heading .panel-title a.collapsed i {
+      -webkit-transform: rotate(0deg);
+      -moz-transform: rotate(0deg);
+      -o-transform: rotate(0deg);
+      -ms-transform: rotate(0deg);
+      transform: rotate(0deg);
+      cursor: pointer; }
   #home-container .panel-default {
     border-color: #E2D3FF; }
     #home-container .panel-default .panel-heading {

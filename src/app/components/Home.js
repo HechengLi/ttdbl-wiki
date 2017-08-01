@@ -365,69 +365,190 @@ export class Home extends React.Component {
                                     </Panel>
                                 </div>
                             </div>
-                        <Panel header={<div><img src={"app/icons/Placeholder.jpg"} />
+                        <div className="row">
+                            <div className="col-sm-7">
+                                <Panel header={<div><img src={"app/icons/Placeholder.jpg"} />
                                         {"  "}波利狂宴
                                         <i className="fa fa-chevron-right" id="collapseBtn" aria-hidden="true" onClick={()=>this.setState({bingo: !this.state.bingo})}></i></div>}
                                         bsStyle="info" collapsible expanded={this.state.bingo}>
-                            <span className="label label-default">玩法</span><br />
-                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;从6x9=54个怪物中选择几个，开奖时如果选对了会获得钻石奖励。选择需要消耗狂宴门票<br />
-                            <span className="label label-default">门票获取方法</span><br />
-                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;每日17:00门面房赠送1张 (邮箱领取)<br />
-                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;100礼物币购买，每日1次 (卢恩商会证明3次)<br />
-                            头等奖-选对3只 钻石x5000
-                            二等奖-选对2只 钻石x200
-                            三等奖-选对1只 钻石x50
-                            每个奖励的怪物是分开的，头等奖3选3，二等奖2选2，三等奖4选1
-                        </Panel>
-                        
-                        <Panel header={<div><img src={"app/icons/Placeholder.jpg"} />
+                                <span className="label label-default">玩法</span><br />
+                                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;从6x9=54个怪物中选择几个<br />
+                                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;开奖时如果选对了会获得钻石奖励<br />
+                                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;选择需要消耗狂宴门票<br />
+                                <span className="label label-default">门票获取方法</span><br />
+                                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;每日17:00赠送1张 (邮箱领取)<br />
+                                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;100礼物币购买，每日1次 (卢恩商会证明3次)<br />
+                                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;门票每周自动清空
+                                <div className="panel panel-default">
+                                    <div className="panel-heading">奖励列表</div>
+                                    <table className="table table-striped table-condensed">
+                                        <thead>
+                                            <tr>
+                                                <td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;奖励</td>
+                                                <td>条件</td>
+                                                <td>奖品</td>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr>
+                                                <td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;头等奖</td>
+                                                <td>选对3只</td>
+                                                <td>钻石 x5000</td>
+                                            </tr>
+                                            <tr>
+                                                <td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;二等奖</td>
+                                                <td>选对2只</td>
+                                                <td>钻石 x200</td>
+                                            </tr>
+                                            <tr>
+                                                <td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;三等奖</td>
+                                                <td>选对1只</td>
+                                                <td>钻石 x50</td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                                每个奖励的怪物是分开的，头等奖3选3，二等奖2选2，三等奖4选1
+                            </Panel>
+                            </div>
+                            <div className="col-sm-5">
+                                <Panel header={<div><img src={"app/icons/Placeholder.jpg"} />
                                         {"  "}波利股市
                                         <i className="fa fa-chevron-right" id="collapseBtn" aria-hidden="true" onClick={()=>this.setState({stock: !this.state.stock})}></i></div>} 
-                                bsStyle="warning" collapsible expanded={this.state.stock}>
-                            玩法： 每周一至周五10:00-22:00可以进行交易
-                            价格10分钟刷新一次
-                            周五22:00自动出售所有股票
-                            购买上限100000Zeny，每次转生增加100000Zeny，每天增加50000Zeny(周一重置)
-                            涨跌基本随机
-                        </Panel>
+                                        bsStyle="warning" collapsible expanded={this.state.stock}>
+                                    <span className="label label-default">玩法</span><br />
+                                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;每周一至周五10:00-22:00可以进行交易<br />
+                                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;价格10分钟刷新一次<br />
+                                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;涨跌基本随机<br />
+                                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;周五22:00自动出售所有股票<br />
+                                    <span className="label label-default">上限</span><br />
+                                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;基础上限100000Zeny<br />
+                                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;每次转生增加100000Zeny<br />
+                                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;每天增加50000Zeny (周一重置)
+                                </Panel>
+                            </div>
+                        </div>
 
                         <Panel header={<div><img src={"app/icons/Placeholder.jpg"} />
                                         {"  "}每日签到
                                         <i className="fa fa-chevron-right" id="collapseBtn" aria-hidden="true" onClick={()=>this.setState({checkin: !this.state.checkin})}></i></div>} 
                                         bsStyle="danger" collapsible expanded={this.state.checkin}>
                             每天签到获得奖励 注意并不是累计签到，而是几号签到领几号的奖励
-                            1 Boss扫荡卷x1
-                            2 钻石x20
-                            3 紫色宠物碎片x5
-                            4 西瓜x1
-                            5 1级耐力宝石x1
-                            6 Boss扫荡卷x2
-                            7 钻石x25
-                            8 紫色宠物碎片x10
-                            9 西瓜x2
-                            10 1级幸运宝石x1
-                            11 Boss扫荡卷x3
-                            12 钻石x30
-                            13 紫色宠物碎片x15
-                            14 西瓜x3
-                            15 1级敏捷宝石x1
-                            16 Boss扫荡卷x4
-                            17 钻石x35
-                            18 紫色宠物碎片x15
-                            19 西瓜x4
-                            20 1级力量宝石x1
-                            21 Boss扫荡卷x5
-                            22 钻石x40
-                            23 紫色宠物碎片x15
-                            24 西瓜x6
-                            25 1级智力宝石x1
-                            26 Boss扫荡卷x6
-                            27 钻石x50
-                            28 紫色宠物碎片x20
-                            29 西瓜x8
-                            30 1级灵巧宝石x1
-                            31 Boss扫荡卷x6
-                            每签到30天获得时装盒x1
+                            <div className="panel panel-default">
+                                <div className="panel-heading">签到奖励</div>
+                                <table id="checkin" className="table table-striped table-condensed">
+                                    <thead>
+
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td>Boss扫荡卷 x1</td>
+                                            <td>钻石 x20</td>
+                                            <td>紫色宠物碎片 x5</td>
+                                            <td>西瓜 x1</td>
+                                            <td>1级耐力宝石 x1</td>
+                                            <td>Boss扫荡卷 x2</td>
+                                        </tr>
+                                        <tr>
+                                            <td>钻石 x25</td>
+                                            <td>紫色宠物碎片 x10</td>
+                                            <td>西瓜 x2</td>
+                                            <td>1级幸运宝石 x1</td>
+                                            <td>Boss扫荡卷 x3</td>
+                                            <td>钻石 x30</td>
+                                        </tr>
+                                        <tr>
+                                            <td>紫色宠物碎片 x15</td>
+                                            <td>西瓜 x3</td>
+                                            <td>1级敏捷宝石 x1</td>
+                                            <td>Boss扫荡卷 x4</td>
+                                            <td>钻石 x35</td>
+                                            <td>紫色宠物碎片 x15</td>
+                                        </tr>
+                                        <tr>
+                                            <td>西瓜 x4</td>
+                                            <td>1级力量宝石 x1</td>
+                                            <td>Boss扫荡卷 x5</td>
+                                            <td>钻石 x40</td>
+                                            <td>紫色宠物碎片 x15</td>
+                                            <td>西瓜 x6</td>
+                                        </tr>
+                                        <tr>
+                                            <td>1级智力宝石 x1</td>
+                                            <td>Boss扫荡卷 x6</td>
+                                            <td>钻石 x50</td>
+                                            <td>紫色宠物碎片 x20</td>
+                                            <td>西瓜 x8</td>
+                                            <td>1级灵巧宝石 x1</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Boss扫荡卷 x6</td>
+                                            <td></td>
+                                            <td></td>
+                                            <td></td>
+                                            <td></td>
+                                            <td></td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                                
+                                <table id="checkin2" className="table table-striped table-condensed">
+                                    <thead>
+
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td>Boss扫荡卷 x1</td>
+                                            <td>钻石 x20</td>
+                                            <td>紫色宠物碎片 x5</td>
+                                            <td>西瓜 x1</td>
+                                        </tr>
+                                        <tr>
+                                            <td>1级耐力宝石 x1</td>
+                                            <td>Boss扫荡卷 x2</td>
+                                            <td>钻石 x25</td>
+                                            <td>紫色宠物碎片 x10</td>
+                                        </tr>
+                                        <tr>
+                                            <td>西瓜 x2</td>
+                                            <td>1级幸运宝石 x1</td>
+                                            <td>Boss扫荡卷 x3</td>
+                                            <td>钻石 x30</td>
+                                        </tr>
+                                        <tr>
+                                            <td>紫色宠物碎片 x15</td>
+                                            <td>西瓜 x3</td>
+                                            <td>1级敏捷宝石 x1</td>
+                                            <td>Boss扫荡卷 x4</td>
+                                        </tr>
+                                        <tr>
+                                            <td>钻石 x35</td>
+                                            <td>紫色宠物碎片 x15</td>
+                                            <td>西瓜 x4</td>
+                                            <td>1级力量宝石 x1</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Boss扫荡卷 x5</td>
+                                            <td>钻石 x40</td>
+                                            <td>紫色宠物碎片 x15</td>
+                                            <td>西瓜 x6</td>
+                                        </tr>
+                                        <tr>
+                                            <td>1级智力宝石 x1</td>
+                                            <td>Boss扫荡卷 x6</td>
+                                            <td>钻石 x50</td>
+                                            <td>紫色宠物碎片 x20</td>
+                                        </tr>
+                                        <tr>
+                                            <td>西瓜 x8</td>
+                                            <td>1级灵巧宝石 x1</td>
+                                            <td>Boss扫荡卷 x6</td>
+                                            <td></td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                            每签到30天获得时装盒 x1
 
                             大事记记录：
                             1转生

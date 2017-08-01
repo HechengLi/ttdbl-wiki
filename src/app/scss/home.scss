@@ -17,6 +17,66 @@ $panel-special2-text-color: #68BDFF;
     font-family: "ff-tisa-web-pro-1","ff-tisa-web-pro-2","Lucida Grande","Hiragino Sans GB","Hiragino Sans GB W3",serif;
     font-weight: bold;
     
+    @media only screen and (max-width:720px) {
+        #checkin {
+            table, thead, tbody, th, td, tr {
+                display: block;
+            }
+            
+            thead tr {
+                position: absolute;
+                top: -9999px;
+                left: -9999px;
+            }
+            
+            tr {
+                border: 1px solid #ccc;
+            }
+            
+            td {
+                border: none;
+                border-bottom: 1px solid #eee;
+                position: relative;
+                white-space: normal;
+                text-align: center;
+            }
+            td:before {
+                position: absolute;
+                top: 6px;
+                left: 6px;
+                width: 45%;
+                padding-right: 10px;
+                white-space: nowrap;
+                text-align: left;
+                font-weight: bold;
+            }
+        }
+        #checkin {
+            display: table;
+        }
+        #checkin2 {
+            display: none;
+        }
+    }
+    
+    @media only screen and (max-width:960px) and (min-width:721px) {
+        #checkin {
+            display: none;
+        }
+        #checkin2 {
+            display: table;
+        }
+    }
+    
+    @media only screen and (min-width:961px) {
+        #checkin {
+            display: table;
+        }
+        #checkin2 {
+            display: none;
+        }
+    }
+    
     #collapseBtn {
         float:right;
         margin-top:3px;

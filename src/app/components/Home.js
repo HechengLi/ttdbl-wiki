@@ -36,41 +36,51 @@ export class Home extends React.Component {
     }
     
     render() {
+        const hideornot = ((this.state.stock)?"inline":"none");
+
+        const hidePic = {
+            display: hideornot
+        };
         return (
             <div id="home-container">
                 <div className="row">
                     <div className="col-sm-2">
-                        <p>
-                            &nbsp;&nbsp;特权<br />
-                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;皇家特权<br />
-                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;其他特权<br />
-                            &nbsp;&nbsp;领时装币<br />
-                            &nbsp;&nbsp;精彩活动<br />
-                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;首次充值<br />
-                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;绑定奖励<br />
-                            &nbsp;&nbsp;波利狂宴<br />
-                            &nbsp;&nbsp;波利股市<br />
-                            &nbsp;&nbsp;每日签到<br />
-                            &nbsp;&nbsp;生命研究所<br />
-                            &nbsp;&nbsp;商城<br />
-                            &nbsp;&nbsp;黑市<br />
-                            &nbsp;&nbsp;交易所<br />
-                            &nbsp;&nbsp;铁匠<br />
-                            &nbsp;&nbsp;好友<br />
-                            &nbsp;&nbsp;公会<br />
-                            &nbsp;&nbsp;决斗<br />
-                            &nbsp;&nbsp;道场<br />
-                            &nbsp;&nbsp;战队<br />
-                            &nbsp;&nbsp;锦标赛<br />
-                            &nbsp;&nbsp;战团<br />
-                            &nbsp;&nbsp;螺旋塔
-                        </p>
+                        <div id="menu" style={{border:"2px solid grey", borderRadius:"8px", marginLeft:"10px"}}>
+                            <p>
+                                &nbsp;&nbsp;<a>特权</a><br />
+                                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a>皇家特权</a><br />
+                                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a>其他特权</a><br />
+                                &nbsp;&nbsp;<a>领时装币</a><br />
+                                &nbsp;&nbsp;<a>精彩活动</a><br />
+                                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a>首次充值</a><br />
+                                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a>绑定奖励</a><br />
+                                &nbsp;&nbsp;<a>波利狂宴</a><br />
+                                &nbsp;&nbsp;<a>波利股市</a><br />
+                                &nbsp;&nbsp;<a>每日签到</a><br />
+                                &nbsp;&nbsp;<a>生命研究所</a><br />
+                                &nbsp;&nbsp;<a>商城</a><br />
+                                &nbsp;&nbsp;<a>黑市</a><br />
+                                &nbsp;&nbsp;<a>交易所</a><br />
+                                &nbsp;&nbsp;<a>铁匠</a><br />
+                                &nbsp;&nbsp;<a>好友</a><br />
+                                &nbsp;&nbsp;<a>公会</a><br />
+                                &nbsp;&nbsp;<a>决斗</a><br />
+                                &nbsp;&nbsp;<a>道场</a><br />
+                                &nbsp;&nbsp;<a>战队</a><br />
+                                &nbsp;&nbsp;<a>锦标赛</a><br />
+                                &nbsp;&nbsp;<a>战团</a><br />
+                                &nbsp;&nbsp;<a>螺旋塔</a>
+                            </p>
+                        </div>
                     </div>
                     <div className="col-sm-10">
-                        <Panel header={<div><img src={"app/icons/Placeholder.jpg"} />
-                                    {"  "}特权
-                                    <i className="fa fa-chevron-right" id="collapseBtn" aria-hidden="true" onClick={()=>this.setState({vip: !this.state.vip})}></i></div>} 
-                        bsStyle="default" collapsible expanded={this.state.vip}>
+                        <Panel header={<div onClick={()=>this.setState({vip: !this.state.vip})}>
+                                        <img src={"app/icons/Placeholder.jpg"} />
+                                        {"  "}特权
+                                        <i className="fa fa-chevron-right" id="collapseBtn" aria-hidden="true" onClick={()=>this.setState({vip: !this.state.vip})}></i></div>}
+                                bsStyle="default"
+                                collapsible
+                                expanded={this.state.vip}>
                             <div className="panel panel-default" id="special1">
                                 <div className="panel-heading">
                                     皇家特权
@@ -267,10 +277,13 @@ export class Home extends React.Component {
                         </Panel>
                             <div className="row">
                                 <div className="col-sm-6">
-                                    <Panel header={<div><img src={"app/icons/Placeholder.jpg"} />
+                                    <Panel header={<div onClick={()=>this.setState({coin: !this.state.coin})}>
+                                                    <img src={"app/icons/Placeholder.jpg"} />
                                                     {"  "}领时装币
                                                     <i className="fa fa-chevron-right" id="collapseBtn" aria-hidden="true" onClick={()=>this.setState({coin: !this.state.coin})}></i></div>} 
-                                                    bsStyle="primary" collapsible expanded={this.state.coin}>
+                                            bsStyle="default"
+                                            collapsible
+                                            expanded={this.state.coin}>
                                         <div className="row">
                                             <div className="col-md-6 col-sm-12">
                                                 <p>
@@ -321,10 +334,13 @@ export class Home extends React.Component {
                                     </Panel>
                                 </div>
                                 <div className="col-sm-6">
-                                    <Panel header={<div><img src={"app/icons/Placeholder.jpg"} />
+                                    <Panel header={<div onClick={()=>this.setState({event: !this.state.event})}>
+                                                    <img src={"app/icons/Placeholder.jpg"} />
                                                     {"  "}精彩活动
                                                     <i className="fa fa-chevron-right" id="collapseBtn" aria-hidden="true" onClick={()=>this.setState({event: !this.state.event})}></i></div>} 
-                                                    bsStyle="success" collapsible expanded={this.state.event}>
+                                            bsStyle="default"
+                                            collapsible
+                                            expanded={this.state.event}>
                                         <div className="row">
                                             <div className="col-md-6">
                                                 <div className="panel panel-default">
@@ -367,10 +383,13 @@ export class Home extends React.Component {
                             </div>
                         <div className="row">
                             <div className="col-sm-7">
-                                <Panel header={<div><img src={"app/icons/Placeholder.jpg"} />
-                                        {"  "}波利狂宴
-                                        <i className="fa fa-chevron-right" id="collapseBtn" aria-hidden="true" onClick={()=>this.setState({bingo: !this.state.bingo})}></i></div>}
-                                        bsStyle="info" collapsible expanded={this.state.bingo}>
+                                <Panel header={<div onClick={()=>this.setState({bingo: !this.state.bingo})}>
+                                                <img src={"app/icons/Placeholder.jpg"} />
+                                                {"  "}波利狂宴
+                                                <i className="fa fa-chevron-right" id="collapseBtn" aria-hidden="true" onClick={()=>this.setState({bingo: !this.state.bingo})}></i></div>}
+                                        bsStyle="default"
+                                        collapsible
+                                        expanded={this.state.bingo}>
                                 <span className="label label-default">玩法</span><br />
                                 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;从6x9=54个怪物中选择几个<br />
                                 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;开奖时如果选对了会获得钻石奖励<br />
@@ -412,10 +431,13 @@ export class Home extends React.Component {
                             </Panel>
                             </div>
                             <div className="col-sm-5">
-                                <Panel header={<div><img src={"app/icons/Placeholder.jpg"} />
-                                        {"  "}波利股市
-                                        <i className="fa fa-chevron-right" id="collapseBtn" aria-hidden="true" onClick={()=>this.setState({stock: !this.state.stock})}></i></div>} 
-                                        bsStyle="warning" collapsible expanded={this.state.stock}>
+                                <Panel header={<div onClick={()=>this.setState({stock: !this.state.stock})}>
+                                                <img src={"app/icons/Placeholder.jpg"} />
+                                                {"  "}波利股市
+                                                <i className="fa fa-chevron-right" id="collapseBtn" aria-hidden="true" onClick={()=>this.setState({stock: !this.state.stock})}></i></div>} 
+                                        bsStyle="default"
+                                        collapsible
+                                        expanded={this.state.stock}>
                                     <span className="label label-default">玩法</span><br />
                                     &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;每周一至周五10:00-22:00可以进行交易<br />
                                     &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;价格10分钟刷新一次<br />
@@ -426,14 +448,19 @@ export class Home extends React.Component {
                                     &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;每次转生增加100000Zeny<br />
                                     &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;每天增加50000Zeny (周一重置)
                                 </Panel>
+                                <div key={hideornot} className="thumbnail" style={hidePic}>
+                                    <img src={"app/icons/Placeholder.jpg"} style={{height:"156px"}} />
+                                </div>
                             </div>
                         </div>
 
-                        <Panel header={<div><img src={"app/icons/Placeholder.jpg"} />
+                        <Panel header={<div onClick={()=>this.setState({checkin: !this.state.checkin})}>
+                                        <img src={"app/icons/Placeholder.jpg"} />
                                         {"  "}每日签到
                                         <i className="fa fa-chevron-right" id="collapseBtn" aria-hidden="true" onClick={()=>this.setState({checkin: !this.state.checkin})}></i></div>} 
-                                        bsStyle="danger" collapsible expanded={this.state.checkin}>
-                            每天签到获得奖励 注意并不是累计签到，而是几号签到领几号的奖励
+                                bsStyle="default"
+                                collapsible
+                                expanded={this.state.checkin}>
                             <div className="panel panel-default">
                                 <div className="panel-heading">签到奖励</div>
                                 <table id="checkin" className="table table-striped table-condensed">
@@ -491,7 +518,7 @@ export class Home extends React.Component {
                                         </tr>
                                     </tbody>
                                 </table>
-                                
+
                                 <table id="checkin2" className="table table-striped table-condensed">
                                     <thead>
 
@@ -547,110 +574,319 @@ export class Home extends React.Component {
                                         </tr>
                                     </tbody>
                                 </table>
-                            </div>
-                            每签到30天获得时装盒 x1
+                                <div className="panel-footer">
+                                    每天签到获得奖励 注意并不是累计签到，而是几号签到领几号的奖励<br />
+                                    每签到30天获得时装盒 x1
+                                </div>
+                            </div>              
+                            <div className="panel panel-default">
+                                <div className="panel-heading">大事记记录</div>
+                                <table className="table table-striped table-condensed">
+                                    <thead>
 
-                            大事记记录：
-                            1转生
-                            2转生
-                            3转生
-                            4转生
-                            5转生
-                            6转生
-                            7转生
-                            第一次到达830关
-                            第一次关注别人
-                            第一次蜕变宠物
-                            第一次决斗胜利
-                            第一次合成宠物
-                            第一天进入游戏
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td>转生</td>
+                                            <td>第一次到达830关</td>
+                                            <td>第一次关注别人</td>
+                                            <td>第一次蜕变宠物</td>
+                                        </tr>
+                                        <tr>
+                                            <td>第一次决斗胜利</td>
+                                            <td>第一次合成宠物</td>
+                                            <td>第一天进入游戏</td>
+                                            <td></td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
                         </Panel>   
+                        <div className="row">
+                            <div className="col-md-5">
+                                <Panel header={<div onClick={()=>this.setState({life: !this.state.life})}>
+                                                <img src={"app/icons/Placeholder.jpg"} />
+                                                {"  "}生命研究所
+                                                <i className="fa fa-chevron-right" id="collapseBtn" aria-hidden="true" onClick={()=>this.setState({life: !this.state.life})}></i></div>} 
+                                        bsStyle="default"
+                                        collapsible
+                                        expanded={this.state.life}>
+                                    <span className="label label-default">玩法</span><br />
+                                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;每周三16个npc进行决斗<br />
+                                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;可以用竞猜币压哪个npc获胜<br />
+                                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;猜对翻倍 (最高压1000)
+                                    <div className="panel panel-default">
+                                        <div className="panel-heading">竞猜币兑换表</div>
+                                        <table className="table table-striped table-condensed">
+                                            <thead>
+                                                <tr>
+                                                    <th>物品</th>
+                                                    <th>价格</th>
+                                                </tr>
+                                            </thead>
+                                            <tbody>
+                                                <tr>
+                                                    <td>&nbsp;&nbsp;初级探险经验药水 x1</td>
+                                                    <td>竞猜币 x100</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>&nbsp;&nbsp;初级战斗经验药水x1</td>
+                                                    <td>竞猜币x200</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>&nbsp;&nbsp;高级探险经验药水x1</td>
+                                                    <td>竞猜币x500</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>&nbsp;&nbsp;高级战斗经验药水x1</td>
+                                                    <td>竞猜币x2000</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>&nbsp;&nbsp;3级力量宝石x1</td>
+                                                    <td>竞猜币x1800</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>&nbsp;&nbsp;3级灵巧宝石x1</td>
+                                                    <td>竞猜币x1800</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>&nbsp;&nbsp;3级智力宝石x1</td>
+                                                    <td>竞猜币x1800</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>&nbsp;&nbsp;4级力量宝石x1</td>
+                                                    <td>竞猜币x5000</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>&nbsp;&nbsp;4级灵巧宝石x1</td>
+                                                    <td>竞猜币x5000</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>&nbsp;&nbsp;4级智力宝石x1</td>
+                                                    <td>竞猜币x5000</td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                    </div>
+                                </Panel>
+                            </div>
+                                                    
+                            <div className="col-md-7">
+                                <Panel header={<div onClick={()=>this.setState({store: !this.state.store})}>
+                                                <img src={"app/icons/Placeholder.jpg"} />
+                                                {"  "}商城
+                                                <i className="fa fa-chevron-right" id="collapseBtn" aria-hidden="true" onClick={()=>this.setState({store: !this.state.store})}></i></div>} 
+                                        bsStyle="default"
+                                        collapsible
+                                        expanded={this.state.store}>
+                                    <div className="panel panel-default">
+                                        <div className="panel-heading">充值</div>
+                                        <div className="panel-body">
+                                            <div className="row">
+                                                <div className="col-md-6">
+                                                    <div className="panel panel-default">
+                                                        <div className="panel-heading">钻石</div>
+                                                        <ul className="list-group">
+                                                            <li className="list-group-item">
+                                                                钻石 x7480
+                                                                <span className="label label-default" style={{float:"right"}}>￥648</span>
+                                                            </li>
+                                                            <li className="list-group-item">
+                                                                钻石 x3768
+                                                                <span className="label label-default" style={{float:"right"}}>￥328</span>
+                                                            </li>
+                                                            <li className="list-group-item">
+                                                                钻石 x1460
+                                                                <span className="label label-default" style={{float:"right"}}>￥128</span>
+                                                            </li>
+                                                            <li className="list-group-item">
+                                                                钻石 x768
+                                                                <span className="label label-default" style={{float:"right"}}>￥68</span>
+                                                            </li>
+                                                            <li className="list-group-item">
+                                                                钻石 x336
+                                                                <span className="label label-default" style={{float:"right"}}>￥30</span>
+                                                            </li>
+                                                            <li className="list-group-item">
+                                                                钻石 x6
+                                                                <span className="label label-default" style={{float:"right"}}>￥6</span>
+                                                            </li>
+                                                        </ul>
+                                                    </div>
+                                                </div>
+                                                <div className="col-md-6">
+                                                    <div className="panel panel-default">
+                                                        <div className="panel-heading">礼物币</div>
+                                                        <ul className="list-group">
+                                                            <li className="list-group-item">
+                                                                礼物币 x500
+                                                                <span className="label label-default" style={{float:"right"}}>￥50</span>
+                                                            </li>
+                                                            <li className="list-group-item">
+                                                                礼物币 x1100
+                                                                <span className="label label-default" style={{float:"right"}}>￥108</span>
+                                                            </li>
+                                                            <li className="list-group-item">
+                                                                礼物币 x2800
+                                                                <span className="label label-default" style={{float:"right"}}>￥128</span>
+                                                            </li>
+                                                            <li className="list-group-item">
+                                                                礼物币 x5500
+                                                                <span className="label label-default" style={{float:"right"}}>￥518</span>
+                                                            </li>
+                                                        </ul>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div className="panel panel-default">
+                                        <div className="panel-heading">每日抽</div>
+                                        <ul className="list-group">
+                                            <li className="list-group-item">
+                                                ???
+                                                <span className="badge">??%</span>
+                                            </li>
+                                        </ul>
+                                        <div className="panel-footer">每天免费30次</div>
+                                    </div>
+                                    <div className="row">
+                                        <div className="col-md-6">
+                                            <div className="panel panel-default">
+                                                <div className="panel-heading">抽宠物 - 每抽10次必得宠物 x1</div>
+                                                <ul className="list-group">
+                                                    <li className="list-group-item">
+                                                        探险经验药水
+                                                        <span className="badge">13.39%</span>
+                                                    </li>
+                                                    <li className="list-group-item">
+                                                        战斗经验药水
+                                                        <span className="badge">13.39%</span>
+                                                    </li>
+                                                    <li className="list-group-item">
+                                                        绿色宠物碎片
+                                                        <span className="badge">16.07%</span>
+                                                    </li>
+                                                    <li className="list-group-item">
+                                                        蓝色宠物碎片
+                                                        <span className="badge">31.25%</span>
+                                                    </li>
+                                                    <li className="list-group-item">
+                                                        紫色宠物碎片
+                                                        <span className="badge">20.98%</span>
+                                                    </li>
+                                                    <li className="list-group-item">
+                                                        绿色宠物
+                                                        <span className="badge">1%</span>
+                                                    </li>
+                                                    <li className="list-group-item">
+                                                        蓝色宠物
+                                                        <span className="badge">1.95%</span>
+                                                    </li>
+                                                    <li className="list-group-item">
+                                                        紫色宠物
+                                                        <span className="badge">1.62%</span>
+                                                    </li>
+                                                    <li className="list-group-item">
+                                                        宝图碎片
+                                                        <span className="badge">0.35%</span>
+                                                    </li>
+                                                    <li className="list-group-item">
+                                                        白色宠物/碎片
+                                                        <span className="badge">??%</span>
+                                                    </li>
+                                                </ul>
+                                                <div className="panel-footer">
+                                                    每天免费一次<br />
+                                                    抽一次: 钻石 x100<br />
+                                                    连抽10次: 钻石 x880
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div className="col-md-6">
+                                            <div className="panel panel-default">
+                                                <div className="panel-heading">抽宝图 - 每抽10次必得宝图碎片 x1</div>
+                                                <ul className="list-group">
+                                                    <li className="list-group-item">
+                                                        水果
+                                                        <span className="badge">20%</span>
+                                                    </li>
+                                                    <li className="list-group-item">
+                                                        糖果
+                                                        <span className="badge">20%</span>
+                                                    </li>
+                                                    <li className="list-group-item">
+                                                        探险经验药水
+                                                        <span className="badge">28%</span>
+                                                    </li>
+                                                    <li className="list-group-item">
+                                                        战斗经验药水
+                                                        <span className="badge">28%</span>
+                                                    </li>
+                                                    <li className="list-group-item">
+                                                        宝图碎片(符文)
+                                                        <span className="badge">2%</span>
+                                                    </li>
+                                                    <li className="list-group-item">
+                                                        宝图碎片(宠物技能)
+                                                        <span className="badge">2%</span>
+                                                    </li>
+                                                </ul>
+                                                <div className="panel-footer">
+                                                    每天免费一次<br />
+                                                    抽一次: 钻石 x100<br />
+                                                    连抽10次: 钻石 x880
+                                                </div>
+                                            </div>
+                                            <div className="panel panel-default">
+                                                <div className="panel-heading">兑换Zeny</div>
+                                                <div className="panel-body">
+                                                    兑换120分钟的zeny收益
+                                                </div>
+                                                <div className="panel-footer">礼物币 x20/?/?</div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div className="panel panel-default">
+                                        <div className="panel-heading">时装</div>
+                                        <div className="panel-body">
+                                            商城出售:<br />
+                                            除武器，发型之外随机时装x6<br />
+                                            随机音乐x1<br />
+                                            本职业随机武器x4<br />
+                                            随机发型x4
+                                        </div>
+                                        <div className="panel-footer">
+                                            每星期刷新一次<br />
+                                            刷新价格: 钻石 x50
+                                        </div>
+                                    </div>
+                                </Panel>
+                            </div>
+                        </div>    
                         
-                        <Panel header={<div><img src={"app/icons/Placeholder.jpg"} />
-                                        {"  "}生命研究所
-                                        <i className="fa fa-chevron-right" id="collapseBtn" aria-hidden="true" onClick={()=>this.setState({life: !this.state.life})}></i></div>} 
-                                        bsStyle="default" collapsible expanded={this.state.life}>
-                            每周三16个npc进行决斗
-                            可以用竞猜币压哪个npc获胜，猜对翻倍(最高压1000)
-                            竞猜币兑换表
-                            初级探险经验药水x1 竞猜币x100
-                            初级战斗经验药水x1 竞猜币x200
-                            高级探险经验药水x1 竞猜币x500
-                            高级战斗经验药水x1 竞猜币x2000
-                            3级力量宝石x1 竞猜币x1800
-                            3级灵巧宝石x1 竞猜币x1800
-                            3级智力宝石x1 竞猜币x1800
-                            4级力量宝石x1 竞猜币x5000
-                            4级灵巧宝石x1 竞猜币x5000
-                            4级智力宝石x1 竞猜币x5000
-                        </Panel>
-                            
-                        <Panel header={<div><img src={"app/icons/Placeholder.jpg"} />
-                                        {"  "}商城
-                                        <i className="fa fa-chevron-right" id="collapseBtn" aria-hidden="true" onClick={()=>this.setState({store: !this.state.store})}></i></div>} 
-                                        bsStyle="primary" collapsible expanded={this.state.store}>
-                            充值
-                            钻石x7480 ￥648
-                            钻石x3768 ￥328
-                            钻石x1460 ￥128
-                            钻石x768 ￥68
-                            钻石x336 ￥30
-                            钻石x66 ￥6
-                            礼物币x500 ￥50
-                            礼物币x1100 ￥108
-                            礼物币x2800 ￥268
-                            礼物币x5500 ￥518
-                            每日抽 每天免费30次
-                            奖励：
-                            抽宠物 每天免费一次 抽1次 钻石x100 抽10次 钻石x880
-                            每抽10次必获得宠物x1 获得所有宠物随机获得宠物碎片x40
-                            奖励：
-                                探险经验药水 13.39%
-                                战斗经验药水 13.39%
-                                绿色宠物碎片 16.07%
-                                蓝色宠物碎片 31.25%
-                                紫色宠物碎片 20.98%
-                                绿色宠物 1%
-                                蓝色宠物 1.95%
-                                紫色宠物 1.62%
-                                宝图碎片 0.35%
-                                *白色宠物的概率心动没有放出*
-                            抽宝图 每天免费一次 抽1次 钻石x100 抽10次 钻石x880
-                            每抽10次必获得宝图碎片x1
-                            奖励：
-                                水果 20%
-                                糖果 20%
-                                探险经验药水 28%
-                                战斗经验药水 28%
-                                宝图碎片(符文) 2%
-                                宝图碎片(宠物技能) 2%
-                            兑换zeny
-                            兑换120分钟的zeny收益
-                            兑换价格20/?
-                            时装
-                            每星期刷一次
-                            手动刷新价格 钻石x50
-                            除武器，发型之外时装x6
-                            音乐x1
-                            武器x4
-                            发型x4
-                        </Panel>
                         
-                        <Panel header={<div><img src={"app/icons/Placeholder.jpg"} />
+                        <Panel header={<div onClick={()=>this.setState({blackmarket: !this.state.blackmarket})}>
+                                        <img src={"app/icons/Placeholder.jpg"} />
                                         {"  "}黑市
                                         <i className="fa fa-chevron-right" id="collapseBtn" aria-hidden="true" onClick={()=>this.setState({blackmarket: !this.state.blackmarket})}></i></div>} 
-                                        bsStyle="success" collapsible expanded={this.state.blackmarket}>
+                                bsStyle="default"
+                                collapsible
+                                expanded={this.state.blackmarket}>
                             展示6个随机道具，价格可能是钻石或zeny
                             随机出现2/4/6/8折扣
                             可能出现 白色宠物碎片，绿色宠物碎片，蓝色宠物碎片，紫色宠物碎片，橙色宠物碎片(只会出现已有宠物的碎片)，神之金属，装备，1/2/3级宝石，Boss扫荡卷，星魂经验
-                            手动刷新价格10/?
+                            手动刷新价格10/?/?
                             刷新时间?
                         </Panel>
 
-                        <Panel header={<div><img src={"app/icons/Placeholder.jpg"} />
+                        <Panel header={<div onClick={()=>this.setState({trade: !this.state.trade})}>
+                                        <img src={"app/icons/Placeholder.jpg"} />
                                         {"  "}交易所
                                         <i className="fa fa-chevron-right" id="collapseBtn" aria-hidden="true" onClick={()=>this.setState({trade: !this.state.trade})}></i></div>} 
-                                        bsStyle="danger" collapsible expanded={this.state.trade}>
+                                bsStyle="default"
+                                collapsible
+                                expanded={this.state.trade}>
                             可以用Zeny购买其他玩家道具，或者把道具出售给其他玩家
                             购买谁的物品纯属随机
                             上架费用（不知道怎么算的）最高Zenyx10000
@@ -662,10 +898,13 @@ export class Home extends React.Component {
                             最多上架道具x10
                         </Panel>
 
-                        <Panel header={<div><img src={"app/icons/Placeholder.jpg"} />
+                        <Panel header={<div onClick={()=>this.setState({blacksmith: !this.state.blacksmith})}>
+                                        <img src={"app/icons/Placeholder.jpg"} />
                                         {"  "}铁匠
                                         <i className="fa fa-chevron-right" id="collapseBtn" aria-hidden="true" onClick={()=>this.setState({blacksmith: !this.state.blacksmith})}></i></div>} 
-                                        bsStyle="info" collapsible expanded={this.state.blacksmith}>
+                                bsStyle="default"
+                                collapsible
+                                expanded={this.state.blacksmith}>
                             普通熔炼装备(最多同时6个)熔炼时有概率获得更高品质装备，橙装有概率获得神之水晶
                             熔炼值获得
                             白装 熔炼值x？
@@ -678,10 +917,13 @@ export class Home extends React.Component {
                                     传奇宝石x3 钻石x500
                         </Panel>
                         
-                        <Panel header={<div><img src={"app/icons/Placeholder.jpg"} />
+                        <Panel header={<div onClick={()=>this.setState({friend: !this.state.friend})}>
+                                        <img src={"app/icons/Placeholder.jpg"} />
                                         {"  "}好友
                                         <i className="fa fa-chevron-right" id="collapseBtn" aria-hidden="true" onClick={()=>this.setState({friend: !this.state.friend})}></i></div>} 
-                                        bsStyle="warning" collapsible expanded={this.state.friend}>
+                                bsStyle="default"
+                                collapsible
+                                expanded={this.state.friend}>
                             摸头 每日五次 获得荣誉x50
                             送礼 每日只能送一次玫瑰 冰雕玫瑰 钻石x50 获得荣誉x300 羁绊x50
                                                 永恒玫瑰 钻石x500 获得荣誉x500 羁绊x300
@@ -696,10 +938,13 @@ export class Home extends React.Component {
                                 卢恩商会证明 礼物币x280
                         </Panel>
                         
-                        <Panel header={<div><img src={"app/icons/Placeholder.jpg"} />
+                        <Panel header={<div onClick={()=>this.setState({guild: !this.state.guild})}>
+                                        <img src={"app/icons/Placeholder.jpg"} />
                                         {"  "}公会
                                         <i className="fa fa-chevron-right" id="collapseBtn" aria-hidden="true" onClick={()=>this.setState({guild: !this.state.guild})}></i></div>} 
-                                        bsStyle="danger" collapsible expanded={this.state.guild}>
+                                bsStyle="default"
+                                collapsible
+                                expanded={this.state.guild}>
                             公会人数上限100
                             职位：会长 - 
                                 副会长 - 
@@ -737,10 +982,13 @@ export class Home extends React.Component {
                                     ?
                         </Panel>
 
-                        <Panel header={<div><img src={"app/icons/Placeholder.jpg"} />
+                        <Panel header={<div onClick={()=>this.setState({pvp: !this.state.pvp})}>
+                                        <img src={"app/icons/Placeholder.jpg"} />
                                         {"  "}决斗
-                                        <i className="fa fa-chevron-right" id="collapseBtn" aria-hidden="true" onClick={()=>this.setState({pvp: !this.state.pvp})}></i></div>} 
-                                        bsStyle="default" collapsible expanded={this.state.pvp}>
+                                        <i className="fa fa-chevron-right" id="collapseBtn" aria-hidden="true" onClick={()=>this.setState({pvp: !this.state.pvp})}></i></div>}
+                                bsStyle="default"
+                                collapsible
+                                expanded={this.state.pvp}>
                             每周分配30名同转生 战力接近的玩家组成小组(一周未登录不匹配)
                             进行战斗消耗入场券x1
                             一张入场券失败1次或3连胜失效
@@ -757,10 +1005,13 @@ export class Home extends React.Component {
                                     第二十一名-第三十名 荣誉x2000 钻石x20
                         </Panel>
                         
-                        <Panel header={<div><img src={"app/icons/Placeholder.jpg"} />
+                        <Panel header={<div onClick={()=>this.setState({daochang: !this.state.daochang})}>
+                                        <img src={"app/icons/Placeholder.jpg"} />
                                         {"  "}道场
                                         <i className="fa fa-chevron-right" id="collapseBtn" aria-hidden="true" onClick={()=>this.setState({daochang: !this.state.daochang})}></i></div>} 
-                                        bsStyle="primary" collapsible expanded={this.state.daochang}>
+                                bsStyle="default"
+                                collapsible
+                                expanded={this.state.daochang}>
                             通关/扫荡可以获得装备精炼用的结晶
                             通关1星解锁神器，通关5星觉醒神器(属性翻倍)，兽人酋长除外
                             每天免费扫荡3次，扫荡4次必出完美结晶
@@ -771,10 +1022,13 @@ export class Home extends React.Component {
                                     完美结晶 25%-50%
                         </Panel>
  
-                        <Panel header={<div><img src={"app/icons/Placeholder.jpg"} />
+                        <Panel header={<div onClick={()=>this.setState({team: !this.state.team})}>
+                                        <img src={"app/icons/Placeholder.jpg"} />
                                         {"  "}战队
                                         <i className="fa fa-chevron-right" id="collapseBtn" aria-hidden="true" onClick={()=>this.setState({team: !this.state.team})}></i></div>} 
-                                        bsStyle="success" collapsible expanded={this.state.team}>
+                                bsStyle="default"
+                                collapsible
+                                expanded={this.state.team}>
                             玩法：
                                     满5人队长可以报名
                                     比赛持续6天 冷却1天
@@ -791,10 +1045,13 @@ export class Home extends React.Component {
                                     排名越高概率越大
                         </Panel>
                         
-                        <Panel header={<div><img src={"app/icons/Placeholder.jpg"} />
+                        <Panel header={<div onClick={()=>this.setState({arena: !this.state.arena})}>
+                                        <img src={"app/icons/Placeholder.jpg"} />
                                         {"  "}锦标赛
                                         <i className="fa fa-chevron-right" id="collapseBtn" aria-hidden="true" onClick={()=>this.setState({arena: !this.state.arena})}></i></div>} 
-                                        bsStyle="info" collapsible expanded={this.state.arena}>
+                                bsStyle="default"
+                                collapsible
+                                expanded={this.state.arena}>
                             玩法：周二15:00-17:00进行3场16进8，间隔1小时
                                     19:00-21:00进行3场8进4，间隔1小时
                                  周三15:00-17:00进行3场4进2，间隔1小时
@@ -810,10 +1067,13 @@ export class Home extends React.Component {
                                 16强 荣誉x? 钻石x?
                         </Panel>
                         
-                        <Panel header={<div><img src={"app/icons/Placeholder.jpg"} />
+                        <Panel header={<div onClick={()=>this.setState({zhantuan: !this.state.zhantuan})}>
+                                        <img src={"app/icons/Placeholder.jpg"} />
                                         {"  "}战团
                                         <i className="fa fa-chevron-right" id="collapseBtn" aria-hidden="true" onClick={()=>this.setState({zhantuan: !this.state.zhantuan})}></i></div>} 
-                                        bsStyle="warning" collapsible expanded={this.state.zhantuan}>
+                                bsStyle="default"
+                                collapsible
+                                expanded={this.state.zhantuan}>
                             玩法：
                                 3名玩家一起推图，每位玩家设置自己的战团技能
                                 关卡进度共享
@@ -836,10 +1096,13 @@ export class Home extends React.Component {
                                 部位材料 50%
                         </Panel>
                         
-                        <Panel header={<div><img src={"app/icons/Placeholder.jpg"} />
+                        <Panel header={<div onClick={()=>this.setState({tower: !this.state.tower})}>
+                                        <img src={"app/icons/Placeholder.jpg"} />
                                         {"  "}螺旋塔
                                         <i className="fa fa-chevron-right" id="collapseBtn" aria-hidden="true" onClick={()=>this.setState({tower: !this.state.tower})}></i></div>} 
-                                        bsStyle="danger" collapsible expanded={this.state.tower}>
+                                bsStyle="default"
+                                collapsible
+                                expanded={this.state.tower}>
                             XXXXXX
                         </Panel>
                     </div>

@@ -1,6 +1,6 @@
 # ttdbl-wiki
 wiki for game ttdbl<br />
 TODO:<br />
-&nbsp;- Welcome page<br />
-    - Better layout<br />
-    - More information
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- Welcome page<br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- Better layout<br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- More information

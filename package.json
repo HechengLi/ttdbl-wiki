@@ -4,9 +4,9 @@
     "description": "",
     "main": "index.js",
     "scripts": {
-        "start": "npm run build",
-        "build": "webpack -d && cp src/index.html dist/index.html && webpack-dev-server --content-base src/ --inline --hot --history-api-fallback",
-        "build:prod": "webpack -p && cp src/index.html dist/index.html"
+        "start": "npm run test",
+        "build": "webpack -d && cp src/index.html dist/index.html && cp -R src/app/icons dist/app && webpack-dev-server --content-base src/ --inline --hot",
+        "prod": "webpack -p && cp src/index.html dist/index.html && cp -R src/app/icons dist/app"
     },
     "keywords": [
         "reactjs"

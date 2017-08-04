@@ -30,24 +30,24 @@ export class Home extends React.Component {
             tower: true
         }
     }
-    
+
     onCollapse(e) {
         this.setState({ collapse: !this.state.collapse })
     }
-    
+
     render() {
         const hideornot1 = ((this.state.stock)?"inline":"none");
 
         const hidePic1 = {
             display: hideornot1
         };
-        
+
         const hideornot2 = ((this.state.blackmarket)?"inline":"none");
 
         const hidePic2 = {
             display: hideornot2
         };
-        
+
         return (
             <div id="home-container">
                 <div className="row">
@@ -287,7 +287,7 @@ export class Home extends React.Component {
                                     <Panel header={<div onClick={()=>this.setState({coin: !this.state.coin})}>
                                                     <img src={"app/icons/Placeholder.jpg"} />
                                                     {"  "}领时装币
-                                                    <i className="fa fa-chevron-right" id="collapseBtn" aria-hidden="true" onClick={()=>this.setState({coin: !this.state.coin})}></i></div>} 
+                                                    <i className="fa fa-chevron-right" id="collapseBtn" aria-hidden="true" onClick={()=>this.setState({coin: !this.state.coin})}></i></div>}
                                             bsStyle="default"
                                             collapsible
                                             expanded={this.state.coin}>
@@ -344,7 +344,7 @@ export class Home extends React.Component {
                                     <Panel header={<div onClick={()=>this.setState({event: !this.state.event})}>
                                                     <img src={"app/icons/Placeholder.jpg"} />
                                                     {"  "}精彩活动
-                                                    <i className="fa fa-chevron-right" id="collapseBtn" aria-hidden="true" onClick={()=>this.setState({event: !this.state.event})}></i></div>} 
+                                                    <i className="fa fa-chevron-right" id="collapseBtn" aria-hidden="true" onClick={()=>this.setState({event: !this.state.event})}></i></div>}
                                             bsStyle="default"
                                             collapsible
                                             expanded={this.state.event}>
@@ -441,7 +441,7 @@ export class Home extends React.Component {
                                 <Panel header={<div onClick={()=>this.setState({stock: !this.state.stock})}>
                                                 <img src={"app/icons/Placeholder.jpg"} />
                                                 {"  "}波利股市
-                                                <i className="fa fa-chevron-right" id="collapseBtn" aria-hidden="true" onClick={()=>this.setState({stock: !this.state.stock})}></i></div>} 
+                                                <i className="fa fa-chevron-right" id="collapseBtn" aria-hidden="true" onClick={()=>this.setState({stock: !this.state.stock})}></i></div>}
                                         bsStyle="default"
                                         collapsible
                                         expanded={this.state.stock}>
@@ -464,7 +464,7 @@ export class Home extends React.Component {
                         <Panel header={<div onClick={()=>this.setState({checkin: !this.state.checkin})}>
                                         <img src={"app/icons/Placeholder.jpg"} />
                                         {"  "}每日签到
-                                        <i className="fa fa-chevron-right" id="collapseBtn" aria-hidden="true" onClick={()=>this.setState({checkin: !this.state.checkin})}></i></div>} 
+                                        <i className="fa fa-chevron-right" id="collapseBtn" aria-hidden="true" onClick={()=>this.setState({checkin: !this.state.checkin})}></i></div>}
                                 bsStyle="default"
                                 collapsible
                                 expanded={this.state.checkin}>
@@ -585,7 +585,7 @@ export class Home extends React.Component {
                                     每天签到获得奖励 注意并不是累计签到，而是几号签到领几号的奖励<br />
                                     每签到30天获得时装盒 x1
                                 </div>
-                            </div>              
+                            </div>
                             <div className="panel panel-default">
                                 <div className="panel-heading">大事记记录</div>
                                 <table className="table table-striped table-condensed">
@@ -608,13 +608,13 @@ export class Home extends React.Component {
                                     </tbody>
                                 </table>
                             </div>
-                        </Panel>   
+                        </Panel>
                         <div className="row">
                             <div className="col-md-5">
                                 <Panel header={<div onClick={()=>this.setState({life: !this.state.life})}>
                                                 <img src={"app/icons/Placeholder.jpg"} />
                                                 {"  "}生命研究所
-                                                <i className="fa fa-chevron-right" id="collapseBtn" aria-hidden="true" onClick={()=>this.setState({life: !this.state.life})}></i></div>} 
+                                                <i className="fa fa-chevron-right" id="collapseBtn" aria-hidden="true" onClick={()=>this.setState({life: !this.state.life})}></i></div>}
                                         bsStyle="default"
                                         collapsible
                                         expanded={this.state.life}>
@@ -676,11 +676,11 @@ export class Home extends React.Component {
                                         </table>
                                     </div>
                                 </Panel>
-                                                    
+
                                 <Panel header={<div onClick={()=>this.setState({blackmarket: !this.state.blackmarket})}>
                                                 <img src={"app/icons/Placeholder.jpg"} />
                                                 {"  "}黑市
-                                                <i className="fa fa-chevron-right" id="collapseBtn" aria-hidden="true" onClick={()=>this.setState({blackmarket: !this.state.blackmarket})}></i></div>} 
+                                                <i className="fa fa-chevron-right" id="collapseBtn" aria-hidden="true" onClick={()=>this.setState({blackmarket: !this.state.blackmarket})}></i></div>}
                                         bsStyle="default"
                                         collapsible
                                         expanded={this.state.blackmarket}>
@@ -739,7 +739,7 @@ export class Home extends React.Component {
                                                 <span className="badge">Zeny x?</span>
                                             </li>
                                         </ul>
-                                        
+
                                         <div className="panel-footer">
                                             手动刷新价格 钻石 x10/?/?<br />
                                             刷新时间 ?小时<br />
@@ -751,12 +751,12 @@ export class Home extends React.Component {
                                     <img src={"app/icons/Placeholder.jpg"} style={{height:"156px"}} />
                                 </div>
                             </div>
-                                                    
+
                             <div className="col-md-7">
                                 <Panel header={<div onClick={()=>this.setState({store: !this.state.store})}>
                                                 <img src={"app/icons/Placeholder.jpg"} />
                                                 {"  "}商城
-                                                <i className="fa fa-chevron-right" id="collapseBtn" aria-hidden="true" onClick={()=>this.setState({store: !this.state.store})}></i></div>} 
+                                                <i className="fa fa-chevron-right" id="collapseBtn" aria-hidden="true" onClick={()=>this.setState({store: !this.state.store})}></i></div>}
                                         bsStyle="default"
                                         collapsible
                                         expanded={this.state.store}>
@@ -945,13 +945,13 @@ export class Home extends React.Component {
                                 </Panel>
                             </div>
                         </div>
-                        
+
                         <div className='row'>
                             <div className='col-md-4'>
                                 <Panel header={<div onClick={()=>this.setState({trade: !this.state.trade})}>
                                                 <img src={"app/icons/Placeholder.jpg"} />
                                                 {"  "}交易所
-                                                <i className="fa fa-chevron-right" id="collapseBtn" aria-hidden="true" onClick={()=>this.setState({trade: !this.state.trade})}></i></div>} 
+                                                <i className="fa fa-chevron-right" id="collapseBtn" aria-hidden="true" onClick={()=>this.setState({trade: !this.state.trade})}></i></div>}
                                         bsStyle="default"
                                         collapsible
                                         expanded={this.state.trade}>
@@ -985,7 +985,7 @@ export class Home extends React.Component {
                                 <Panel header={<div onClick={()=>this.setState({team: !this.state.team})}>
                                                 <img src={"app/icons/Placeholder.jpg"} />
                                                 {"  "}战队
-                                                <i className="fa fa-chevron-right" id="collapseBtn" aria-hidden="true" onClick={()=>this.setState({team: !this.state.team})}></i></div>} 
+                                                <i className="fa fa-chevron-right" id="collapseBtn" aria-hidden="true" onClick={()=>this.setState({team: !this.state.team})}></i></div>}
                                         bsStyle="default"
                                         collapsible
                                         expanded={this.state.team}>
@@ -1010,15 +1010,15 @@ export class Home extends React.Component {
                                             排名越高概率越大<br />
                                             0积分无奖励
                                         </div>
-                                    </div>     
+                                    </div>
                                 </Panel>
                             </div>
-                            
+
                             <div className='col-md-4'>
                                 <Panel header={<div onClick={()=>this.setState({blacksmith: !this.state.blacksmith})}>
                                                 <img src={"app/icons/Placeholder.jpg"} />
                                                 {"  "}铁匠
-                                                <i className="fa fa-chevron-right" id="collapseBtn" aria-hidden="true" onClick={()=>this.setState({blacksmith: !this.state.blacksmith})}></i></div>} 
+                                                <i className="fa fa-chevron-right" id="collapseBtn" aria-hidden="true" onClick={()=>this.setState({blacksmith: !this.state.blacksmith})}></i></div>}
                                         bsStyle="default"
                                         collapsible
                                         expanded={this.state.blacksmith}>
@@ -1027,7 +1027,7 @@ export class Home extends React.Component {
                                     橙装有概率获得神之水晶<br />
                                     熔炼值可以打造装备
                                     <div className='panel panel-default'>
-                                        <div className='panel-heading'>熔炼值获得</div>    
+                                        <div className='panel-heading'>熔炼值获得</div>
                                         <ul className='list-group'>
                                             <li className='list-group-item'>
                                                 白色装备
@@ -1058,7 +1058,7 @@ export class Home extends React.Component {
                                         </ul>
                                     </div>
                                     <div className='panel panel-default'>
-                                        <div className='panel-heading'>神衣熔炼价格</div>    
+                                        <div className='panel-heading'>神衣熔炼价格</div>
                                         <ul className='list-group'>
                                             <li className='list-group-item'>
                                                 传奇宝石 x1
@@ -1081,7 +1081,7 @@ export class Home extends React.Component {
                                 <Panel header={<div onClick={()=>this.setState({daochang: !this.state.daochang})}>
                                                 <img src={"app/icons/Placeholder.jpg"} />
                                                 {"  "}道场
-                                                <i className="fa fa-chevron-right" id="collapseBtn" aria-hidden="true" onClick={()=>this.setState({daochang: !this.state.daochang})}></i></div>} 
+                                                <i className="fa fa-chevron-right" id="collapseBtn" aria-hidden="true" onClick={()=>this.setState({daochang: !this.state.daochang})}></i></div>}
                                         bsStyle="default"
                                         collapsible
                                         expanded={this.state.daochang}>
@@ -1111,11 +1111,11 @@ export class Home extends React.Component {
                                 </Panel>
                             </div>
                         </div>
-                        
+
                         <Panel header={<div onClick={()=>this.setState({friend: !this.state.friend})}>
                                         <img src={"app/icons/Placeholder.jpg"} />
                                         {"  "}好友
-                                        <i className="fa fa-chevron-right" id="collapseBtn" aria-hidden="true" onClick={()=>this.setState({friend: !this.state.friend})}></i></div>} 
+                                        <i className="fa fa-chevron-right" id="collapseBtn" aria-hidden="true" onClick={()=>this.setState({friend: !this.state.friend})}></i></div>}
                                 bsStyle="default"
                                 collapsible
                                 expanded={this.state.friend}>
@@ -1142,28 +1142,28 @@ export class Home extends React.Component {
                                                     <td>1</td>
                                                 </tr>
                                                 <tr>
-                                                    <td>冰雕玫瑰</td>   
+                                                    <td>冰雕玫瑰</td>
                                                     <td>钻石 x50</td>
                                                     <td>获得荣誉 x300<br />羁绊 x50</td>
                                                     <td></td>
                                                     <td>2种玫瑰选1</td>
-                                                </tr>   
+                                                </tr>
                                                 <tr>
-                                                    <td>永恒玫瑰</td>  
+                                                    <td>永恒玫瑰</td>
                                                     <td>钻石 x500</td>
                                                     <td>获得荣誉 x500<br />羁绊 x300</td>
                                                     <td></td>
                                                     <td>2种玫瑰选1</td>
                                                 </tr>
                                                 <tr>
-                                                    <td>棒棒糖</td>   
+                                                    <td>棒棒糖</td>
                                                     <td>礼物币 x10</td>
                                                     <td>?</td>
                                                     <td>钻石 x10<br />小奖励</td>
                                                     <td></td>
                                                 </tr>
                                                 <tr>
-                                                    <td>二克拉钻石</td>  
+                                                    <td>二克拉钻石</td>
                                                     <td>礼物币 x250</td>
                                                     <td>?</td>
                                                     <td>对方获得钻石 x125<br />丰厚奖励</td>
@@ -1177,7 +1177,7 @@ export class Home extends React.Component {
                                                     <td></td>
                                                 </tr>
                                                 <tr>
-                                                    <td>世界之星钻石</td>   
+                                                    <td>世界之星钻石</td>
                                                     <td>礼物币x6180</td>
                                                     <td>?</td>
                                                     <td>钻石x3090<br />极丰厚奖励</td>
@@ -1216,12 +1216,12 @@ export class Home extends React.Component {
                                 </div>
                             </div>
                         </Panel>
-                                
-                        
+
+
                         <Panel header={<div onClick={()=>this.setState({guild: !this.state.guild})}>
                                         <img src={"app/icons/Placeholder.jpg"} />
                                         {"  "}公会
-                                        <i className="fa fa-chevron-right" id="collapseBtn" aria-hidden="true" onClick={()=>this.setState({guild: !this.state.guild})}></i></div>} 
+                                        <i className="fa fa-chevron-right" id="collapseBtn" aria-hidden="true" onClick={()=>this.setState({guild: !this.state.guild})}></i></div>}
                                 bsStyle="default"
                                 collapsible
                                 expanded={this.state.guild}>
@@ -1345,7 +1345,7 @@ export class Home extends React.Component {
                                         </div>
                                     </div>
                                 </div>
-                            </div>     
+                            </div>
                         </Panel>
 
                         <div className='row'>
@@ -1372,30 +1372,30 @@ export class Home extends React.Component {
                                                 第一名
                                                 <span className='badge'>荣誉 x6000</span>
                                                 <span className='badge'>钻石 x150</span><br />
-                                                <span className='badge'>神秘宠物水晶/神秘符文原石 x10</span>      
+                                                <span className='badge'>神秘宠物水晶/神秘符文原石 x10</span>
                                             </li>
                                             <li className='list-group-item'>
                                                 第二名
                                                 <span className='badge'>荣誉 x5000</span>
                                                 <span className='badge'>钻石 x130</span><br />
-                                                <span className='badge'>神秘宠物水晶/神秘符文原石 x5</span>      
+                                                <span className='badge'>神秘宠物水晶/神秘符文原石 x5</span>
                                             </li>
                                             <li className='list-group-item'>
                                                 第三名
                                                 <span className='badge'>荣誉 x4500</span>
                                                 <span className='badge'>钻石 x125</span><br />
-                                                <span className='badge'>神秘宠物水晶/神秘符文原石 x3</span>      
+                                                <span className='badge'>神秘宠物水晶/神秘符文原石 x3</span>
                                             </li>
                                             <li className='list-group-item'>
                                                 第四名-第十名
                                                 <span className='badge'>荣誉 x3600</span>
                                                 <span className='badge'>钻石 x50</span><br />
-                                                <span className='badge'>神秘宠物水晶/神秘符文原石 x1</span>      
+                                                <span className='badge'>神秘宠物水晶/神秘符文原石 x1</span>
                                             </li>
                                             <li className='list-group-item'>
                                                 第十一名-第二十名
                                                 <span className='badge'>荣誉 x2800</span>
-                                                <span className='badge'>钻石 x25</span>   
+                                                <span className='badge'>钻石 x25</span>
                                             </li>
                                             <li className='list-group-item'>
                                                 第二十一名-第三十名
@@ -1408,7 +1408,7 @@ export class Home extends React.Component {
                                 <Panel header={<div onClick={()=>this.setState({zhantuan: !this.state.zhantuan})}>
                                                 <img src={"app/icons/Placeholder.jpg"} />
                                                 {"  "}战团
-                                                <i className="fa fa-chevron-right" id="collapseBtn" aria-hidden="true" onClick={()=>this.setState({zhantuan: !this.state.zhantuan})}></i></div>} 
+                                                <i className="fa fa-chevron-right" id="collapseBtn" aria-hidden="true" onClick={()=>this.setState({zhantuan: !this.state.zhantuan})}></i></div>}
                                         bsStyle="default"
                                         collapsible
                                         expanded={this.state.zhantuan}>
@@ -1470,14 +1470,14 @@ export class Home extends React.Component {
                                                 </ul>
                                             </div>
                                         </div>
-                                    </div> 
+                                    </div>
                                 </Panel>
                             </div>
                             <div className='col-md-5'>
                                 <Panel header={<div onClick={()=>this.setState({arena: !this.state.arena})}>
                                                 <img src={"app/icons/Placeholder.jpg"} />
                                                 {"  "}锦标赛
-                                                <i className="fa fa-chevron-right" id="collapseBtn" aria-hidden="true" onClick={()=>this.setState({arena: !this.state.arena})}></i></div>} 
+                                                <i className="fa fa-chevron-right" id="collapseBtn" aria-hidden="true" onClick={()=>this.setState({arena: !this.state.arena})}></i></div>}
                                         bsStyle="default"
                                         collapsible
                                         expanded={this.state.arena}>
@@ -1563,7 +1563,7 @@ export class Home extends React.Component {
                                 <Panel header={<div onClick={()=>this.setState({tower: !this.state.tower})}>
                                                 <img src={"app/icons/Placeholder.jpg"} />
                                                 {"  "}螺旋塔
-                                                <i className="fa fa-chevron-right" id="collapseBtn" aria-hidden="true" onClick={()=>this.setState({tower: !this.state.tower})}></i></div>} 
+                                                <i className="fa fa-chevron-right" id="collapseBtn" aria-hidden="true" onClick={()=>this.setState({tower: !this.state.tower})}></i></div>}
                                         bsStyle="default"
                                         collapsible
                                         expanded={this.state.tower}>
@@ -1643,7 +1643,7 @@ export class Home extends React.Component {
                                                 </div>
                                             </div>
                                         </div>
-                                    </div>   
+                                    </div>
                                 </Panel>
                             </div>
                         </div>
@@ -1653,9 +1653,3 @@ export class Home extends React.Component {
         );
     }
 }
-                            
-                    
-                    
-                        
-                    
-                

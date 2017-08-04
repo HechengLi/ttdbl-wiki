@@ -20,7 +20,7 @@ export class Header extends React.Component {
     activate(e) {
         this.setState({ activeTab: e.target.id });
     }
-    
+	
     render() {
         return(
             <Router>
@@ -49,13 +49,13 @@ export class Header extends React.Component {
                             </ul>
                         </div>
                     </nav>
-                                        
+
                     <div className="jumbotron">
                         <h1>天天打波利！</h1>
                         <p>以后再写</p>
                         <p><a className="btn btn-primary btn-lg" href="#" role="button">按钮</a></p>
                     </div>
-                    
+
                     <div className="row">
                         <div className="col-sm-2">
                         </div>
@@ -78,13 +78,13 @@ export class Header extends React.Component {
                                         <span><img src={"app/icons/Placeholder.jpg"} /></span>
                                         {"  "}战斗
                                     </Link>
-                                </li> 
+                                </li>
                                 <li role="presentation" className={(this.state.activeTab === "character")?"active":""}>
                                     <Link to="/character" id="character" onClick={this.activate.bind(this)}>
                                         <span><img src={"app/icons/Placeholder.jpg"} /></span>
                                         {"  "}人物
                                     </Link>
-                                </li> 
+                                </li>
                                 <li role="presentation" className={(this.state.activeTab === "pet")?"active":""}>
                                     <Link to="/pet" id="pet" onClick={this.activate.bind(this)}>
                                         <span><img src={"app/icons/Placeholder.jpg"} /></span>
@@ -94,7 +94,7 @@ export class Header extends React.Component {
                             </ul>
                         </div>
                     </div>
-                        
+
                     <Switch>
                         <Route path="/home" component={Home} />
                         <Route path="/inventory" component={Inventory} />

@@ -1,7 +1,0 @@
-{
-"version": 3,
-"mappings": "AAEA,cAAe;EACX,MAAM,EAAE,mBAAmB;EAInB,wCAAI;IACA,MAAM,EARR,IAAI;IASF,KAAK,EATP,IAAI;IAUF,QAAQ,EAAE,QAAQ;IAClB,GAAG,EAAE,EAAE;IACP,aAAa,EAAE,GAAG",
-"sources": ["../scss/pet.scss"],
-"names": [],
-"file": "pet.css"
-}

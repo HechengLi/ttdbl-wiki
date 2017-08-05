@@ -1,6 +1,6 @@
 import React from "react";
 import { BrowserRouter as Router, Route, Link } from "react-router-dom";
-import { Panel, Button} from "react-bootstrap";
+import { Panel, Button } from "react-bootstrap";
 
 import "../stylesheets/home.css"
 //import "../stylesheets/font-awesome.min.css"
@@ -81,8 +81,8 @@ export class Home extends React.Component {
                         </div>
                     </div>
                     <div className="col-sm-10">
-                        <Panel header={<div onClick={()=>this.setState({vip: !this.state.vip})}>
-                                        <img src={"app/icons/Placeholder.jpg"} />
+						<Panel header={<div onClick={()=>this.setState({vip: !this.state.vip})}>
+                                        <img src={"/app/icons/Placeholder.jpg"} />
                                         {"  "}特权
                                         <i className="fa fa-chevron-right" id="collapseBtn" aria-hidden="true" onClick={()=>this.setState({vip: !this.state.vip})}></i></div>}
                                 bsStyle="default"
@@ -95,80 +95,114 @@ export class Home extends React.Component {
 
                                 <div className="panel-body">
                                     <div className="row">
-                                        <div className="col-md-4 col-md-offset-2 col-sm-6">
+                                        <div className="col-sm-6">
                                             <div className="thumbnail">
-                                                <img src={"app/icons/Placeholder.jpg"} />
+                                                <img src={"/app/icons/Placeholder.jpg"} />
                                                 <div className="caption">
                                                     <h3>皇家证明</h3>
+													<h3>￥28/30天</h3>
                                                     <hr />
-                                                    <p>
-                                                        <span className="label label-default">每日获得</span><br />
-                                                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                                                        <i className="fa fa-chevron-right" aria-hidden="true"></i>&nbsp;钻石 x100<br />
-                                                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                                                        <i className="fa fa-chevron-right" aria-hidden="true"></i>&nbsp;荣誉 x50<br />
-                                                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                                                        <i className="fa fa-chevron-right" aria-hidden="true"></i>&nbsp;商城免费购买zeny x1<br />
-                                                        <span className="label label-default">持续特权</span><br />
-                                                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                                                        <i className="fa fa-chevron-right" aria-hidden="true"></i>&nbsp;挂机收益 +5%<br />
-                                                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                                                        <i className="fa fa-chevron-right" aria-hidden="true"></i>&nbsp;解除所有玩法的次数购买上限<br />
-                                                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                                                        <i className="fa fa-chevron-right" aria-hidden="true"></i>&nbsp;新增快速探险功能<br />
-                                                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                                                        <i className="fa fa-chevron-right" aria-hidden="true"></i>&nbsp;探险任务经验 +15%<br />
-                                                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                                                        <i className="fa fa-chevron-right" aria-hidden="true"></i>&nbsp;可发送全频道广播<br />
-                                                        <span className="label label-default">价格</span><br />
-                                                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                                                        <i className="fa fa-chevron-right" aria-hidden="true"></i>&nbsp;￥28/30天
-                                                    </p>
+													<div className="row">
+														<div className="col-lg-5 col-lg-offset-1 col-sm-12 padding-0">
+		                                                	<p className="well padding-1" style={{margin:"auto", maxWidth:"190px", borderStyle:"solid"}}>
+		                                                        <span className="label label-default">每日获得</span><br />
+																<p style={{paddingLeft:"2em", textIndent:"-0.5em"}}>
+			                                                        <i className="fa fa-chevron-right" aria-hidden="true"></i>&nbsp;钻石&nbsp;x100
+																</p>
+		                                                        <p style={{paddingLeft:"2em", textIndent:"-0.5em"}}>
+		                                                        	<i className="fa fa-chevron-right" aria-hidden="true"></i>&nbsp;荣誉&nbsp;x50
+																</p>
+																<p style={{paddingLeft:"2em", textIndent:"-0.5em"}}>
+		                                                        	<i className="fa fa-chevron-right" aria-hidden="true"></i>&nbsp;商城免费购买Zeny&nbsp;x1
+																</p>
+															</p>
+														</div>
+														<div className="col-lg-5 col-sm-12 padding-0">
+															<p className="well padding-1" style={{margin:"auto", maxWidth:"190px", borderStyle:"solid"}}>
+																<span className="label label-default">持续特权</span><br />
+																<p style={{paddingLeft:"2em", textIndent:"-0.5em"}}>
+		                                                        	<i className="fa fa-chevron-right" aria-hidden="true"></i>&nbsp;挂机收益 +5%
+																</p>
+																<p style={{paddingLeft:"2em", textIndent:"-0.5em"}}>
+		                                                        	<i className="fa fa-chevron-right" aria-hidden="true"></i>&nbsp;解除所有购买次数上限
+																</p>
+																<p style={{paddingLeft:"2em", textIndent:"-0.5em"}}>
+		                                                        	<i className="fa fa-chevron-right" aria-hidden="true"></i>&nbsp;新增快速探险功能
+																</p>
+																<p style={{paddingLeft:"2em", textIndent:"-0.5em"}}>
+		                                                        	<i className="fa fa-chevron-right" aria-hidden="true"></i>&nbsp;探险任务经验 +15%
+																</p>
+																<p style={{paddingLeft:"2em", textIndent:"-0.5em"}}>
+		                                                        	<i className="fa fa-chevron-right" aria-hidden="true"></i>&nbsp;可发送全频道广播
+																</p>
+															</p>
+														</div>
+													</div>
                                                 </div>
                                             </div>
                                         </div>
-                                        <div className="col-md-4 col-sm-6">
+                                        <div className="col-sm-6">
                                             <div className="thumbnail">
-                                                <img src={"app/icons/Placeholder.jpg"} />
+                                                <img src={"/app/icons/Placeholder.jpg"} />
                                                 <div className="caption">
                                                     <h3>皇家纹章</h3>
+													<h3>￥118/90天</h3>
                                                     <hr />
-                                                    <p>
-                                                        <span className="label label-default">每日获得</span><br />
-                                                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                                                        <i className="fa fa-chevron-right" aria-hidden="true"></i>&nbsp;钻石 x100<br />
-                                                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                                                        <i className="fa fa-chevron-right" aria-hidden="true"></i>&nbsp;荣誉 x50<br />
-                                                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                                                        <i className="fa fa-chevron-right" aria-hidden="true"></i>&nbsp;商城免费购买zeny x1<br />
-                                                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                                                        <i className="fa fa-chevron-right" aria-hidden="true"></i>&nbsp;熔炼值 x2000<br />
-                                                        <span className="label label-default">每五天获得</span><br />
-                                                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                                                        <i className="fa fa-chevron-right" aria-hidden="true"></i>&nbsp;时装币 x1<br />
-                                                        <span className="label label-default">持续特权</span><br />
-                                                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                                                        <i className="fa fa-chevron-right" aria-hidden="true"></i>&nbsp;挂机收益 +5%<br />
-                                                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                                                        <i className="fa fa-chevron-right" aria-hidden="true"></i>&nbsp;战斗跟随宠物经验 +50%<br />
-                                                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                                                        <i className="fa fa-chevron-right" aria-hidden="true"></i>&nbsp;随意进入爆满聊天室<br />
-                                                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                                                        <i className="fa fa-chevron-right" aria-hidden="true"></i>&nbsp;探险任务上限 +2<br />
-                                                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                                                        <i className="fa fa-chevron-right" aria-hidden="true"></i>&nbsp;解锁所有玩法的次数购买上限<br />
-                                                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                                                        <i className="fa fa-chevron-right" aria-hidden="true"></i>&nbsp;新增快速探险功能<br />
-                                                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                                                        <i className="fa fa-chevron-right" aria-hidden="true"></i>&nbsp;探险任务经验 +15%<br />
-                                                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                                                        <i className="fa fa-chevron-right" aria-hidden="true"></i>&nbsp;可发送全频道广播<br />
-                                                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                                                        <i className="fa fa-chevron-right" aria-hidden="true"></i>&nbsp;螺旋塔免费连续调整<br />
-                                                        <span className="label label-default">价格</span><br />
-                                                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                                                        <i className="fa fa-chevron-right" aria-hidden="true"></i>&nbsp;￥118/90天
-                                                    </p>
+													<div className="row">
+														<div className="col-lg-5 col-lg-offset-1 col-sm-12 padding-0">
+		                                                    <p className="well padding-1" style={{margin:"auto",maxWidth:"208px"}}>
+		                                                        <span className="label label-default">每日获得</span>
+		                                                        <p style={{paddingLeft:"2em", textIndent:"-0.5em"}}>
+		                                                        	<i className="fa fa-chevron-right" aria-hidden="true"></i>&nbsp;钻石 x100
+																</p>
+		                                                        <p style={{paddingLeft:"2em", textIndent:"-0.5em"}}>
+		                                                        	<i className="fa fa-chevron-right" aria-hidden="true"></i>&nbsp;荣誉 x50
+																</p>
+		                                                        <p style={{paddingLeft:"2em", textIndent:"-0.5em"}}>
+		                                                        	<i className="fa fa-chevron-right" aria-hidden="true"></i>&nbsp;商城免费购买zeny x1
+																</p>
+		                                                        <p style={{paddingLeft:"2em", textIndent:"-0.5em"}}>
+		                                                        	<i className="fa fa-chevron-right" aria-hidden="true"></i>&nbsp;熔炼值 x2000
+																</p>
+		                                                        	<span className="label label-default">每五天获得</span>
+		                                                        <p style={{paddingLeft:"2em", textIndent:"-0.5em"}}>
+		                                                        	<i className="fa fa-chevron-right" aria-hidden="true"></i>&nbsp;时装币 x1
+																</p>
+															</p>
+														</div>
+														<div className="col-lg-5 col-sm-12 padding-0">
+															<p className="well padding-1" style={{margin:"auto",maxWidth:"208px"}}>
+																<span className="label label-default">持续特权</span><br />
+		                                                        <p style={{paddingLeft:"2em", textIndent:"-0.5em"}}>
+		                                                        	<i className="fa fa-chevron-right" aria-hidden="true"></i>&nbsp;挂机收益 +5%
+																</p>
+		                                                        <p style={{paddingLeft:"2em", textIndent:"-0.5em"}}>
+		                                                        	<i className="fa fa-chevron-right" aria-hidden="true"></i>&nbsp;战斗跟随宠物经验 +50%
+																</p>
+		                                                        <p style={{paddingLeft:"2em", textIndent:"-0.5em"}}>
+		                                                        	<i className="fa fa-chevron-right" aria-hidden="true"></i>&nbsp;随意进入爆满聊天室
+																</p>
+		                                                        <p style={{paddingLeft:"2em", textIndent:"-0.5em"}}>
+		                                                        	<i className="fa fa-chevron-right" aria-hidden="true"></i>&nbsp;探险任务上限 +2
+																</p>
+		                                                        <p style={{paddingLeft:"2em", textIndent:"-0.5em"}}>
+		                                                        	<i className="fa fa-chevron-right" aria-hidden="true"></i>&nbsp;解除所有购买次数上限
+																</p>
+		                                                        <p style={{paddingLeft:"2em", textIndent:"-0.5em"}}>
+		                                                        	<i className="fa fa-chevron-right" aria-hidden="true"></i>&nbsp;新增快速探险功能
+																</p>
+		                                                        <p style={{paddingLeft:"2em", textIndent:"-0.5em"}}>
+		                                                        	<i className="fa fa-chevron-right" aria-hidden="true"></i>&nbsp;探险任务经验 +15%
+																</p>
+		                                                        <p style={{paddingLeft:"2em", textIndent:"-0.5em"}}>
+		                                                        	<i className="fa fa-chevron-right" aria-hidden="true"></i>&nbsp;可发送全频道广播
+																</p>
+		                                                        <p style={{paddingLeft:"2em", textIndent:"-0.5em"}}>
+		                                                        	<i className="fa fa-chevron-right" aria-hidden="true"></i>&nbsp;螺旋塔免费连续调整
+																</p>
+		                                                    </p>
+														</div>
+													</div>
                                                 </div>
                                             </div>
                                         </div>
@@ -185,7 +219,7 @@ export class Home extends React.Component {
                                             <div className="row">
                                                 <div className="col-md-6 col-sm-6">
                                                     <div className="thumbnail">
-                                                        <img src={"app/icons/Placeholder.jpg"} />
+                                                        <img src={"/app/icons/Placeholder.jpg"} />
                                                         <div className="caption">
                                                             <h3>宠物大师证明</h3>
                                                             <hr />
@@ -213,7 +247,7 @@ export class Home extends React.Component {
                                                 </div>
                                                 <div className="col-md-6 col-sm-6">
                                                     <div className="thumbnail">
-                                                        <img src={"app/icons/Placeholder.jpg"} />
+                                                        <img src={"/app/icons/Placeholder.jpg"} />
                                                         <div className="caption">
                                                             <h3>佣兵公会证明</h3>
                                                             <hr />
@@ -244,7 +278,7 @@ export class Home extends React.Component {
                                             <div className="row">
                                                 <div className="col-md-12 col-sm-6">
                                                     <div className="thumbnail">
-                                                        <img src={"app/icons/Placeholder.jpg"} />
+                                                        <img src={"/app/icons/Placeholder.jpg"} />
                                                         <div className="caption">
                                                             <h3>卢恩商会证明</h3>
                                                             <hr />
@@ -282,165 +316,165 @@ export class Home extends React.Component {
                                 </div>
                             </div>
                         </Panel>
-                            <div className="row">
-                                <div className="col-sm-6">
-                                    <Panel header={<div onClick={()=>this.setState({coin: !this.state.coin})}>
-                                                    <img src={"app/icons/Placeholder.jpg"} />
-                                                    {"  "}领时装币
-                                                    <i className="fa fa-chevron-right" id="collapseBtn" aria-hidden="true" onClick={()=>this.setState({coin: !this.state.coin})}></i></div>}
-                                            bsStyle="default"
-                                            collapsible
-                                            expanded={this.state.coin}>
-                                        <div className="row">
-                                            <div className="col-md-6 col-sm-12">
-                                                <p>
-                                                    分享二维码/链接获得奖励<br />
-                                                    获得积分方法：<br />
-                                                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                                                    <i className="fa fa-dot-circle-o" aria-hidden="true"></i>&nbsp;点击链接或扫二维码<br />
-                                                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                                                    <i className="fa fa-circle-o" aria-hidden="true"></i>&nbsp;创建角色<br />
-                                                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                                                    <i className="fa fa-dot-circle-o" aria-hidden="true"></i>&nbsp;通过苏克拉特100<br />
-                                                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                                                    <i className="fa fa-circle-o" aria-hidden="true"></i>&nbsp;角色一转职<br />
-                                                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                                                    <i className="fa fa-dot-circle-o" aria-hidden="true"></i>&nbsp;角色二转职<br />
-                                                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                                                    <i className="fa fa-circle-o" aria-hidden="true"></i>&nbsp;角色一转生
-                                                </p>
-                                            </div>
-                                            <div className="col-md-6 col-sm-12">
-                                                <div className="panel panel-default">
-                                                    <div className="panel-heading">奖励列表</div>
-                                                    <table className="table table-striped table-condensed">
-                                                        <thead>
-                                                            <tr>
-                                                                <th>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;积分</th>
-                                                                <th>奖励</th>
-                                                            </tr>
-                                                        </thead>
-                                                        <tbody>
-                                                            <tr>
-                                                                <td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;20</td>
-                                                                <td>时装币 x1</td>
-                                                            </tr>
-                                                            <tr>
-                                                                <td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;40</td>
-                                                                <td>荣誉 x100</td>
-                                                            </tr>
-                                                            <tr>
-                                                                <td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;???</td>
-                                                                <td>??? x?</td>
-                                                            </tr>
-                                                        </tbody>
-                                                    </table>
-                                                </div>
+                        <div className="row">
+                            <div className="col-sm-6">
+                                <Panel header={<div onClick={()=>this.setState({coin: !this.state.coin})}>
+                                                <img src={"/app/icons/Placeholder.jpg"} />
+                                                {"  "}领时装币
+                                                <i className="fa fa-chevron-right" id="collapseBtn" aria-hidden="true" onClick={()=>this.setState({coin: !this.state.coin})}></i></div>}
+                                        bsStyle="default"
+                                        collapsible
+                                        expanded={this.state.coin}>
+                                    <div className="row">
+                                        <div className="col-md-6 col-sm-12">
+                                            <p>
+                                                分享二维码/链接获得奖励<br />
+                                                获得积分方法：<br />
+                                                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                                                <i className="fa fa-dot-circle-o" aria-hidden="true"></i>&nbsp;点击链接或扫二维码<br />
+                                                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                                                <i className="fa fa-circle-o" aria-hidden="true"></i>&nbsp;创建角色<br />
+                                                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                                                <i className="fa fa-dot-circle-o" aria-hidden="true"></i>&nbsp;通过苏克拉特100<br />
+                                                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                                                <i className="fa fa-circle-o" aria-hidden="true"></i>&nbsp;角色一转职<br />
+                                                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                                                <i className="fa fa-dot-circle-o" aria-hidden="true"></i>&nbsp;角色二转职<br />
+                                                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                                                <i className="fa fa-circle-o" aria-hidden="true"></i>&nbsp;角色一转生
+                                            </p>
+                                        </div>
+                                        <div className="col-md-6 col-sm-12">
+                                            <div className="panel panel-default">
+                                                <div className="panel-heading">奖励列表</div>
+                                                <table className="table table-striped table-condensed">
+                                                    <thead>
+                                                        <tr>
+                                                            <th>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;积分</th>
+                                                            <th>奖励</th>
+                                                        </tr>
+                                                    </thead>
+                                                    <tbody>
+                                                        <tr>
+                                                            <td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;20</td>
+                                                            <td>时装币 x1</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;40</td>
+                                                            <td>荣誉 x100</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;???</td>
+                                                            <td>??? x?</td>
+                                                        </tr>
+                                                    </tbody>
+                                                </table>
                                             </div>
                                         </div>
-                                    </Panel>
-                                </div>
-                                <div className="col-sm-6">
-                                    <Panel header={<div onClick={()=>this.setState({event: !this.state.event})}>
-                                                    <img src={"app/icons/Placeholder.jpg"} />
-                                                    {"  "}精彩活动
-                                                    <i className="fa fa-chevron-right" id="collapseBtn" aria-hidden="true" onClick={()=>this.setState({event: !this.state.event})}></i></div>}
-                                            bsStyle="default"
-                                            collapsible
-                                            expanded={this.state.event}>
-                                        <div className="row">
-                                            <div className="col-md-6">
-                                                <div className="panel panel-default">
-                                                    <div className="panel-heading">
-                                                        {"  "}首次充值
-                                                    </div>
-                                                    <div className="panel-body">
-                                                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                                                        <i className="fa fa-heart-o" aria-hidden="true"></i>&nbsp;时装 波利帽 x1<br />
-                                                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                                                        <i className="fa fa-heart" aria-hidden="true"></i>&nbsp;Zeny x10000<br />
-                                                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                                                        <i className="fa fa-heart-o" aria-hidden="true"></i>&nbsp;属性洗点书 x1<br />
-                                                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                                                        <i className="fa fa-heart" aria-hidden="true"></i>&nbsp;技能重置棒 x1
-                                                    </div>
-                                                </div>
-                                            </div>
-
-                                            <div className="col-md-6">
-                                                <div className="panel panel-default">
-                                                    <div className="panel-heading">
-                                                        {"  "}绑定奖励
-                                                    </div>
-                                                    <div className="panel-body">
-                                                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                                                        <i className="fa fa-heart-o" aria-hidden="true"></i>&nbsp;钻石 x200<br />
-                                                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                                                        <i className="fa fa-heart" aria-hidden="true"></i>&nbsp;时装币 x1<br />
-                                                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                                                        <i className="fa fa-heart-o" aria-hidden="true"></i>&nbsp;zeny x10000<br />
-                                                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                                                        <i className="fa fa-heart" aria-hidden="true"></i>&nbsp;榴莲 x10
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </Panel>
-                                </div>
+                                    </div>
+                                </Panel>
                             </div>
+                            <div className="col-sm-6">
+                                <Panel header={<div onClick={()=>this.setState({event: !this.state.event})}>
+                                                <img src={"/app/icons/Placeholder.jpg"} />
+                                                {"  "}精彩活动
+                                                <i className="fa fa-chevron-right" id="collapseBtn" aria-hidden="true" onClick={()=>this.setState({event: !this.state.event})}></i></div>}
+                                        bsStyle="default"
+                                        collapsible
+                                        expanded={this.state.event}>
+                                    <div className="row">
+                                        <div className="col-md-6">
+                                            <div className="panel panel-default">
+                                                <div className="panel-heading">
+                                                    {"  "}首次充值
+                                                </div>
+                                                <div className="panel-body">
+                                                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                                                    <i className="fa fa-heart-o" aria-hidden="true"></i>&nbsp;时装 波利帽 x1<br />
+                                                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                                                    <i className="fa fa-heart" aria-hidden="true"></i>&nbsp;Zeny x10000<br />
+                                                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                                                    <i className="fa fa-heart-o" aria-hidden="true"></i>&nbsp;属性洗点书 x1<br />
+                                                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                                                    <i className="fa fa-heart" aria-hidden="true"></i>&nbsp;技能重置棒 x1
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <div className="col-md-6">
+                                            <div className="panel panel-default">
+                                                <div className="panel-heading">
+                                                    {"  "}绑定奖励
+                                                </div>
+                                                <div className="panel-body">
+                                                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                                                    <i className="fa fa-heart-o" aria-hidden="true"></i>&nbsp;钻石 x200<br />
+                                                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                                                    <i className="fa fa-heart" aria-hidden="true"></i>&nbsp;时装币 x1<br />
+                                                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                                                    <i className="fa fa-heart-o" aria-hidden="true"></i>&nbsp;zeny x10000<br />
+                                                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                                                    <i className="fa fa-heart" aria-hidden="true"></i>&nbsp;榴莲 x10
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </Panel>
+                            </div>
+                        </div>
                         <div className="row">
                             <div className="col-sm-7">
                                 <Panel header={<div onClick={()=>this.setState({bingo: !this.state.bingo})}>
-                                                <img src={"app/icons/Placeholder.jpg"} />
-                                                {"  "}波利狂宴
+                                                <img src={"/app/icons/Placeholder.jpg"} />
+                                                {"  "}波利狂宴 - 解锁:1转生
                                                 <i className="fa fa-chevron-right" id="collapseBtn" aria-hidden="true" onClick={()=>this.setState({bingo: !this.state.bingo})}></i></div>}
-                                        bsStyle="default"
+										bsStyle="default"
                                         collapsible
                                         expanded={this.state.bingo}>
-                                <span className="label label-default">玩法</span><br />
-                                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;从6x9=54个怪物中选择几个<br />
-                                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;开奖时如果选对了会获得钻石奖励<br />
-                                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;选择需要消耗狂宴门票<br />
-                                <span className="label label-default">门票获取方法</span><br />
-                                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;每日17:00赠送1张 (邮箱领取)<br />
-                                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;100礼物币购买，每日1次 (卢恩商会证明3次)<br />
-                                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;门票每周自动清空
-                                <div className="panel panel-default">
-                                    <div className="panel-heading">奖励列表</div>
-                                    <table className="table table-striped table-condensed">
-                                        <thead>
-                                            <tr>
-                                                <th>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;奖励</th>
-                                                <th>条件</th>
-                                                <th>奖品</th>
-                                            </tr>
-                                        </thead>
-                                        <tbody>
-                                            <tr>
-                                                <td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;头等奖</td>
-                                                <td>选对3只</td>
-                                                <td>钻石 x5000</td>
-                                            </tr>
-                                            <tr>
-                                                <td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;二等奖</td>
-                                                <td>选对2只</td>
-                                                <td>钻石 x200</td>
-                                            </tr>
-                                            <tr>
-                                                <td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;三等奖</td>
-                                                <td>选对1只</td>
-                                                <td>钻石 x50</td>
-                                            </tr>
-                                        </tbody>
-                                    </table>
-                                </div>
-                                每个奖励的怪物是分开的，头等奖3选3，二等奖2选2，三等奖4选1
-                            </Panel>
+	                                <span className="label label-default">玩法</span><br />
+	                                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;从6x9=54个怪物中选择几个<br />
+	                                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;开奖时如果选对了会获得钻石奖励<br />
+	                                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;选择需要消耗狂宴门票<br />
+	                                <span className="label label-default">门票获取方法</span><br />
+	                                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;每日17:00赠送1张 (邮箱领取)<br />
+	                                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;100礼物币购买，每日1次 (卢恩商会证明3次)<br />
+	                                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;门票每周自动清空
+	                                <div className="panel panel-default">
+	                                    <div className="panel-heading">奖励列表</div>
+	                                    <table className="table table-striped table-condensed">
+	                                        <thead>
+	                                            <tr>
+	                                                <th>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;奖励</th>
+	                                                <th>条件</th>
+	                                                <th>奖品</th>
+	                                            </tr>
+	                                        </thead>
+	                                        <tbody>
+	                                            <tr>
+	                                                <td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;头等奖</td>
+	                                                <td>选对3只</td>
+	                                                <td>钻石 x5000</td>
+	                                            </tr>
+	                                            <tr>
+	                                                <td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;二等奖</td>
+	                                                <td>选对2只</td>
+	                                                <td>钻石 x200</td>
+	                                            </tr>
+	                                            <tr>
+	                                                <td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;三等奖</td>
+	                                                <td>选对1只</td>
+	                                                <td>钻石 x50</td>
+	                                            </tr>
+	                                        </tbody>
+	                                    </table>
+	                                </div>
+	                                每个奖励的怪物是分开的，头等奖3选3，二等奖2选2，三等奖4选1
+	                            </Panel>
                             </div>
                             <div className="col-sm-5">
                                 <Panel header={<div onClick={()=>this.setState({stock: !this.state.stock})}>
-                                                <img src={"app/icons/Placeholder.jpg"} />
-                                                {"  "}波利股市
+                                                <img src={"/app/icons/Placeholder.jpg"} />
+                                                {"  "}波利股市 - 解锁:1转生
                                                 <i className="fa fa-chevron-right" id="collapseBtn" aria-hidden="true" onClick={()=>this.setState({stock: !this.state.stock})}></i></div>}
                                         bsStyle="default"
                                         collapsible
@@ -456,13 +490,13 @@ export class Home extends React.Component {
                                     &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;每天增加50000Zeny (周一重置)
                                 </Panel>
                                 <div key={hideornot1} className="thumbnail" style={hidePic1}>
-                                    <img src={"app/icons/Placeholder.jpg"} style={{height:"156px"}} />
+                                    <img src={"/app/icons/Placeholder.jpg"} style={{height:"156px"}} />
                                 </div>
                             </div>
                         </div>
 
                         <Panel header={<div onClick={()=>this.setState({checkin: !this.state.checkin})}>
-                                        <img src={"app/icons/Placeholder.jpg"} />
+                                        <img src={"/app/icons/Placeholder.jpg"} />
                                         {"  "}每日签到
                                         <i className="fa fa-chevron-right" id="collapseBtn" aria-hidden="true" onClick={()=>this.setState({checkin: !this.state.checkin})}></i></div>}
                                 bsStyle="default"
@@ -612,7 +646,7 @@ export class Home extends React.Component {
                         <div className="row">
                             <div className="col-md-5">
                                 <Panel header={<div onClick={()=>this.setState({life: !this.state.life})}>
-                                                <img src={"app/icons/Placeholder.jpg"} />
+                                                <img src={"/app/icons/Placeholder.jpg"} />
                                                 {"  "}生命研究所
                                                 <i className="fa fa-chevron-right" id="collapseBtn" aria-hidden="true" onClick={()=>this.setState({life: !this.state.life})}></i></div>}
                                         bsStyle="default"
@@ -678,7 +712,7 @@ export class Home extends React.Component {
                                 </Panel>
 
                                 <Panel header={<div onClick={()=>this.setState({blackmarket: !this.state.blackmarket})}>
-                                                <img src={"app/icons/Placeholder.jpg"} />
+                                                <img src={"/app/icons/Placeholder.jpg"} />
                                                 {"  "}黑市
                                                 <i className="fa fa-chevron-right" id="collapseBtn" aria-hidden="true" onClick={()=>this.setState({blackmarket: !this.state.blackmarket})}></i></div>}
                                         bsStyle="default"
@@ -748,13 +782,13 @@ export class Home extends React.Component {
                                     </div>
                                 </Panel>
                                 <div key={hideornot2} className="thumbnail" style={hidePic2}>
-                                    <img src={"app/icons/Placeholder.jpg"} style={{height:"156px"}} />
+                                    <img src={"/app/icons/Placeholder.jpg"} style={{height:"156px"}} />
                                 </div>
                             </div>
 
                             <div className="col-md-7">
                                 <Panel header={<div onClick={()=>this.setState({store: !this.state.store})}>
-                                                <img src={"app/icons/Placeholder.jpg"} />
+                                                <img src={"/app/icons/Placeholder.jpg"} />
                                                 {"  "}商城
                                                 <i className="fa fa-chevron-right" id="collapseBtn" aria-hidden="true" onClick={()=>this.setState({store: !this.state.store})}></i></div>}
                                         bsStyle="default"
@@ -949,8 +983,8 @@ export class Home extends React.Component {
                         <div className='row'>
                             <div className='col-md-4'>
                                 <Panel header={<div onClick={()=>this.setState({trade: !this.state.trade})}>
-                                                <img src={"app/icons/Placeholder.jpg"} />
-                                                {"  "}交易所
+                                                <img src={"/app/icons/Placeholder.jpg"} />
+                                                {"  "}交易所 - 解锁:0转400关/1转生
                                                 <i className="fa fa-chevron-right" id="collapseBtn" aria-hidden="true" onClick={()=>this.setState({trade: !this.state.trade})}></i></div>}
                                         bsStyle="default"
                                         collapsible
@@ -983,8 +1017,8 @@ export class Home extends React.Component {
                                     </div>
                                 </Panel>
                                 <Panel header={<div onClick={()=>this.setState({team: !this.state.team})}>
-                                                <img src={"app/icons/Placeholder.jpg"} />
-                                                {"  "}战队
+                                                <img src={"/app/icons/Placeholder.jpg"} />
+                                                {"  "}战队 - 解锁:通过第200关
                                                 <i className="fa fa-chevron-right" id="collapseBtn" aria-hidden="true" onClick={()=>this.setState({team: !this.state.team})}></i></div>}
                                         bsStyle="default"
                                         collapsible
@@ -1016,7 +1050,7 @@ export class Home extends React.Component {
 
                             <div className='col-md-4'>
                                 <Panel header={<div onClick={()=>this.setState({blacksmith: !this.state.blacksmith})}>
-                                                <img src={"app/icons/Placeholder.jpg"} />
+                                                <img src={"/app/icons/Placeholder.jpg"} />
                                                 {"  "}铁匠
                                                 <i className="fa fa-chevron-right" id="collapseBtn" aria-hidden="true" onClick={()=>this.setState({blacksmith: !this.state.blacksmith})}></i></div>}
                                         bsStyle="default"
@@ -1079,8 +1113,8 @@ export class Home extends React.Component {
                             </div>
                             <div className='col-md-4'>
                                 <Panel header={<div onClick={()=>this.setState({daochang: !this.state.daochang})}>
-                                                <img src={"app/icons/Placeholder.jpg"} />
-                                                {"  "}道场
+                                                <img src={"/app/icons/Placeholder.jpg"} />
+                                                {"  "}道场 - 解锁:通过第60关
                                                 <i className="fa fa-chevron-right" id="collapseBtn" aria-hidden="true" onClick={()=>this.setState({daochang: !this.state.daochang})}></i></div>}
                                         bsStyle="default"
                                         collapsible
@@ -1113,7 +1147,7 @@ export class Home extends React.Component {
                         </div>
 
                         <Panel header={<div onClick={()=>this.setState({friend: !this.state.friend})}>
-                                        <img src={"app/icons/Placeholder.jpg"} />
+                                        <img src={"/app/icons/Placeholder.jpg"} />
                                         {"  "}好友
                                         <i className="fa fa-chevron-right" id="collapseBtn" aria-hidden="true" onClick={()=>this.setState({friend: !this.state.friend})}></i></div>}
                                 bsStyle="default"
@@ -1219,8 +1253,8 @@ export class Home extends React.Component {
 
 
                         <Panel header={<div onClick={()=>this.setState({guild: !this.state.guild})}>
-                                        <img src={"app/icons/Placeholder.jpg"} />
-                                        {"  "}公会
+                                        <img src={"/app/icons/Placeholder.jpg"} />
+                                        {"  "}公会 - 解锁:通过第28关
                                         <i className="fa fa-chevron-right" id="collapseBtn" aria-hidden="true" onClick={()=>this.setState({guild: !this.state.guild})}></i></div>}
                                 bsStyle="default"
                                 collapsible
@@ -1351,8 +1385,8 @@ export class Home extends React.Component {
                         <div className='row'>
                             <div className='col-md-7'>
                                 <Panel header={<div onClick={()=>this.setState({pvp: !this.state.pvp})}>
-                                                <img src={"app/icons/Placeholder.jpg"} />
-                                                {"  "}决斗
+                                                <img src={"/app/icons/Placeholder.jpg"} />
+                                                {"  "}决斗 - 解锁:通过第32关
                                                 <i className="fa fa-chevron-right" id="collapseBtn" aria-hidden="true" onClick={()=>this.setState({pvp: !this.state.pvp})}></i></div>}
                                         bsStyle="default"
                                         collapsible
@@ -1405,69 +1439,87 @@ export class Home extends React.Component {
                                         </ul>
                                     </div>
                                 </Panel>
-                                <Panel header={<div onClick={()=>this.setState({zhantuan: !this.state.zhantuan})}>
-                                                <img src={"app/icons/Placeholder.jpg"} />
-                                                {"  "}战团
-                                                <i className="fa fa-chevron-right" id="collapseBtn" aria-hidden="true" onClick={()=>this.setState({zhantuan: !this.state.zhantuan})}></i></div>}
+								<Panel header={<div onClick={()=>this.setState({tower: !this.state.tower})}>
+                                                <img src={"/app/icons/Placeholder.jpg"} />
+                                                {"  "}螺旋塔 - 解锁:2转生通过第400关
+                                                <i className="fa fa-chevron-right" id="collapseBtn" aria-hidden="true" onClick={()=>this.setState({tower: !this.state.tower})}></i></div>}
                                         bsStyle="default"
                                         collapsible
-                                        expanded={this.state.zhantuan}>
+                                        expanded={this.state.tower}>
+                                    总共300章 每章3关<br />
                                     <div className='row'>
-                                        <div className='col-md-7'>
+                                        <div className='col-md-6'>
                                             <div className='panel panel-default'>
-                                                <div className='panel-heading'>玩法</div>
-                                                <div className='panel-body'>
-                                                    3名玩家一起推图<br />
-                                                    每位玩家设置自己的战团技能<br />
-                                                    关卡进度共享<br />
-                                                    战团关卡不会超过团员中最高转生<br />
-                                                    战团中符文无效，探险宠物有效<br />
-                                                    挑战成功可扫荡低于自身转生的关卡<br />
-                                                    扫荡收益不可在交易所交易<br />
-                                                    转生差距越大 扫荡收益越高
+                                                <div className='panel-heading'>螺旋塔增益</div>
+                                                <ul className='list-group'>
+                                                    <li className='list-group-item'>HP+4%</li>
+                                                    <li className='list-group-item'>攻速+5%</li>
+                                                    <li className='list-group-item'>命中+5%</li>
+                                                    <li className='list-group-item'>SP+6%</li>
+                                                    <li className='list-group-item'>吟唱+5%</li>
+                                                    <li className='list-group-item'>回避+5%</li>
+                                                    <li className='list-group-item'>魔防+8%</li>
+                                                    <li className='list-group-item'>暴击+5%</li>
+                                                    <li className='list-group-item'>物防+8%</li>
+                                                    <li className='list-group-item'>双攻+5%</li>
+                                                </ul>
+                                                <div className='panel-footer'>
+                                                    兑换价格:<br />
+                                                    &nbsp;&nbsp;20+5*n<br />
+                                                    &nbsp;&nbsp;n代表已兑换次数
                                                 </div>
                                             </div>
-                                            <div className='panel panel-default'>
-                                                <div className='panel-heading'>战团概率</div>
-                                                <ul className='list-group'>
-                                                    <li className='list-group-item'>图纸掉落
-                                                        <span className='badge'>5%</span>
-                                                    </li>
-                                                    <li className='list-group-item'>神魂掉落
-                                                        <span className='badge'>100%</span>
-                                                    </li>
-                                                    <li className='list-group-item'>部位材料
-                                                        <span className='badge'>50%</span>
-                                                    </li>
-                                                </ul>
-                                            </div>
                                         </div>
-                                        <div className='col-md-5'>
-                                            <div className='panel panel-default'>
-                                                <div className='panel-heading'>7转扫荡收益</div>
-                                                <ul className='list-group'>
-                                                    <li className='list-group-item'>扫0转
-                                                        <span className='badge'>28小时</span>
-                                                    </li>
-                                                    <li className='list-group-item'>扫1转
-                                                        <span className='badge'>24小时</span>
-                                                    </li>
-                                                    <li className='list-group-item'>扫2转
-                                                        <span className='badge'>20小时</span>
-                                                    </li>
-                                                    <li className='list-group-item'>扫3转
-                                                        <span className='badge'>17小时</span>
-                                                    </li>
-                                                    <li className='list-group-item'>扫4转
-                                                        <span className='badge'>14小时</span>
-                                                    </li>
-                                                    <li className='list-group-item'>扫5转
-                                                        <span className='badge'>11小时</span>
-                                                    </li>
-                                                    <li className='list-group-item'>扫6转
-                                                        <span className='badge'>8小时</span>
-                                                    </li>
-                                                </ul>
+                                        <div className='col-md-6'>
+                                            <div className='row'>
+                                                <div className='col-md-12'>
+                                                    <div className='panel panel-default'>
+                                                        <div className='panel-heading'>星魂兑换</div>
+                                                        <ul className='list-group'>
+                                                            <li className='list-group-item'>2转
+                                                                <span className='badge'>螺旋碎片 x150</span>
+                                                            </li>
+                                                            <li className='list-group-item'>3转
+                                                                <span className='badge'>螺旋碎片 x?</span>
+                                                            </li>
+                                                            <li className='list-group-item'>4转
+                                                                <span className='badge'>螺旋碎片 x?</span>
+                                                            </li>
+                                                            <li className='list-group-item'>5转
+                                                                <span className='badge'>螺旋碎片 x?</span>
+                                                            </li>
+                                                            <li className='list-group-item'>6转
+                                                                <span className='badge'>螺旋碎片 x?</span>
+                                                            </li>
+                                                            <li className='list-group-item'>7转
+                                                                <span className='badge'>螺旋碎片 x300</span>
+                                                            </li>
+                                                        </ul>
+                                                    </div>
+                                                </div>
+                                                <div className='col-md-12'>
+                                                    <div className='panel panel-default'>
+                                                        <div className='panel-heading'>星魂经验兑换</div>
+                                                        <ul className='list-group'>
+                                                            <li className='list-group-item'>星魂经验(10)
+                                                                <span className='badge'>37.5%</span>
+                                                            </li>
+                                                            <li className='list-group-item'>星魂经验(50)
+                                                                <span className='badge'>37.5%</span>
+                                                            </li>
+                                                            <li className='list-group-item'>星魂经验(100)
+                                                                <span className='badge'>12.5%</span>
+                                                            </li>
+                                                            <li className='list-group-item'>星魂经验(1000)
+                                                                <span className='badge'>12.5%</span>
+                                                            </li>
+                                                        </ul>
+                                                        <div className='panel-footer'>
+                                                            价格: 螺旋碎片 x50<br />
+                                                            概率纯属猜测
+                                                        </div>
+                                                    </div>
+                                                </div>
                                             </div>
                                         </div>
                                     </div>
@@ -1475,8 +1527,8 @@ export class Home extends React.Component {
                             </div>
                             <div className='col-md-5'>
                                 <Panel header={<div onClick={()=>this.setState({arena: !this.state.arena})}>
-                                                <img src={"app/icons/Placeholder.jpg"} />
-                                                {"  "}锦标赛
+                                                <img src={"/app/icons/Placeholder.jpg"} />
+                                                {"  "}锦标赛 - 解锁:通过第250关
                                                 <i className="fa fa-chevron-right" id="collapseBtn" aria-hidden="true" onClick={()=>this.setState({arena: !this.state.arena})}></i></div>}
                                         bsStyle="default"
                                         collapsible
@@ -1560,91 +1612,73 @@ export class Home extends React.Component {
                         </div>
                         <div className='row'>
                             <div className='col-md-8'>
-                                <Panel header={<div onClick={()=>this.setState({tower: !this.state.tower})}>
-                                                <img src={"app/icons/Placeholder.jpg"} />
-                                                {"  "}螺旋塔
-                                                <i className="fa fa-chevron-right" id="collapseBtn" aria-hidden="true" onClick={()=>this.setState({tower: !this.state.tower})}></i></div>}
-                                        bsStyle="default"
-                                        collapsible
-                                        expanded={this.state.tower}>
-                                    总共300章 每章3关<br />
-                                    <div className='row'>
-                                        <div className='col-md-6'>
-                                            <div className='panel panel-default'>
-                                                <div className='panel-heading'>螺旋塔增益</div>
-                                                <ul className='list-group'>
-                                                    <li className='list-group-item'>HP+4%</li>
-                                                    <li className='list-group-item'>攻速+5%</li>
-                                                    <li className='list-group-item'>命中+5%</li>
-                                                    <li className='list-group-item'>SP+6%</li>
-                                                    <li className='list-group-item'>吟唱+5%</li>
-                                                    <li className='list-group-item'>回避+5%</li>
-                                                    <li className='list-group-item'>魔防+8%</li>
-                                                    <li className='list-group-item'>暴击+5%</li>
-                                                    <li className='list-group-item'>物防+8%</li>
-                                                    <li className='list-group-item'>双攻+5%</li>
-                                                </ul>
-                                                <div className='panel-footer'>
-                                                    兑换价格:<br />
-                                                    &nbsp;&nbsp;20+5*n<br />
-                                                    &nbsp;&nbsp;n代表已兑换次数
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div className='col-md-6'>
-                                            <div className='row'>
-                                                <div className='col-md-12'>
-                                                    <div className='panel panel-default'>
-                                                        <div className='panel-heading'>星魂兑换</div>
-                                                        <ul className='list-group'>
-                                                            <li className='list-group-item'>2转
-                                                                <span className='badge'>螺旋碎片 x150</span>
-                                                            </li>
-                                                            <li className='list-group-item'>3转
-                                                                <span className='badge'>螺旋碎片 x?</span>
-                                                            </li>
-                                                            <li className='list-group-item'>4转
-                                                                <span className='badge'>螺旋碎片 x?</span>
-                                                            </li>
-                                                            <li className='list-group-item'>5转
-                                                                <span className='badge'>螺旋碎片 x?</span>
-                                                            </li>
-                                                            <li className='list-group-item'>6转
-                                                                <span className='badge'>螺旋碎片 x?</span>
-                                                            </li>
-                                                            <li className='list-group-item'>7转
-                                                                <span className='badge'>螺旋碎片 x300</span>
-                                                            </li>
-                                                        </ul>
-                                                    </div>
-                                                </div>
-                                                <div className='col-md-12'>
-                                                    <div className='panel panel-default'>
-                                                        <div className='panel-heading'>星魂经验兑换</div>
-                                                        <ul className='list-group'>
-                                                            <li className='list-group-item'>星魂经验(10)
-                                                                <span className='badge'>37.5%</span>
-                                                            </li>
-                                                            <li className='list-group-item'>星魂经验(50)
-                                                                <span className='badge'>37.5%</span>
-                                                            </li>
-                                                            <li className='list-group-item'>星魂经验(100)
-                                                                <span className='badge'>12.5%</span>
-                                                            </li>
-                                                            <li className='list-group-item'>星魂经验(1000)
-                                                                <span className='badge'>12.5%</span>
-                                                            </li>
-                                                        </ul>
-                                                        <div className='panel-footer'>
-                                                            价格: 螺旋碎片 x50<br />
-                                                            概率纯属猜测
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </Panel>
+								<Panel header={<div onClick={()=>this.setState({zhantuan: !this.state.zhantuan})}>
+												<img src={"/app/icons/Placeholder.jpg"} />
+												{"  "}战团 - 解锁:通过第300关
+												<i className="fa fa-chevron-right" id="collapseBtn" aria-hidden="true" onClick={()=>this.setState({zhantuan: !this.state.zhantuan})}></i></div>}
+										bsStyle="default"
+										collapsible
+										expanded={this.state.zhantuan}>
+									<div className='row'>
+										<div className='col-md-7'>
+											<div className='panel panel-default'>
+												<div className='panel-heading'>玩法</div>
+												<div className='panel-body'>
+													3名玩家一起推图<br />
+													每位玩家设置自己的战团技能<br />
+													关卡进度共享<br />
+													战团关卡不会超过团员中最高转生<br />
+													战团中符文无效，探险宠物有效<br />
+													挑战成功可扫荡低于自身转生的关卡<br />
+													扫荡收益不可在交易所交易<br />
+													转生差距越大 扫荡收益越高
+												</div>
+											</div>
+											<div className='panel panel-default'>
+												<div className='panel-heading'>战团概率</div>
+												<ul className='list-group'>
+													<li className='list-group-item'>图纸掉落
+														<span className='badge'>5%</span>
+													</li>
+													<li className='list-group-item'>神魂掉落
+														<span className='badge'>100%</span>
+													</li>
+													<li className='list-group-item'>部位材料
+														<span className='badge'>50%</span>
+													</li>
+												</ul>
+											</div>
+										</div>
+										<div className='col-md-5'>
+											<div className='panel panel-default'>
+												<div className='panel-heading'>7转扫荡收益</div>
+												<ul className='list-group'>
+													<li className='list-group-item'>扫0转
+														<span className='badge'>28小时</span>
+													</li>
+													<li className='list-group-item'>扫1转
+														<span className='badge'>24小时</span>
+													</li>
+													<li className='list-group-item'>扫2转
+														<span className='badge'>20小时</span>
+													</li>
+													<li className='list-group-item'>扫3转
+														<span className='badge'>17小时</span>
+													</li>
+													<li className='list-group-item'>扫4转
+														<span className='badge'>14小时</span>
+													</li>
+													<li className='list-group-item'>扫5转
+														<span className='badge'>11小时</span>
+													</li>
+													<li className='list-group-item'>扫6转
+														<span className='badge'>8小时</span>
+													</li>
+												</ul>
+											</div>
+										</div>
+									</div>
+								</Panel>
                             </div>
                         </div>
                     </div>

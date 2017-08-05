@@ -48,7 +48,8 @@
   width: auto; }
 
 #home-container {
-  margin: auto 10px auto 10px;
+  width: 98%;
+  margin: auto 10px 60px 10px;
   font-family: "ff-tisa-web-pro-1","ff-tisa-web-pro-2","Lucida Grande","Hiragino Sans GB","Hiragino Sans GB W3",serif;
   font-weight: bold; }
   @media only screen and (max-width: 480px) {

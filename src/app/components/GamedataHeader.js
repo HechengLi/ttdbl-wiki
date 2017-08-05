@@ -6,6 +6,7 @@ import { Inventory } from "./Inventory";
 import { Character } from "./Character";
 import { Pet } from "./Pet";
 import { Battle } from "./Battle";
+import { UnderConstruction } from "./UnderConstruction";
 
 import "../stylesheets/header.css"
 
@@ -60,10 +61,10 @@ export class GamedataHeader extends React.Component {
 				</div>
 
 				<Route path="/gamedata/home" component={Home} />
-				<Route path="/gamedata/character" component={Character} />
-				<Route path="/gamedata/battle" component={Battle} />
+				<Route path="/gamedata/character" component={UnderConstruction} />
+				<Route path="/gamedata/battle" component={UnderConstruction} />
 				<Route path="/gamedata/inventory" component={Inventory} />
-				<Route path="/gamedata/pet" component={Pet} />
+				<Route path="/gamedata/pet" component={UnderConstruction} />
 				<Route path="/gamedata/home/test" component={Home} />
 			</div>
 		);

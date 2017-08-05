@@ -14,20 +14,6 @@ $panel-special2-text-color: #68BDFF;
     font-family: "ff-tisa-web-pro-1","ff-tisa-web-pro-2","Lucida Grande","Hiragino Sans GB","Hiragino Sans GB W3",serif;
     font-weight: bold;
 
-	.padding-0{
-	    padding-right:5px;
-	    padding-left:5px;
-		padding-top:5px;
-		padding-bottom:5px;
-	}
-
-	.padding-1{
-		padding-left:10px;
-		padding-top:10px;
-		padding-bottom:0;
-		padding-right:0;
-	}
-
     @media only screen and (max-width:720px) {
         #checkin {
             table, thead, tbody, th, td, tr {
@@ -93,6 +79,20 @@ $panel-special2-text-color: #68BDFF;
         font-weight: bold;
     }
 
+	.padding-0{
+	    padding-right:5px;
+	    padding-left:5px;
+		padding-top:5px;
+		padding-bottom:5px;
+	}
+
+	.padding-1{
+		padding-left:10px;
+		padding-top:10px;
+		padding-bottom:0;
+		padding-right:5px;
+	}
+
     .label {
         font-size: 12px;
         padding-bottom: 1px;
@@ -142,6 +142,18 @@ $panel-special2-text-color: #68BDFF;
                 }
             }
         }
+		.panel-body {
+			.thumbnail {
+				.caption {
+					p {
+						p {
+							padding-left: 2em;
+							text-indent: -0.5em;
+						}
+					}
+				}
+			}
+		}
     }
 
     .panel-primary {

@@ -51,16 +51,6 @@
   margin: auto 10px auto 10px;
   font-family: "ff-tisa-web-pro-1","ff-tisa-web-pro-2","Lucida Grande","Hiragino Sans GB","Hiragino Sans GB W3",serif;
   font-weight: bold; }
-  #home-container .padding-0 {
-    padding-right: 5px;
-    padding-left: 5px;
-    padding-top: 5px;
-    padding-bottom: 5px; }
-  #home-container .padding-1 {
-    padding-left: 10px;
-    padding-top: 10px;
-    padding-bottom: 0;
-    padding-right: 0; }
   @media only screen and (max-width: 720px) {
     #home-container #checkin table, #home-container #checkin thead, #home-container #checkin tbody, #home-container #checkin th, #home-container #checkin td, #home-container #checkin tr {
       display: block; }
@@ -102,6 +92,16 @@
   #home-container h3 {
     font-family: "ff-tisa-web-pro-1","ff-tisa-web-pro-2","Lucida Grande","Hiragino Sans GB","Hiragino Sans GB W3",serif;
     font-weight: bold; }
+  #home-container .padding-0 {
+    padding-right: 5px;
+    padding-left: 5px;
+    padding-top: 5px;
+    padding-bottom: 5px; }
+  #home-container .padding-1 {
+    padding-left: 10px;
+    padding-top: 10px;
+    padding-bottom: 0;
+    padding-right: 5px; }
   #home-container .label {
     font-size: 12px;
     padding-bottom: 1px; }
@@ -136,6 +136,9 @@
       -ms-transform: rotate(0deg);
       transform: rotate(0deg);
       cursor: pointer; }
+  #home-container .panel .panel-body .thumbnail .caption p p {
+    padding-left: 2em;
+    text-indent: -0.5em; }
   #home-container .panel-primary {
     border-color: #C2F8FF; }
     #home-container .panel-primary .panel-heading {

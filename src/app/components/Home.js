@@ -103,36 +103,36 @@ export class Home extends React.Component {
 													<h3>￥28/30天</h3>
                                                     <hr />
 													<div className="row">
-														<div className="col-lg-5 col-lg-offset-1 col-sm-12 padding-0">
-		                                                	<p className="well padding-1" style={{margin:"auto", maxWidth:"190px", borderStyle:"solid"}}>
+														<div className="col-lg-5 col-lg-offset-1 col-ms-6 padding-0">
+		                                                	<p className="well padding-1" style={{margin:"auto", maxWidth:"190px"}}>
 		                                                        <span className="label label-default">每日获得</span><br />
-																<p style={{paddingLeft:"2em", textIndent:"-0.5em"}}>
+																<p>
 			                                                        <i className="fa fa-chevron-right" aria-hidden="true"></i>&nbsp;钻石&nbsp;x100
 																</p>
-		                                                        <p style={{paddingLeft:"2em", textIndent:"-0.5em"}}>
+		                                                        <p>
 		                                                        	<i className="fa fa-chevron-right" aria-hidden="true"></i>&nbsp;荣誉&nbsp;x50
 																</p>
-																<p style={{paddingLeft:"2em", textIndent:"-0.5em"}}>
+																<p>
 		                                                        	<i className="fa fa-chevron-right" aria-hidden="true"></i>&nbsp;商城免费购买Zeny&nbsp;x1
 																</p>
 															</p>
 														</div>
-														<div className="col-lg-5 col-sm-12 padding-0">
-															<p className="well padding-1" style={{margin:"auto", maxWidth:"190px", borderStyle:"solid"}}>
+														<div className="col-lg-5 col-ms-6 padding-0">
+															<p className="well padding-1" style={{margin:"auto", maxWidth:"190px"}}>
 																<span className="label label-default">持续特权</span><br />
-																<p style={{paddingLeft:"2em", textIndent:"-0.5em"}}>
+																<p>
 		                                                        	<i className="fa fa-chevron-right" aria-hidden="true"></i>&nbsp;挂机收益 +5%
 																</p>
-																<p style={{paddingLeft:"2em", textIndent:"-0.5em"}}>
+																<p>
 		                                                        	<i className="fa fa-chevron-right" aria-hidden="true"></i>&nbsp;解除所有购买次数上限
 																</p>
-																<p style={{paddingLeft:"2em", textIndent:"-0.5em"}}>
+																<p>
 		                                                        	<i className="fa fa-chevron-right" aria-hidden="true"></i>&nbsp;新增快速探险功能
 																</p>
-																<p style={{paddingLeft:"2em", textIndent:"-0.5em"}}>
+																<p>
 		                                                        	<i className="fa fa-chevron-right" aria-hidden="true"></i>&nbsp;探险任务经验 +15%
 																</p>
-																<p style={{paddingLeft:"2em", textIndent:"-0.5em"}}>
+																<p>
 		                                                        	<i className="fa fa-chevron-right" aria-hidden="true"></i>&nbsp;可发送全频道广播
 																</p>
 															</p>
@@ -149,55 +149,61 @@ export class Home extends React.Component {
 													<h3>￥118/90天</h3>
                                                     <hr />
 													<div className="row">
-														<div className="col-lg-5 col-lg-offset-1 col-sm-12 padding-0">
-		                                                    <p className="well padding-1" style={{margin:"auto",maxWidth:"208px"}}>
-		                                                        <span className="label label-default">每日获得</span>
-		                                                        <p style={{paddingLeft:"2em", textIndent:"-0.5em"}}>
-		                                                        	<i className="fa fa-chevron-right" aria-hidden="true"></i>&nbsp;钻石 x100
-																</p>
-		                                                        <p style={{paddingLeft:"2em", textIndent:"-0.5em"}}>
-		                                                        	<i className="fa fa-chevron-right" aria-hidden="true"></i>&nbsp;荣誉 x50
-																</p>
-		                                                        <p style={{paddingLeft:"2em", textIndent:"-0.5em"}}>
-		                                                        	<i className="fa fa-chevron-right" aria-hidden="true"></i>&nbsp;商城免费购买zeny x1
-																</p>
-		                                                        <p style={{paddingLeft:"2em", textIndent:"-0.5em"}}>
-		                                                        	<i className="fa fa-chevron-right" aria-hidden="true"></i>&nbsp;熔炼值 x2000
-																</p>
-		                                                        	<span className="label label-default">每五天获得</span>
-		                                                        <p style={{paddingLeft:"2em", textIndent:"-0.5em"}}>
-		                                                        	<i className="fa fa-chevron-right" aria-hidden="true"></i>&nbsp;时装币 x1
-																</p>
-															</p>
+														<div className="col-lg-5 col-lg-offset-1 col-ms-6 padding-0">
+																<div className="col padding-0">
+				                                                    <p className="well padding-1" style={{margin:"auto",maxWidth:"220px"}}>
+				                                                        <span className="label label-default">每日获得</span>
+				                                                        <p>
+				                                                        	<i className="fa fa-chevron-right" aria-hidden="true"></i>&nbsp;钻石 x100
+																		</p>
+				                                                        <p>
+				                                                        	<i className="fa fa-chevron-right" aria-hidden="true"></i>&nbsp;荣誉 x50
+																		</p>
+				                                                        <p>
+				                                                        	<i className="fa fa-chevron-right" aria-hidden="true"></i>&nbsp;商城免费购买Zeny&nbsp;x1
+																		</p>
+				                                                        <p>
+				                                                        	<i className="fa fa-chevron-right" aria-hidden="true"></i>&nbsp;熔炼值 x2000
+																		</p>
+																	</p>
+																</div>
+																<div className="col padding-0">
+																	<p className="well padding-1" style={{margin:"auto", maxWidth:"220px"}}>
+				                                                        <span className="label label-default">每五天获得</span>
+				                                                        <p>
+				                                                        	<i className="fa fa-chevron-right" aria-hidden="true"></i>&nbsp;时装币 x1
+																		</p>
+																	</p>
+																</div>
 														</div>
-														<div className="col-lg-5 col-sm-12 padding-0">
-															<p className="well padding-1" style={{margin:"auto",maxWidth:"208px"}}>
+														<div className="col-lg-5 col-ms-6 padding-0">
+															<p className="well padding-1" style={{margin:"auto",maxWidth:"220px"}}>
 																<span className="label label-default">持续特权</span><br />
-		                                                        <p style={{paddingLeft:"2em", textIndent:"-0.5em"}}>
+		                                                        <p>
 		                                                        	<i className="fa fa-chevron-right" aria-hidden="true"></i>&nbsp;挂机收益 +5%
 																</p>
-		                                                        <p style={{paddingLeft:"2em", textIndent:"-0.5em"}}>
+		                                                        <p>
 		                                                        	<i className="fa fa-chevron-right" aria-hidden="true"></i>&nbsp;战斗跟随宠物经验 +50%
 																</p>
 		                                                        <p style={{paddingLeft:"2em", textIndent:"-0.5em"}}>
 		                                                        	<i className="fa fa-chevron-right" aria-hidden="true"></i>&nbsp;随意进入爆满聊天室
 																</p>
-		                                                        <p style={{paddingLeft:"2em", textIndent:"-0.5em"}}>
+		                                                        <p>
 		                                                        	<i className="fa fa-chevron-right" aria-hidden="true"></i>&nbsp;探险任务上限 +2
 																</p>
-		                                                        <p style={{paddingLeft:"2em", textIndent:"-0.5em"}}>
+		                                                        <p>
 		                                                        	<i className="fa fa-chevron-right" aria-hidden="true"></i>&nbsp;解除所有购买次数上限
 																</p>
-		                                                        <p style={{paddingLeft:"2em", textIndent:"-0.5em"}}>
+		                                                        <p>
 		                                                        	<i className="fa fa-chevron-right" aria-hidden="true"></i>&nbsp;新增快速探险功能
 																</p>
-		                                                        <p style={{paddingLeft:"2em", textIndent:"-0.5em"}}>
+		                                                        <p>
 		                                                        	<i className="fa fa-chevron-right" aria-hidden="true"></i>&nbsp;探险任务经验 +15%
 																</p>
-		                                                        <p style={{paddingLeft:"2em", textIndent:"-0.5em"}}>
+		                                                        <p>
 		                                                        	<i className="fa fa-chevron-right" aria-hidden="true"></i>&nbsp;可发送全频道广播
 																</p>
-		                                                        <p style={{paddingLeft:"2em", textIndent:"-0.5em"}}>
+		                                                        <p>
 		                                                        	<i className="fa fa-chevron-right" aria-hidden="true"></i>&nbsp;螺旋塔免费连续调整
 																</p>
 		                                                    </p>
@@ -222,26 +228,38 @@ export class Home extends React.Component {
                                                         <img src={"/app/icons/Placeholder.jpg"} />
                                                         <div className="caption">
                                                             <h3>宠物大师证明</h3>
+															<h3>280礼物币(￥28)/30天</h3>
                                                             <hr />
-                                                            <p>
-                                                                <span className="label label-default">每日获得</span><br />
-                                                                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                                                                <i className="fa fa-chevron-right" aria-hidden="true"></i>&nbsp;高级探险经验药水 x2<br />
-                                                                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                                                                <i className="fa fa-chevron-right" aria-hidden="true"></i>&nbsp;高级战斗经验药水 x2<br />
-                                                                <span className="label label-default">持续特权</span><br />
-                                                                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                                                                <i className="fa fa-chevron-right" aria-hidden="true"></i>&nbsp;探险任务经验 +30%<br />
-                                                                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                                                                <i className="fa fa-chevron-right" aria-hidden="true"></i>&nbsp;战斗跟随宠物经验 +30%<br />
-                                                                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                                                                <i className="fa fa-chevron-right" aria-hidden="true"></i>&nbsp;解锁探险‘一键领取’功能<br />
-                                                                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                                                                <i className="fa fa-chevron-right" aria-hidden="true"></i>&nbsp;宠物进化所需碎片 -12.5%<br />
-                                                                <span className="label label-default">价格</span><br />
-                                                                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                                                                <i className="fa fa-chevron-right" aria-hidden="true"></i>&nbsp;280礼物币(￥28)/30天
-                                                            </p>
+															<div className="row">
+																<div className="col-lg-5 col-ms-6 padding-0">
+		                                                            <p className="well padding-1" style={{margin:"auto",maxWidth:"220px"}}>
+		                                                                <span className="label label-default">每日获得</span>
+																		<p>
+		                                                                	<i className="fa fa-chevron-right" aria-hidden="true"></i>&nbsp;高级探险经验药水 x2
+																		</p>
+																		<p>
+		                                                                	<i className="fa fa-chevron-right" aria-hidden="true"></i>&nbsp;高级战斗经验药水 x2
+																		</p>
+																	</p>
+																</div>
+																<div className="col-lg-5 col-ms-6 padding-0">
+																	<p className="well padding-1" style={{margin:"auto",maxWidth:"220px"}}>
+		                                                                	<span className="label label-default">持续特权</span><br />
+																		<p>
+		                                                                	<i className="fa fa-chevron-right" aria-hidden="true"></i>&nbsp;探险任务经验 +30%
+																		</p>
+																		<p>
+		                                                                	<i className="fa fa-chevron-right" aria-hidden="true"></i>&nbsp;战斗跟随宠物经验 +30%
+																		</p>
+																		<p>
+		                                                                	<i className="fa fa-chevron-right" aria-hidden="true"></i>&nbsp;解锁探险‘一键领取’功能
+																		</p>
+																		<p>
+		                                                                	<i className="fa fa-chevron-right" aria-hidden="true"></i>&nbsp;宠物进化所需碎片 -12.5%
+																		</p>
+																	</p>
+																</div>
+															</div>
                                                         </div>
                                                     </div>
                                                 </div>

@@ -14,7 +14,7 @@ $panel-special2-text-color: #68BDFF;
     font-family: "ff-tisa-web-pro-1","ff-tisa-web-pro-2","Lucida Grande","Hiragino Sans GB","Hiragino Sans GB W3",serif;
     font-weight: bold;
 
-    @media only screen and (max-width:720px) {
+    @media only screen and (max-width:480px) {
         #checkin {
             table, thead, tbody, th, td, tr {
                 display: block;
@@ -54,7 +54,22 @@ $panel-special2-text-color: #68BDFF;
         #checkin2 {
             display: none;
         }
+		#checkin3 {
+			display: none;
+		}
     }
+
+	@media only screen and (max-width:720px) and (min-width:481px) {
+		#checkin {
+            display: none;
+        }
+        #checkin2 {
+            display: none;
+        }
+		#checkin3 {
+			display: table;
+		}
+	}
 
     @media only screen and (max-width:960px) and (min-width:721px) {
         #checkin {
@@ -63,6 +78,12 @@ $panel-special2-text-color: #68BDFF;
         #checkin2 {
             display: table;
         }
+		#checkin3 {
+			display: none;
+		}
+		.testpic {/*change to bootstrap breakpoint media query later*/
+			display: none !important;
+		}
     }
 
     @media only screen and (min-width:961px) {
@@ -72,31 +93,30 @@ $panel-special2-text-color: #68BDFF;
         #checkin2 {
             display: none;
         }
-    }
-
-    h3 {
-        font-family: "ff-tisa-web-pro-1","ff-tisa-web-pro-2","Lucida Grande","Hiragino Sans GB","Hiragino Sans GB W3",serif;
-        font-weight: bold;
+		#checkin3 {
+			display: none;
+		}
     }
 
 	.padding-0{
 	    padding-right:5px;
 	    padding-left:5px;
 		padding-top:5px;
-		padding-bottom:5px;
+		padding-bottom:0px;
 	}
 
 	.padding-1{
 		padding-left:10px;
 		padding-top:10px;
-		padding-bottom:0;
-		padding-right:5px;
+		padding-bottom:5px;
+		padding-right:10px;
 	}
 
     .label {
         font-size: 12px;
         padding-bottom: 1px;
     }
+
     .panel {
         .panel-heading {
             img {
@@ -143,40 +163,40 @@ $panel-special2-text-color: #68BDFF;
             }
         }
 		.panel-body {
+			p {
+				padding-left: 2em;
+				text-indent: -0.5em;
+				margin-top: 0px;
+				margin-bottom: 0px;
+			}
+
+			.textDiv {
+				padding: auto;
+				padding-right: 0px;
+			}
+
 			.thumbnail {
+				img {
+					height: 100px;
+					width: 100px;
+					position: relative;
+					border-radius: 50%;
+					top: 10px;
+				}
 				.caption {
-					p {
-						p {
-							padding-left: 2em;
-							text-indent: -0.5em;
-						}
+	                h3 {
+						font-family: "ff-tisa-web-pro-1","ff-tisa-web-pro-2","Lucida Grande","Hiragino Sans GB","Hiragino Sans GB W3",serif;
+				        font-weight: bold;
+	                    text-align: center;
+	                }
+					h4 {
+						font-family: "ff-tisa-web-pro-1","ff-tisa-web-pro-2","Lucida Grande","Hiragino Sans GB","Hiragino Sans GB W3",serif;
+				        font-weight: bold;
+	                    text-align: center;
 					}
 				}
 			}
 		}
-    }
-
-    .panel-primary {
-        border-color: $panel-primary-border-color;
-        .panel-heading {
-            background-color: $panel-primary-background-color;
-            border-color: $panel-primary-border-color;
-            color: $panel-primary-text-color;
-        }
-        .panel-body {
-            ul {
-                padding: -10px 0px 0px 0px;
-                margin: 0px 0px 0px 0px;
-
-                .list-group-item {
-                    padding: 3px 10px;
-                }
-
-                .active {
-                    padding: 5px 10px;
-                }
-            }
-        }
     }
 
     #special1 {
@@ -187,25 +207,6 @@ $panel-special2-text-color: #68BDFF;
             color: $panel-special1-text-color;
             text-align: center;
         }
-        .panel-body {
-            .row {
-                align-content: center;
-                align-items: center;
-                align-self: center;
-                img {
-                    height: 100px;
-                    width: 100px;
-                    position: relative;
-                    border-radius: 50%;
-                    top: 10px;
-                }
-                .caption {
-                    h3 {
-                        text-align: center;
-                    }
-                }
-            }
-        }
     }
 
     #special2 {
@@ -215,22 +216,6 @@ $panel-special2-text-color: #68BDFF;
             border-color: $panel-special2-border-color;
             color: $panel-special2-text-color;
             text-align: center;
-        }
-        .panel-body {
-            .row {
-                img {
-                    height: 100px;
-                    width: 100px;
-                    position: relative;
-                    border-radius: 50%;
-                    top: 10px;
-                }
-                .caption {
-                    h3 {
-                        text-align: center;
-                    }
-                }
-            }
         }
     }
 }

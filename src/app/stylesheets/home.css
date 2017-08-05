@@ -2,7 +2,7 @@
   margin: auto 10px auto 10px;
   font-family: "ff-tisa-web-pro-1","ff-tisa-web-pro-2","Lucida Grande","Hiragino Sans GB","Hiragino Sans GB W3",serif;
   font-weight: bold; }
-  @media only screen and (max-width: 720px) {
+  @media only screen and (max-width: 480px) {
     #home-container #checkin table, #home-container #checkin thead, #home-container #checkin tbody, #home-container #checkin th, #home-container #checkin td, #home-container #checkin tr {
       display: block; }
     #home-container #checkin thead tr {
@@ -29,30 +29,43 @@
     #home-container #checkin {
       display: table; }
     #home-container #checkin2 {
+      display: none; }
+    #home-container #checkin3 {
       display: none; } }
+  @media only screen and (max-width: 720px) and (min-width: 481px) {
+    #home-container #checkin {
+      display: none; }
+    #home-container #checkin2 {
+      display: none; }
+    #home-container #checkin3 {
+      display: table; } }
   @media only screen and (max-width: 960px) and (min-width: 721px) {
     #home-container #checkin {
       display: none; }
     #home-container #checkin2 {
-      display: table; } }
+      display: table; }
+    #home-container #checkin3 {
+      display: none; }
+    #home-container .testpic {
+      /*change to bootstrap breakpoint media query later*/
+      display: none !important; } }
   @media only screen and (min-width: 961px) {
     #home-container #checkin {
       display: table; }
     #home-container #checkin2 {
+      display: none; }
+    #home-container #checkin3 {
       display: none; } }
-  #home-container h3 {
-    font-family: "ff-tisa-web-pro-1","ff-tisa-web-pro-2","Lucida Grande","Hiragino Sans GB","Hiragino Sans GB W3",serif;
-    font-weight: bold; }
   #home-container .padding-0 {
     padding-right: 5px;
     padding-left: 5px;
     padding-top: 5px;
-    padding-bottom: 5px; }
+    padding-bottom: 0px; }
   #home-container .padding-1 {
     padding-left: 10px;
     padding-top: 10px;
-    padding-bottom: 0;
-    padding-right: 5px; }
+    padding-bottom: 5px;
+    padding-right: 10px; }
   #home-container .label {
     font-size: 12px;
     padding-bottom: 1px; }
@@ -87,22 +100,28 @@
       -ms-transform: rotate(0deg);
       transform: rotate(0deg);
       cursor: pointer; }
-  #home-container .panel .panel-body .thumbnail .caption p p {
+  #home-container .panel .panel-body p {
     padding-left: 2em;
-    text-indent: -0.5em; }
-  #home-container .panel-primary {
-    border-color: #C2F8FF; }
-    #home-container .panel-primary .panel-heading {
-      background-color: #f0f8ff;
-      border-color: #C2F8FF;
-      color: #6495ED; }
-    #home-container .panel-primary .panel-body ul {
-      padding: -10px 0px 0px 0px;
-      margin: 0px 0px 0px 0px; }
-      #home-container .panel-primary .panel-body ul .list-group-item {
-        padding: 3px 10px; }
-      #home-container .panel-primary .panel-body ul .active {
-        padding: 5px 10px; }
+    text-indent: -0.5em;
+    margin-top: 0px;
+    margin-bottom: 0px; }
+  #home-container .panel .panel-body .textDiv {
+    padding: auto;
+    padding-right: 0px; }
+  #home-container .panel .panel-body .thumbnail img {
+    height: 100px;
+    width: 100px;
+    position: relative;
+    border-radius: 50%;
+    top: 10px; }
+  #home-container .panel .panel-body .thumbnail .caption h3 {
+    font-family: "ff-tisa-web-pro-1","ff-tisa-web-pro-2","Lucida Grande","Hiragino Sans GB","Hiragino Sans GB W3",serif;
+    font-weight: bold;
+    text-align: center; }
+  #home-container .panel .panel-body .thumbnail .caption h4 {
+    font-family: "ff-tisa-web-pro-1","ff-tisa-web-pro-2","Lucida Grande","Hiragino Sans GB","Hiragino Sans GB W3",serif;
+    font-weight: bold;
+    text-align: center; }
   #home-container #special1 {
     border-color: #FFA1B2; }
     #home-container #special1 .panel-heading {
@@ -110,30 +129,10 @@
       border-color: #FFA1B2;
       color: #FF5573;
       text-align: center; }
-    #home-container #special1 .panel-body .row {
-      align-content: center;
-      align-items: center;
-      align-self: center; }
-      #home-container #special1 .panel-body .row img {
-        height: 100px;
-        width: 100px;
-        position: relative;
-        border-radius: 50%;
-        top: 10px; }
-      #home-container #special1 .panel-body .row .caption h3 {
-        text-align: center; }
   #home-container #special2 {
     border-color: #C8DFFF; }
     #home-container #special2 .panel-heading {
       background-color: #E3EDFF;
       border-color: #C8DFFF;
       color: #68BDFF;
-      text-align: center; }
-    #home-container #special2 .panel-body .row img {
-      height: 100px;
-      width: 100px;
-      position: relative;
-      border-radius: 50%;
-      top: 10px; }
-    #home-container #special2 .panel-body .row .caption h3 {
       text-align: center; }

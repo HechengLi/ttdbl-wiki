@@ -18,14 +18,14 @@
 
 #header-container .navbar {
   margin-bottom: 0px; }
-  #header-container .navbar .container .navbar-header .navbar-brand {
+  #header-container .navbar .container .navbar-brand {
     -webkit-user-select: none;
     -moz-user-select: none;
     -ms-user-select: none;
     -o-user-select: none;
     user-select: none;
     cursor: default; }
-    #header-container .navbar .container .navbar-header .navbar-brand img {
+    #header-container .navbar .container .navbar-brand img {
       height: 25px;
       width: 25px;
       position: relative;

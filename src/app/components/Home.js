@@ -18,13 +18,13 @@ export class Home extends React.Component {
             life: false,
             store: false,
             blackmarket: false,
-            trade: true,
-            blacksmith: true,
-            friend: true,
-            guild: true,
+            trade: false,
+            blacksmith: false,
+            friend: false,
+            guild: false,
             pvp: true,
-            daochang: true,
-            team: true,
+            daochang: false,
+            team: false,
             arena: true,
             zhantuan: true,
             tower: true
@@ -1121,7 +1121,7 @@ export class Home extends React.Component {
                             </div>
 						</div>
 						<div className="row">
-                            <div className='col-md-4'>
+                            <div className='col-md-4 col-sm-6 col-ms-6'>
                                 <Panel header={<div onClick={()=>this.setState({trade: !this.state.trade})}>
                                                 <img src={"/app/icons/Placeholder.jpg"} />
                                                 {"  "}交易所 - 解锁:0转400关/1转生
@@ -1129,32 +1129,42 @@ export class Home extends React.Component {
                                         bsStyle="default"
                                         collapsible
                                         expanded={this.state.trade}>
-                                    可以用Zeny购买其他玩家道具<br />
-                                    或者把道具出售给其他玩家<br />
-                                    购买谁的物品纯随机<br />
-                                    最多上架道具 x10<br />
-                                    上架费用最高Zeny x10000
-                                    <div className='panel panel-default'>
-                                        <div className='panel-heading'>交易税</div>
-                                        <ul className='list-group'>
-                                            <li className='list-group-item'>
-                                                单价1-9999
-                                                <span className='badge'>2%</span>
-                                            </li>
-                                            <li className='list-group-item'>
-                                                单价10000-99999
-                                                <span className='badge'>4%</span>
-                                            </li>
-                                            <li className='list-group-item'>
-                                                单价100000-999999
-                                                <span className='badge'>6%</span>
-                                            </li>
-                                            <li className='list-group-item'>
-                                                单价1000000-9999999
-                                                <span className='badge'>8%</span>
-                                            </li>
-                                        </ul>
-                                    </div>
+
+									<div className="row">
+										<div className="col padding-0">
+											<div className="well padding-1">
+												<span className="label label-default">玩法</span>
+												<p>可以用Zeny购买其他玩家道具</p>
+												<p>或者把道具出售给其他玩家</p>
+												<p>购买谁的物品纯随机</p>
+												<p>最多上架道具 x10</p>
+												<p>上架费用最高Zeny&nbsp;x10000</p>
+											</div>
+										</div>
+										<div className="col padding-0">
+											<div className='panel panel-default'>
+												<div className='panel-heading'>交易税</div>
+												<ul className='list-group'>
+													<li className='list-group-item'>
+														单价1-9999
+														<span className='badge'>2%</span>
+													</li>
+													<li className='list-group-item'>
+														单价10000-99999
+														<span className='badge'>4%</span>
+													</li>
+													<li className='list-group-item'>
+														单价100000-999999
+														<span className='badge'>6%</span>
+													</li>
+													<li className='list-group-item'>
+														单价1000000-9999999
+														<span className='badge'>8%</span>
+													</li>
+												</ul>
+											</div>
+										</div>
+									</div>
                                 </Panel>
                                 <Panel header={<div onClick={()=>this.setState({team: !this.state.team})}>
                                                 <img src={"/app/icons/Placeholder.jpg"} />
@@ -1163,31 +1173,40 @@ export class Home extends React.Component {
                                         bsStyle="default"
                                         collapsible
                                         expanded={this.state.team}>
-                                    比赛持续6天, 冷却1天<br />
-                                    冷却时间不能报名/参加其他战队<br />
-                                    比赛结束前退出战队无冷却，无奖励<br />
-                                    比赛进行时战队成员推图获得积分<br />
-                                    <div className='panel panel-default'>
-                                        <div className='panel-heading'>战队奖励</div>
-                                        <ul className='list-group'>
-                                            <li className='list-group-item'>时装币
-                                                <span className='badge'>20%~80%</span>
-                                            </li>
-                                            <li className='list-group-item'>探险药水
-                                                <span className='badge'>40%~60%</span>
-                                            </li>
-                                            <li className='list-group-item'>战斗药水
-                                                <span className='badge'>40%~60%</span>
-                                            </li>
-                                        </ul>
-                                        <div className='panel-footer'>
-                                            排名越高概率越大<br />
-                                            0积分无奖励
-                                        </div>
-                                    </div>
+									<div className="row">
+										<div className="col padding-0">
+											<div className="well padding-1">
+												<span className="label label-default">玩法</span>
+												<p>比赛持续6天, 冷却1天</p>
+												<p>冷却时间不能报名/参加其他战队</p>
+												<p>比赛结束前退出战队无冷却，无奖励</p>
+												<p>比赛进行时战队成员推图获得积分</p>
+											</div>
+										</div>
+										<div className="col padding-0">
+											<div className='panel panel-default'>
+												<div className='panel-heading'>战队奖励</div>
+												<ul className='list-group'>
+													<li className='list-group-item'>时装币
+														<span className='badge'>20%~80%</span>
+													</li>
+													<li className='list-group-item'>探险药水
+														<span className='badge'>40%~60%</span>
+													</li>
+													<li className='list-group-item'>战斗药水
+														<span className='badge'>40%~60%</span>
+													</li>
+												</ul>
+												<div className='panel-footer'>
+													排名越高概率越大<br />
+													0积分无奖励
+												</div>
+											</div>
+										</div>
+									</div>
                                 </Panel>
                             </div>
-                            <div className='col-md-4'>
+                            <div className='col-md-4 col-sm-6 col-ms-6'>
                                 <Panel header={<div onClick={()=>this.setState({blacksmith: !this.state.blacksmith})}>
                                                 <img src={"/app/icons/Placeholder.jpg"} />
                                                 {"  "}铁匠
@@ -1195,62 +1214,73 @@ export class Home extends React.Component {
                                         bsStyle="default"
                                         collapsible
                                         expanded={this.state.blacksmith}>
-                                    熔炼装备(最多同时6个)获得熔炼值<br />
-                                    熔炼时有概率获得更高品质装备<br />
-                                    橙装有概率获得神之水晶<br />
-                                    熔炼值可以打造装备
-                                    <div className='panel panel-default'>
-                                        <div className='panel-heading'>熔炼值获得</div>
-                                        <ul className='list-group'>
-                                            <li className='list-group-item'>
-                                                白色装备
-                                                <span className='badge'>熔炼值 x?</span>
-                                            </li>
-                                            <li className='list-group-item'>
-                                                绿色装备
-                                                <span className='badge'>熔炼值 x?</span>
-                                            </li>
-                                            <li className='list-group-item'>
-                                                蓝色装备
-                                                <span className='badge'>熔炼值 x?</span>
-                                            </li>
-                                            <li className='list-group-item'>
-                                                紫色装备
-                                                <span className='badge'>熔炼值 x100</span>
-                                            </li>
-                                            <li className='list-group-item'>
-                                                橙色装备
-                                                <span className='badge'>熔炼值 x?</span>
-                                            </li>
-                                            <li className='list-group-item' style={{height:"80px"}}>
-                                                <span className='badge'>熔炼值 x500</span><br />
-                                                红色装备(神衣)
-                                                <span className='badge'>重铸碎片 x10</span><br />
-                                                <span className='badge'>传奇宝石 x1-3</span>
-                                            </li>
-                                        </ul>
-                                    </div>
-                                    <div className='panel panel-default'>
-                                        <div className='panel-heading'>神衣熔炼价格</div>
-                                        <ul className='list-group'>
-                                            <li className='list-group-item'>
-                                                传奇宝石 x1
-                                                <span className='badge'>钻石 x0</span>
-                                            </li>
-                                            <li className='list-group-item'>
-                                                传奇宝石 x2
-                                                <span className='badge'>钻石 x200</span>
-                                            </li>
-                                            <li className='list-group-item'>
-                                                传奇宝石 x3
-                                                <span className='badge'>钻石 x500</span>
-                                            </li>
-                                        </ul>
-                                        <div className='panel-footer'>只有红色属性可以打造成传奇宝石</div>
-                                    </div>
+									<div className="row">
+										<div className="col padding-0">
+											<div className="well padding-1">
+												<span className="label label-default">玩法</span>
+												<p>熔炼装备(最多同时6个)获得熔炼值</p>
+												<p>熔炼时有概率获得更高品质装备</p>
+												<p>橙装有概率获得神之水晶</p>
+												<p>熔炼值可以打造装备</p>
+											</div>
+										</div>
+										<div className="col padding-0">
+											<div className='panel panel-default'>
+		                                        <div className='panel-heading'>熔炼值获得</div>
+		                                        <ul className='list-group'>
+		                                            <li className='list-group-item'>
+		                                                白色装备
+		                                                <span className='badge'>熔炼值 x?</span>
+		                                            </li>
+		                                            <li className='list-group-item'>
+		                                                绿色装备
+		                                                <span className='badge'>熔炼值 x?</span>
+		                                            </li>
+		                                            <li className='list-group-item'>
+		                                                蓝色装备
+		                                                <span className='badge'>熔炼值 x?</span>
+		                                            </li>
+		                                            <li className='list-group-item'>
+		                                                紫色装备
+		                                                <span className='badge'>熔炼值 x100</span>
+		                                            </li>
+		                                            <li className='list-group-item'>
+		                                                橙色装备
+		                                                <span className='badge'>熔炼值 x?</span>
+		                                            </li>
+		                                            <li className='list-group-item' style={{height:"80px"}}>
+		                                                <span className='badge'>熔炼值 x500</span><br />
+		                                                红色装备(神衣)
+		                                                <span className='badge'>重铸碎片 x10</span><br />
+		                                                <span className='badge'>传奇宝石 x1-3</span>
+		                                            </li>
+		                                        </ul>
+		                                    </div>
+										</div>
+										<div className="col padding-0">
+											<div className='panel panel-default'>
+												<div className='panel-heading'>神衣熔炼价格</div>
+												<ul className='list-group'>
+													<li className='list-group-item'>
+														传奇宝石 x1
+														<span className='badge'>钻石 x0</span>
+													</li>
+													<li className='list-group-item'>
+														传奇宝石 x2
+														<span className='badge'>钻石 x200</span>
+													</li>
+													<li className='list-group-item'>
+														传奇宝石 x3
+														<span className='badge'>钻石 x500</span>
+													</li>
+												</ul>
+												<div className='panel-footer'>只有红色属性可以打造成传奇宝石</div>
+											</div>
+										</div>
+									</div>
                                 </Panel>
                             </div>
-                            <div className='col-md-4'>
+                            <div className='col-md-4 col-sm-6 col-ms-6'>
                                 <Panel header={<div onClick={()=>this.setState({daochang: !this.state.daochang})}>
                                                 <img src={"/app/icons/Placeholder.jpg"} />
                                                 {"  "}道场 - 解锁:通过第60关
@@ -1258,29 +1288,38 @@ export class Home extends React.Component {
                                         bsStyle="default"
                                         collapsible
                                         expanded={this.state.daochang}>
-                                    通关/扫荡获得装备精炼结晶<br />
-                                    通关1星解锁神器<br />
-                                    通关5星觉醒神器(属性翻倍)<br />
-                                    每天免费扫荡3次<br />
-                                    扫荡4次必出完美结晶<br />
-                                    完美结晶每次扫荡最多出1个
-                                    <div className='panel panel-default'>
-                                        <div className='panel-heading'>道场概率</div>
-                                        <ul className='list-group'>
-                                            <li className='list-group-item'>
-                                                破碎结晶
-                                                <span className='badge'>100%</span>
-                                            </li>
-                                            <li className='list-group-item'>
-                                                瑕疵结晶
-                                                <span className='badge'>70%</span>
-                                            </li>
-                                            <li className='list-group-item'>
-                                                完美结晶
-                                                <span className='badge'>25-50%</span>
-                                            </li>
-                                        </ul>
-                                    </div>
+									<div className="row">
+										<div className="col padding-0">
+											<div className="well padding-1">
+												<span className="label label-default">玩法</span>
+												<p>通关/扫荡获得装备精炼结晶</p>
+												<p>通关1星解锁神器</p>
+												<p>通关5星觉醒神器(属性翻倍)</p>
+												<p>每天免费扫荡3次</p>
+												<p>扫荡4次必出完美结晶</p>
+												<p>完美结晶每次扫荡最多出1个</p>
+											</div>
+										</div>
+										<div className="col padding-0">
+											<div className='panel panel-default'>
+												<div className='panel-heading'>道场概率</div>
+												<ul className='list-group'>
+													<li className='list-group-item'>
+														破碎结晶
+														<span className='badge'>100%</span>
+													</li>
+													<li className='list-group-item'>
+														瑕疵结晶
+														<span className='badge'>70%</span>
+													</li>
+													<li className='list-group-item'>
+														完美结晶
+														<span className='badge'>25-50%</span>
+													</li>
+												</ul>
+											</div>
+										</div>
+									</div>
                                 </Panel>
                             </div>
                         </div>
@@ -1293,7 +1332,7 @@ export class Home extends React.Component {
                                 collapsible
                                 expanded={this.state.friend}>
                             <div className='row'>
-                                <div className='col-md-8'> {/* Change to individual items in future */}
+                                <div className='col-md-8 padding-0'> {/* Change to individual items in future */}
                                     <div className='panel panel-default'>
                                         <div className='panel-heading'>好友送礼</div>
                                         <table className="table table-striped table-condensed">
@@ -1360,7 +1399,7 @@ export class Home extends React.Component {
                                         </table>
                                     </div>
                                 </div>
-                                <div className='col-md-4'>
+                                <div className='col-md-4 padding-0'>
                                     <div className='panel panel-default'>
                                         <div className='panel-heading'>送特权</div>
                                         <ul className='list-group'>
@@ -1399,7 +1438,7 @@ export class Home extends React.Component {
                                 collapsible
                                 expanded={this.state.guild}>
                             <div className='row'>
-                                <div className='col-md-3'>
+                                <div className='col-md-3 padding-0'>
                                     <div className='row'>
                                         <div className='col-md-12'>
                                             <div className='panel panel-default'>
@@ -1428,7 +1467,7 @@ export class Home extends React.Component {
                                         </div>
                                     </div>
                                 </div>
-                                <div className='col-md-4'>
+                                <div className='col-md-4 padding-0'>
                                     <div className='panel panel-default'>
                                         <div className='panel-heading'>公会红包</div>
                                         <table className="table table-striped table-condensed">
@@ -1471,12 +1510,12 @@ export class Home extends React.Component {
                                         </div>
                                     </div>
                                 </div>
-                                <div className='col-md-5'>
+                                <div className='col-md-5 padding-0'>
                                     <div className='panel panel-default'>
                                         <div className='panel-heading'>公会战</div>
                                         <div className='panel-body'>
                                             <div className='row'>
-                                                <div className='col-md-12'>
+                                                <div className='col-md-12 padding-0'>
                                                     <div className='panel panel-default'>
                                                         <div className='panel-heading'>公会战流程</div>
                                                         <ul className='list-group'>
@@ -1494,7 +1533,7 @@ export class Home extends React.Component {
                                                         </div>
                                                     </div>
                                                 </div>
-                                                <div className='col-md-12'>
+                                                <div className='col-md-12 padding-0'>
                                                     <div className='panel panel-default'>
                                                         <div className='panel-heading'>公会战奖励</div>
                                                         <ul className='list-group'>
@@ -1530,53 +1569,62 @@ export class Home extends React.Component {
                                         bsStyle="default"
                                         collapsible
                                         expanded={this.state.pvp}>
-                                    每周分配30名同转生 战力接近的玩家组成小组<br />
-                                    一周未登录不匹配<br />
-                                    进行战斗消耗入场券 x1<br />
-                                    一张入场券失败1次或3连胜失效<br />
-                                    入场券每12小时获得一张，最多2张(已有2张不计时)<br />
-                                    入场券价格: 50/100/100/200/200/300/300/400/400/500(最高)<br />
-                                    周日21:00结算，24:00发送奖励<br />
-                                    战胜对手获得积分，积分获得与战力差有关，最少30，最高？
-                                    <div className='panel panel-default'>
-                                        <div className='panel-heading'>决斗奖励</div>
-                                        <ul className='list-group'>
-                                            <li className='list-group-item'>
-                                                第一名
-                                                <span className='badge'>荣誉 x6000</span>
-                                                <span className='badge'>钻石 x150</span><br />
-                                                <span className='badge'>神秘宠物水晶/神秘符文原石 x10</span>
-                                            </li>
-                                            <li className='list-group-item'>
-                                                第二名
-                                                <span className='badge'>荣誉 x5000</span>
-                                                <span className='badge'>钻石 x130</span><br />
-                                                <span className='badge'>神秘宠物水晶/神秘符文原石 x5</span>
-                                            </li>
-                                            <li className='list-group-item'>
-                                                第三名
-                                                <span className='badge'>荣誉 x4500</span>
-                                                <span className='badge'>钻石 x125</span><br />
-                                                <span className='badge'>神秘宠物水晶/神秘符文原石 x3</span>
-                                            </li>
-                                            <li className='list-group-item'>
-                                                第四名-第十名
-                                                <span className='badge'>荣誉 x3600</span>
-                                                <span className='badge'>钻石 x50</span><br />
-                                                <span className='badge'>神秘宠物水晶/神秘符文原石 x1</span>
-                                            </li>
-                                            <li className='list-group-item'>
-                                                第十一名-第二十名
-                                                <span className='badge'>荣誉 x2800</span>
-                                                <span className='badge'>钻石 x25</span>
-                                            </li>
-                                            <li className='list-group-item'>
-                                                第二十一名-第三十名
-                                                <span className='badge'>荣誉 x2000</span>
-                                                <span className='badge'>钻石 x20</span>
-                                            </li>
-                                        </ul>
-                                    </div>
+									<div className="row">
+										<div className="col padding-0">
+											<div className="well padding-1">
+												<span className="label label-default">玩法</span>
+												<p>每周分配30名同转生 战力接近的玩家组成小组</p>
+												<p>一周未登录不匹配</p>
+												<p>进行战斗消耗入场券 x1</p>
+												<p>一张入场券失败1次或3连胜失效</p>
+												<p>入场券每12小时获得一张，最多2张(已有2张不计时)</p>
+												<p>入场券价格: 50/100/100/200/200/300/300/400/400/500(最高)</p>
+												<p>周日21:00结算，24:00发送奖励</p>
+												<p>战胜对手获得积分，积分获得与战力差有关，最少30，最高?</p>
+											</div>
+										</div>
+										<div className="col padding-0">
+											<div className='panel panel-default'>
+												<div className='panel-heading'>决斗奖励</div>
+												<ul className='list-group'>
+													<li className='list-group-item'>
+														第一名
+														<span className='badge'>荣誉 x6000</span>
+														<span className='badge'>钻石 x150</span><br />
+														<span className='badge'>神秘宠物水晶/神秘符文原石 x10</span>
+													</li>
+													<li className='list-group-item'>
+														第二名
+														<span className='badge'>荣誉 x5000</span>
+														<span className='badge'>钻石 x130</span><br />
+														<span className='badge'>神秘宠物水晶/神秘符文原石 x5</span>
+													</li>
+													<li className='list-group-item'>
+														第三名
+														<span className='badge'>荣誉 x4500</span>
+														<span className='badge'>钻石 x125</span><br />
+														<span className='badge'>神秘宠物水晶/神秘符文原石 x3</span>
+													</li>
+													<li className='list-group-item'>
+														第四名-第十名
+														<span className='badge'>荣誉 x3600</span>
+														<span className='badge'>钻石 x50</span><br />
+														<span className='badge'>神秘宠物水晶/神秘符文原石 x1</span>
+													</li>
+													<li className='list-group-item'>
+														第十一名-第二十名
+														<span className='badge'>荣誉 x2800</span>
+														<span className='badge'>钻石 x25</span>
+													</li>
+													<li className='list-group-item'>
+														第二十一名-第三十名
+														<span className='badge'>荣誉 x2000</span>
+														<span className='badge'>钻石 x20</span>
+													</li>
+												</ul>
+											</div>
+										</div>
+									</div>
                                 </Panel>
 								<Panel header={<div onClick={()=>this.setState({tower: !this.state.tower})}>
                                                 <img src={"/app/icons/Placeholder.jpg"} />
@@ -1585,9 +1633,12 @@ export class Home extends React.Component {
                                         bsStyle="default"
                                         collapsible
                                         expanded={this.state.tower}>
-                                    总共300章 每章3关<br />
                                     <div className='row'>
-                                        <div className='col-md-6'>
+                                        <div className='col-md-6 padding-0'>
+											<div className="well padding-1">
+												<span className="label label-default">玩法</span>
+												<p>总共300章 每章3关</p>
+											</div>
                                             <div className='panel panel-default'>
                                                 <div className='panel-heading'>螺旋塔增益</div>
                                                 <ul className='list-group'>
@@ -1609,7 +1660,7 @@ export class Home extends React.Component {
                                                 </div>
                                             </div>
                                         </div>
-                                        <div className='col-md-6'>
+                                        <div className='col-md-6 padding-0'>
                                             <div className='row'>
                                                 <div className='col-md-12'>
                                                     <div className='panel panel-default'>
@@ -1672,80 +1723,93 @@ export class Home extends React.Component {
                                         bsStyle="default"
                                         collapsible
                                         expanded={this.state.arena}>
-                                    锦标币可以支持每场比赛中任意一名玩家<br />
-                                    最多支持10次，每次最多1000锦标币<br />
-                                    锦标赛开始免费发放1000锦标币<br />
-                                    每场比赛结束发放300锦标币<br />
-                                    支持的玩家获胜获得双倍锦标币
-                                    <div className='panel panel-default'>
-                                        <div className='panel-heading'>锦标赛流程</div>
-                                        <ul className='list-group'>
-                                            <li className='list-group-item'>
-                                                周二<br />
-                                                15:00-17:00进行3场16进8，间隔1小时<br />
-                                                19:00-21:00进行3场8进4，间隔1小时
-                                            </li>
-                                            <li className='list-group-item'>
-                                                周三<br />
-                                                15:00-17:00进行3场4进2，间隔1小时<br />
-                                                19:00-2200进行5局3胜决赛<br />
-                                                前三场间隔1小时，后两场间隔半小时
-                                            </li>
-                                        </ul>
-                                    </div>
-                                    <div className='panel panel-default'>
-                                        <div className='panel-heading'>锦标赛奖励</div>
-                                        <ul className='list-group'>
-                                            <li className='list-group-item'>
-                                                冠军
-                                                <span className='badge'>荣誉 x2000</span>
-                                                <span className='badge'>钻石 x300</span>
-                                            </li>
-                                            <li className='list-group-item'>
-                                                亚军
-                                                <span className='badge'>荣誉 x1000</span>
-                                                <span className='badge'>钻石 x150</span>
-                                            </li>
-                                            <li className='list-group-item'>
-                                                4强
-                                                <span className='badge'>荣誉 x800</span>
-                                                <span className='badge'>钻石 x100</span>
-                                            </li>
-                                            <li className='list-group-item'>
-                                                8强
-                                                <span className='badge'>荣誉 x500</span>
-                                                <span className='badge'>钻石 x50</span>
-                                            </li>
-                                            <li className='list-group-item'>
-                                                16强
-                                                <span className='badge'>荣誉 x?</span>
-                                                <span className='badge'>钻石 x?</span>
-                                            </li>
-                                        </ul>
-                                    </div>
-                                    <div className='panel panel-default'>
-                                        <div className='panel-heading'>锦标赛兑换</div>
-                                        <ul className='list-group'>
-                                            <li className='list-group-item'>初级探险经验药水 x1
-                                                <span className='badge'>锦标币 x60</span>
-                                            </li>
-                                            <li className='list-group-item'>初级战斗经验药水 x1
-                                                <span className='badge'>锦标币 x120</span>
-                                            </li>
-                                            <li className='list-group-item'>高级探险经验药水 x1
-                                                <span className='badge'>锦标币 x300</span>
-                                            </li>
-                                            <li className='list-group-item'>高级战斗经验药水 x1
-                                                <span className='badge'>锦标币 x1200</span>
-                                            </li>
-                                            <li className='list-group-item'>3级主属性宝石 x1
-                                                <span className='badge'>锦标币 x1000</span>
-                                            </li>
-                                            <li className='list-group-item'>4级主属性宝石 x1
-                                                <span className='badge'>锦标币 x3000</span>
-                                            </li>
-                                        </ul>
-                                    </div>
+									<div className="row">
+										<div className="col padding-0">
+											<div className="well padding-1">
+												<span className="label label-default">玩法</span>
+												<p>锦标币可以支持每场比赛中任意一名玩家</p>
+												<p>最多支持10次，每次最多1000锦标币</p>
+												<p>锦标赛开始免费发放1000锦标币</p>
+												<p>每场比赛结束发放300锦标币</p>
+												<p>支持的玩家获胜获得双倍锦标币</p>
+											</div>
+										</div>
+										<div className="col padding-0">
+											<div className='panel panel-default'>
+												<div className='panel-heading'>锦标赛流程</div>
+												<ul className='list-group'>
+													<li className='list-group-item'>
+														周二<br />
+														15:00-17:00进行3场16进8，间隔1小时<br />
+														19:00-21:00进行3场8进4，间隔1小时
+													</li>
+													<li className='list-group-item'>
+														周三<br />
+														15:00-17:00进行3场4进2，间隔1小时<br />
+														19:00-2200进行5局3胜决赛<br />
+														前三场间隔1小时，后两场间隔半小时
+													</li>
+												</ul>
+											</div>
+										</div>
+										<div className="col padding-0">
+											<div className='panel panel-default'>
+												<div className='panel-heading'>锦标赛奖励</div>
+												<ul className='list-group'>
+													<li className='list-group-item'>
+														冠军
+														<span className='badge'>荣誉 x2000</span>
+														<span className='badge'>钻石 x300</span>
+													</li>
+													<li className='list-group-item'>
+														亚军
+														<span className='badge'>荣誉 x1000</span>
+														<span className='badge'>钻石 x150</span>
+													</li>
+													<li className='list-group-item'>
+														4强
+														<span className='badge'>荣誉 x800</span>
+														<span className='badge'>钻石 x100</span>
+													</li>
+													<li className='list-group-item'>
+														8强
+														<span className='badge'>荣誉 x500</span>
+														<span className='badge'>钻石 x50</span>
+													</li>
+													<li className='list-group-item'>
+														16强
+														<span className='badge'>荣誉 x?</span>
+														<span className='badge'>钻石 x?</span>
+													</li>
+												</ul>
+											</div>
+										</div>
+										<div className="col padding-0">
+											<div className='panel panel-default'>
+												<div className='panel-heading'>锦标赛兑换</div>
+												<ul className='list-group'>
+													<li className='list-group-item'>初级探险经验药水 x1
+														<span className='badge'>锦标币 x60</span>
+													</li>
+													<li className='list-group-item'>初级战斗经验药水 x1
+														<span className='badge'>锦标币 x120</span>
+													</li>
+													<li className='list-group-item'>高级探险经验药水 x1
+														<span className='badge'>锦标币 x300</span>
+													</li>
+													<li className='list-group-item'>高级战斗经验药水 x1
+														<span className='badge'>锦标币 x1200</span>
+													</li>
+													<li className='list-group-item'>3级主属性宝石 x1
+														<span className='badge'>锦标币 x1000</span>
+													</li>
+													<li className='list-group-item'>4级主属性宝石 x1
+														<span className='badge'>锦标币 x3000</span>
+													</li>
+												</ul>
+											</div>
+										</div>
+									</div>
                                 </Panel>
                             </div>
                         </div>
@@ -1759,7 +1823,7 @@ export class Home extends React.Component {
 										collapsible
 										expanded={this.state.zhantuan}>
 									<div className='row'>
-										<div className='col-md-7'>
+										<div className='col-md-7 padding-0'>
 											<div className='panel panel-default'>
 												<div className='panel-heading'>玩法</div>
 												<div className='panel-body'>
@@ -1788,7 +1852,7 @@ export class Home extends React.Component {
 												</ul>
 											</div>
 										</div>
-										<div className='col-md-5'>
+										<div className='col-md-5 padding-0'>
 											<div className='panel panel-default'>
 												<div className='panel-heading'>7转扫荡收益</div>
 												<ul className='list-group'>

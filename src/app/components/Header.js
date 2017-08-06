@@ -1,6 +1,8 @@
 import React from "react";
 import { Route, Link, BrowserRouter as Router } from 'react-router-dom';
 import { Switch, Redirect } from 'react-router';
+import { Navbar, Nav, NavItem } from "react-bootstrap";
+import { LinkContainer } from "react-router-bootstrap";
 
 import { GamedataHeader } from "./GamedataHeader";
 import { UnderConstruction } from "./UnderConstruction";
@@ -12,37 +14,31 @@ export class Header extends React.Component {
         return(
             <Router>
                 <div id="header-container">
-                    <nav className="navbar navbar-default">
-                        <div className="container">
-                            <div className="navbar-header">
-                                <a className="navbar-brand">
-                                    <span><img src={"/app/icons/Placeholder.jpg"} /></span>
-                                    {"  "}{this.props.homeLink}
-                                </a>
-                            </div>
-                            <ul className="nav navbar-nav" id="header-nav">
-                                <li className="active">
-                                    <Link to="/gamedata" id="gamedata">
-                                        <span><img src={"/app/icons/Placeholder.jpg"} /></span>
-                                        {"  "}游戏资料
-                                    </Link>
-                                </li>
-								<li>
-                                    <Link to="/updates" id="updates">
-                                        <span><img src={"/app/icons/Placeholder.jpg"} /></span>
-                                        {"  "}版本更新
-                                    </Link>
-                                </li>
-                                <li>
-                                    <Link to="/contactus" id="contact">
-                                        <span><img src={"/app/icons/Placeholder.jpg"} /></span>
-                                        {"  "}联系我们
-                                    </Link>
-                                </li>
-                            </ul>
-                        </div>
-                    </nav>
-
+					<Navbar collapseOnSelect>
+						<Navbar.Header>
+							<Navbar.Brand>
+								<a>天天打波利</a>
+							</Navbar.Brand>
+							<Navbar.Toggle />
+						</Navbar.Header>
+						<Navbar.Collapse>
+							<Nav>
+  								<LinkContainer to="/gamedata">
+									<NavItem eventKey={1}>游戏资料</NavItem>
+								</LinkContainer>
+  								<LinkContainer to="/updates">
+									<NavItem eventKey={2}>版本更新</NavItem>
+								</LinkContainer>
+  								<LinkContainer to="/contactus">
+									<NavItem eventKey={3}>联系我们</NavItem>
+								</LinkContainer>
+							</Nav>
+							<Nav pullRight>
+								<NavItem eventKey={1}>Link Right 1</NavItem>
+								<NavItem eventKey={2}>Link Right 2</NavItem>
+							</Nav>
+						</Navbar.Collapse>
+					</Navbar>
                     <div className="jumbotron">
                         <h1>天天打波利！- Under Construction</h1>
                         <p>--------</p>

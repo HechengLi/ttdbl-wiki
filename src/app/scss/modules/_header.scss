@@ -1,7 +1,7 @@
 $icon-radius-brand: 30px;
 $icon-radius-tag: 20px;
 
-@keyframes mymove {
+@keyframes button_hover {
     70% {box-shadow: inset 0 -60px 60px -25px rgba(255,255,255,1);}
 }
 
@@ -11,9 +11,18 @@ $icon-radius-tag: 20px;
 	align-items: center;
 	padding: 0px;
 	border-bottom: solid rgba(245,245,245,1);
-
+	width: 100%;
+	position: fixed;
+	z-index: 1000;
 	height: 120px;
-	>p {
+
+	-webkit-transition: height 0.3s;
+	-moz-transition: height 0.3s;
+	-ms-transition: height 0.3s;
+	-o-transition: height 0.3s;
+	transition: height 0.3s;
+
+	> p {
 		margin: 0px 100px 0px 50px;
 		padding: auto;
 		font-size: 24px;
@@ -34,9 +43,14 @@ $icon-radius-tag: 20px;
 		font-size: 18px;
 		border: none;
 		outline: none;
+		-webkit-transition: height 0.3s;
+		-moz-transition: height 0.3s;
+		-ms-transition: height 0.3s;
+		-o-transition: height 0.3s;
+		transition: height 0.3s;
 	}
 	button:hover:not(.active) {
-    	animation: mymove 1s;
+    	animation: button_hover 1s;
 		animation-iteration-count: infinite;
 	}
 	button.active {
@@ -45,57 +59,37 @@ $icon-radius-tag: 20px;
 	}
 }
 
-.jumbo {
-	height: 480px;
+.header.small {
+    height: 45px;
+	button {
+		height: 45px;
+		> span {
+			display: none;
+		}
+	}
+	> p {
+		margin-right: 140px;
+		font-size: 18px;
+		img {
+			height: 20px;
+			width: 20px;
+			border-radius: 50%;
+			top: -2.5px;
+			position: relative;
+		}
+	}
 }
 
-#header-container {
-    .navbar {
-        margin-bottom: 0px;
-        .container {
-            .navbar-brand {
-                -webkit-user-select: none;
-                -moz-user-select: none;
-                -ms-user-select: none;
-                -o-user-select: none;
-                user-select: none;
-                cursor: default;
+.background {
+	background-image: url("/app/icons/main_background.jpg");
+	height: 100vh;
+	width: 100%;
+	background-repeat: no-repeat;
+	background-size: 1500px 100%;
+	background-position: top center;
+	position: fixed;
+}
 
-                img {
-                    height: $icon-radius-brand;
-                    width: $icon-radius-brand;
-                    position: relative;
-                    top: -2.5px;
-                    border-radius: 50%;
-                }
-            }
-            ul {
-                li {
-                    img {
-                        height: $icon-radius-tag;
-                        width: $icon-radius-tag;
-                        position: relative;
-                        top: -1px;
-                        border-radius: 50%;
-                    }
-                }
-            }
-
-        }
-    }
-
-    .nav-tabs {
-        img {
-            height: $icon-radius-tag;
-            width: $icon-radius-tag;
-            position: relative;
-            top: -1px;
-            border-radius: 50%;
-        }
-    }
-
-    .jumbotron {
-        padding-left: 20px;
-        width: auto;
-    }
+.jumbo {
+	height: 480px;
 }

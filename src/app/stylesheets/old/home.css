@@ -1,8 +1,9 @@
 #home-container {
   width: 98%;
-  margin: auto 10px 60px 10px;
+  margin-bottom: 110px;
   font-family: "ff-tisa-web-pro-1","ff-tisa-web-pro-2","Lucida Grande","Hiragino Sans GB","Hiragino Sans GB W3",serif;
-  font-weight: bold; }
+  font-weight: bold;
+  z-index: 1; }
   @media only screen and (max-width: 480px) {
     #home-container #checkin table, #home-container #checkin thead, #home-container #checkin tbody, #home-container #checkin th, #home-container #checkin td, #home-container #checkin tr {
       display: block; }

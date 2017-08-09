@@ -1,23 +1,28 @@
-.footer-container html {
-  position: relative;
-  min-height: 100%; }
-.footer-container body {
-  margin-bottom: 60px; }
-  .footer-container body .container {
-    padding: 60px 15px 0; }
-.footer-container code {
-  font-size: 80%; }
-.footer-container .footer {
+.footer {
+  background-color: rgba(220, 220, 220, 0.6);
+  display: flex;
+  align-items: center;
+  padding: 0px;
+  border-bottom: solid whitesmoke;
+  width: 100%;
+  z-index: 1000;
+  height: 100px;
   position: fixed;
   bottom: 0;
-  height: 60px;
-  width: 100%;
-  background-color: #f5f5f5; }
-  .footer-container .footer .container {
-    padding-right: 15px;
-    padding-left: 15px; }
-    .footer-container .footer .container .text-muted {
-      margin: 20px 0; }
+  -webkit-transition: height 0.3s;
+  -moz-transition: height 0.3s;
+  -ms-transition: height 0.3s;
+  -o-transition: height 0.3s;
+  transition: height 0.3s; }
+  .footer > p {
+    margin: auto auto auto 80px;
+    padding: auto;
+    font-size: 24px; }
+
+.footer.small {
+  height: 40px; }
+  .footer.small > p {
+    font-size: 18px; }
 
 @media only screen and (max-width: 768px) {
   #gamedataheader-container .deactivate {
@@ -29,7 +34,7 @@
   top: -2.5px;
   position: relative; }
 
-@keyframes mymove {
+@keyframes button_hover {
   70% {
     box-shadow: inset 0 -60px 60px -25px white; } }
 .header {
@@ -38,7 +43,15 @@
   align-items: center;
   padding: 0px;
   border-bottom: solid whitesmoke;
-  height: 120px; }
+  width: 100%;
+  position: fixed;
+  z-index: 1000;
+  height: 120px;
+  -webkit-transition: height 0.3s;
+  -moz-transition: height 0.3s;
+  -ms-transition: height 0.3s;
+  -o-transition: height 0.3s;
+  transition: height 0.3s; }
   .header > p {
     margin: 0px 100px 0px 50px;
     padding: auto;
@@ -57,53 +70,53 @@
     width: 170px;
     font-size: 18px;
     border: none;
-    outline: none; }
+    outline: none;
+    -webkit-transition: height 0.3s;
+    -moz-transition: height 0.3s;
+    -ms-transition: height 0.3s;
+    -o-transition: height 0.3s;
+    transition: height 0.3s; }
   .header button:hover:not(.active) {
-    animation: mymove 1s;
+    animation: button_hover 1s;
     animation-iteration-count: infinite; }
   .header button.active {
     color: #ff6400;
     background-image: linear-gradient(rgba(255, 255, 255, 0), white); }
 
+.header.small {
+  height: 45px; }
+  .header.small button {
+    height: 45px; }
+    .header.small button > span {
+      display: none; }
+  .header.small > p {
+    margin-right: 140px;
+    font-size: 18px; }
+    .header.small > p img {
+      height: 20px;
+      width: 20px;
+      border-radius: 50%;
+      top: -2.5px;
+      position: relative; }
+
+.background {
+  background-image: url("/app/icons/main_background.jpg");
+  height: 100vh;
+  width: 100%;
+  background-repeat: no-repeat;
+  background-size: 1500px 100%;
+  background-position: top center;
+  position: fixed; }
+
 .jumbo {
   height: 480px; }
 
-#header-container .navbar {
-  margin-bottom: 0px; }
-  #header-container .navbar .container .navbar-brand {
-    -webkit-user-select: none;
-    -moz-user-select: none;
-    -ms-user-select: none;
-    -o-user-select: none;
-    user-select: none;
-    cursor: default; }
-    #header-container .navbar .container .navbar-brand img {
-      height: 30px;
-      width: 30px;
-      position: relative;
-      top: -2.5px;
-      border-radius: 50%; }
-  #header-container .navbar .container ul li img {
-    height: 20px;
-    width: 20px;
-    position: relative;
-    top: -1px;
-    border-radius: 50%; }
-#header-container .nav-tabs img {
-  height: 20px;
-  width: 20px;
-  position: relative;
-  top: -1px;
-  border-radius: 50%; }
-#header-container .jumbotron {
-  padding-left: 20px;
-  width: auto; }
-
 #home-container {
   width: 98%;
-  margin: auto 10px 60px 10px;
+  margin-bottom: 110px;
   font-family: "ff-tisa-web-pro-1","ff-tisa-web-pro-2","Lucida Grande","Hiragino Sans GB","Hiragino Sans GB W3",serif;
-  font-weight: bold; }
+  font-weight: bold;
+  z-index: 1; }
   @media only screen and (max-width: 480px) {
     #home-container #checkin table, #home-container #checkin thead, #home-container #checkin tbody, #home-container #checkin th, #home-container #checkin td, #home-container #checkin tr {
       display: block; }

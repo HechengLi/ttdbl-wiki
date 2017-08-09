@@ -1,0 +1,30 @@
+.footer {
+	background-color: rgba(220,220,220,0.6);
+	display: flex;
+	align-items: center;
+	padding: 0px;
+	border-bottom: solid rgba(245,245,245,1);
+	width: 100%;
+	z-index: 1000;
+	height: 100px;
+	position: fixed;
+	bottom: 0;
+
+	-webkit-transition: height 0.3s;
+	-moz-transition: height 0.3s;
+	-ms-transition: height 0.3s;
+	-o-transition: height 0.3s;
+	transition: height 0.3s;
+	> p {
+		margin: auto auto auto 80px;
+		padding: auto;
+		font-size: 24px;
+	}
+}
+
+.footer.small {
+	height: 40px;
+	> p {
+		font-size: 18px;
+	}
+}

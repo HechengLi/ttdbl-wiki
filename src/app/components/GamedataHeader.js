@@ -1,5 +1,6 @@
 import React from 'react'
 import { Route, Link } from 'react-router-dom';
+import { Switch, Redirect } from 'react-router';
 
 import { Home } from "./Home";
 import { Inventory } from "./Inventory";
@@ -7,6 +8,7 @@ import { Character } from "./Character";
 import { Pet } from "./Pet";
 import { Battle } from "./Battle";
 import { UnderConstruction } from "./UnderConstruction";
+import Actives from "./Actives";
 
 import "../stylesheets/style.css"
 
@@ -59,13 +61,13 @@ export class GamedataHeader extends React.Component {
 						</li>
 					</ul>
 				</div>
-
-				<Route path="/gamedata/home" component={Home} />
-				<Route path="/gamedata/character" component={UnderConstruction} />
-				<Route path="/gamedata/battle" component={UnderConstruction} />
-				<Route path="/gamedata/inventory" component={Inventory} />
-				<Route path="/gamedata/pet" component={UnderConstruction} />
-				<Route path="/gamedata/home/test" component={Home} />
+				<Switch>
+					<Route path="/gamedata/home" component={Home} />
+					<Route path="/gamedata/character" component={UnderConstruction} />
+					<Route path="/gamedata/battle" component={UnderConstruction} />
+					<Route path="/gamedata/inventory" component={UnderConstruction} />
+					<Route path="/gamedata/pet" component={UnderConstruction} />
+				</Switch>
 			</div>
 		);
 	}

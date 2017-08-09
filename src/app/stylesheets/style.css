@@ -22,6 +22,12 @@
 @media only screen and (max-width: 768px) {
   #gamedataheader-container .deactivate {
     display: none; } }
+#gamedataheader-container img {
+  height: 30px;
+  width: 30px;
+  border-radius: 50%;
+  top: -2.5px;
+  position: relative; }
 
 @keyframes mymove {
   30% {

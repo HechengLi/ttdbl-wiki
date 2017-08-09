@@ -6,9 +6,7 @@ import Actives from "./Actives";
 import { GamedataHeader } from "./GamedataHeader";
 import { UnderConstruction } from "./UnderConstruction";
 
-import "../stylesheets/style.css"
-
-var initState = "";
+import "../stylesheets/style.css";
 
 export class Header extends React.Component {
 	constructor (props) {
@@ -23,16 +21,11 @@ export class Header extends React.Component {
 
 	componentDidMount() {
 		this.setState({ active: Actives.getValueForKey("header")});
-	}
-
-	componentDidUpdate() {
-	 	console.log(Actives.getValueForKey("header"));
+		window.onpopstate = (() => (console.log(1),this.setState({ active: Actives.getValueForKey("header")})));
 	}
 
     render() {
-		window.onpopstate = () => (this.setState({ active: Actives.getValueForKey("header")}));
         return(
-            <Router>
                 <div id="header-container">
 					<div className="header">
 						<p style={{whiteSpace:"nowrap"}}><img src={"/app/icons/Placeholder.jpg"} />天天打波利</p>
@@ -60,16 +53,7 @@ export class Header extends React.Component {
                     <div className="jumbo">
 						<p>Constructing</p>
                     </div>
-					<Switch>
-						<Redirect exact from="/gamedata" to="/gamedata/home" />
-						<Route exact path="/" component={UnderConstruction} />
-						<Route exact path="/:name" component={UnderConstruction} />
-						<Route path="/gamedata" component={GamedataHeader} />
-						<Route path="/updates" component={UnderConstruction} />
-						<Route path="/contactus" component={UnderConstruction} />
-					</Switch>
                 </div>
-            </Router>
         );
     }
 }

@@ -1,6 +1,7 @@
 import React from "react";
-import { Route, Link, BrowserRouter as Router } from 'react-router-dom';
+import { Route, Link, withRouter, BrowserRouter as Router } from 'react-router-dom';
 import { Switch, Redirect } from 'react-router';
+import PropTypes from 'prop-types';
 
 import { GamedataHeader } from "./GamedataHeader";
 import { UnderConstruction } from "./UnderConstruction";
@@ -47,11 +48,11 @@ export class Header extends React.Component {
 						</span>
 					</div>
                     <div className="jumbo">
-
+						<p>Constructing</p>
                     </div>
 					<Switch>
-						<Redirect from="/gamedata" exact to="/gamedata/home" />
-						<Route path="/" exact component={UnderConstruction} />
+						<Redirect exact from="/gamedata" to="/gamedata/home" />
+						<Route exact path="/" component={UnderConstruction} />
 						<Route path="/gamedata" component={GamedataHeader} />
 						<Route path="/updates" component={UnderConstruction} />
 						<Route path="/contactus" component={UnderConstruction} />

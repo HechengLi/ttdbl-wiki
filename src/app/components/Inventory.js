@@ -2,7 +2,7 @@ import React from "react";
 import { BrowserRouter as Router, Route, Link } from "react-router-dom";
 import { Panel, Button } from "react-bootstrap";
 
-import "../stylesheets/inventory.css"
+import "../stylesheets/style.css"
 
 export class Inventory extends React.Component {
     render() {

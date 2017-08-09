@@ -2,7 +2,7 @@ import React from "react";
 import { Route, Link, BrowserRouter as Router } from 'react-router-dom';
 import { Switch, Redirect } from 'react-router';
 
-import "../stylesheets/footer.css"
+import "../stylesheets/style.css"
 
 export class Footer extends React.Component {
     render() {

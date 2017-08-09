@@ -1,48 +1,53 @@
 import React from "react";
 import { Route, Link, BrowserRouter as Router } from 'react-router-dom';
 import { Switch, Redirect } from 'react-router';
-import { Navbar, Nav, NavItem } from "react-bootstrap";
-import { LinkContainer } from "react-router-bootstrap";
 
 import { GamedataHeader } from "./GamedataHeader";
 import { UnderConstruction } from "./UnderConstruction";
 
-import "../stylesheets/header.css"
+import "../stylesheets/style.css"
 
 export class Header extends React.Component {
+	constructor (props) {
+        super();
+        this.state = {
+            active: ""
+        }
+    }
+
+	activate(e) {
+        this.setState({ active: e.target.id });
+    }
+
     render() {
         return(
             <Router>
                 <div id="header-container">
-					<Navbar collapseOnSelect>
-						<Navbar.Header>
-							<Navbar.Brand>
-								<a>天天打波利</a>
-							</Navbar.Brand>
-							<Navbar.Toggle />
-						</Navbar.Header>
-						<Navbar.Collapse>
-							<Nav>
-  								<LinkContainer to="/gamedata">
-									<NavItem eventKey={1}>游戏资料</NavItem>
-								</LinkContainer>
-  								<LinkContainer to="/updates">
-									<NavItem eventKey={2}>版本更新</NavItem>
-								</LinkContainer>
-  								<LinkContainer to="/contactus">
-									<NavItem eventKey={3}>联系我们</NavItem>
-								</LinkContainer>
-							</Nav>
-							<Nav pullRight>
-								<NavItem eventKey={1}>Link Right 1</NavItem>
-								<NavItem eventKey={2}>Link Right 2</NavItem>
-							</Nav>
-						</Navbar.Collapse>
-					</Navbar>
-                    <div className="jumbotron">
-                        <h1>天天打波利！- Under Construction</h1>
-                        <p>--------</p>
-                        <p><a className="btn btn-primary btn-lg" href="#" role="button">Btn</a></p>
+					<div className="header">
+						<p><img src={"/app/icons/Placeholder.jpg"} />天天打波利</p>
+						<span>
+							<Link to="/gamedata">
+								<button className={(this.state.active === "gamedata")?"active":""}
+										id="gamedata" onClick={this.activate.bind(this)}>
+									基本资料<br/>Info
+								</button>
+							</Link>
+							<Link to="/updates">
+								<button className={(this.state.active === "updates")?"active":""}
+										id="updates" onClick={this.activate.bind(this)}>
+									版本更新<br/>Update
+								</button>
+							</Link>
+							<Link to="/contactus">
+								<button className={(this.state.active === "contactus")?"active":""}
+										id="contactus" onClick={this.activate.bind(this)}>
+									联系我们<br/>Contact Us
+								</button>
+							</Link>
+						</span>
+					</div>
+                    <div className="jumbo">
+
                     </div>
 					<Switch>
 						<Redirect from="/gamedata" exact to="/gamedata/home" />

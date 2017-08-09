@@ -2,8 +2,8 @@ import React from "react";
 import { BrowserRouter as Router, Route, Link } from "react-router-dom";
 import { Panel, Button } from "react-bootstrap";
 
-import "../stylesheets/home.css"
-//import "../stylesheets/font-awesome.min.css"
+import "../stylesheets/style.css"
+import "../stylesheets/font-awesome.css"
 
 export class Home extends React.Component {
     constructor (props) {
@@ -12,7 +12,7 @@ export class Home extends React.Component {
             vip: false,
             coin: false,
             event: false,
-            bingo: false,
+            bingo: true,
             stock: false,
             checkin: false,
             life: false,

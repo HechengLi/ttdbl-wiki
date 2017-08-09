@@ -1,5 +1,53 @@
-$icon-radius-brand: 25px;
+$icon-radius-brand: 30px;
 $icon-radius-tag: 20px;
+
+@keyframes mymove {
+    30% {box-shadow: inset 0 -60px 60px -25px rgba(255,255,255,1);}
+}
+
+.header {
+	background-color: rgba(220,220,220,0.6);
+	display: flex;
+	align-items: center;
+	padding: 0px;
+	border-bottom: solid rgba(245,245,245,1);
+
+	height: 120px;
+	>p {
+		margin: 0px 100px 0px 50px;
+		padding: auto;
+		font-size: 24px;
+		opacity: 0.5;
+		img {
+			height: $icon-radius-brand;
+			width: $icon-radius-brand;
+			border-radius: 50%;
+			top: -2.5px;
+			position: relative;
+		}
+	}
+	button {
+		color: rgba(255,100,0,0.6);
+		background-color: rgba(245,245,245,0);
+		height: 120px;
+		width: 170px;
+		font-size: 18px;
+		border: none;
+		outline: none;
+	}
+	button:hover:not(.active) {
+    	animation: mymove 3s;
+		animation-iteration-count: infinite;
+	}
+	button.active {
+		color: rgba(255,100,0,1);
+		background-image: linear-gradient(rgba(255,255,255,0), rgba(255,255,255,1));
+	}
+}
+
+.jumbo {
+	height: 377px;
+}
 
 #header-container {
     .navbar {

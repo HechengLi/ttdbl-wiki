@@ -1,7 +1,7 @@
 import React from "react";
 import { BrowserRouter as Router, Route, Link } from "react-router-dom";
 
-import "../stylesheets/character.css"
+import "../stylesheets/style.css"
 
 export class Character extends React.Component {
     render() {
@@ -15,7 +15,7 @@ export class Character extends React.Component {
                     <div className="panel-body">
                     </div>
                 </div>
-            
+
                 <div className="panel panel-primary">
                     <div className="panel-heading">
                         <span><img src={"app/icons/Placeholder.jpg"} /></span>
@@ -24,7 +24,7 @@ export class Character extends React.Component {
                     <div className="panel-body">
                     </div>
                 </div>
-            
+
                 <div className="panel panel-success">
                     <div className="panel-heading">
                         <span><img src={"app/icons/Placeholder.jpg"} /></span>
@@ -39,7 +39,7 @@ export class Character extends React.Component {
                             <div className="panel-body">
                             </div>
                         </div>
-            
+
                         <div className="panel panel-default">
                             <div className="panel-heading">
                                 <span><img src={"app/icons/Placeholder.jpg"} /></span>
@@ -85,7 +85,7 @@ export class Character extends React.Component {
                         </div>
                     </div>
                 </div>
-            
+
                 <div className="panel panel-info">
                     <div className="panel-heading">
                         <span><img src={"app/icons/Placeholder.jpg"} /></span>

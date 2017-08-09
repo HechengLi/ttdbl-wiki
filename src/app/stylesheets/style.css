@@ -1,20 +1,66 @@
-#battle-container {
-  margin: auto 10px auto 10px; }
-  #battle-container .panel .panel-heading img {
-    height: 20px;
-    width: 20px;
-    position: relative;
-    top: -1;
-    border-radius: 50%; }
+.footer-container html {
+  position: relative;
+  min-height: 100%; }
+.footer-container body {
+  margin-bottom: 60px; }
+  .footer-container body .container {
+    padding: 60px 15px 0; }
+.footer-container code {
+  font-size: 80%; }
+.footer-container .footer {
+  position: fixed;
+  bottom: 0;
+  height: 60px;
+  width: 100%;
+  background-color: #f5f5f5; }
+  .footer-container .footer .container {
+    padding-right: 15px;
+    padding-left: 15px; }
+    .footer-container .footer .container .text-muted {
+      margin: 20px 0; }
 
-#character-container {
-  margin: auto 10px auto 10px; }
-  #character-container .panel .panel-heading img {
-    height: 20px;
-    width: 20px;
-    position: relative;
-    top: -1;
-    border-radius: 50%; }
+@media only screen and (max-width: 768px) {
+  #gamedataheader-container .deactivate {
+    display: none; } }
+
+@keyframes mymove {
+  30% {
+    box-shadow: inset 0 -60px 60px -25px white; } }
+.header {
+  background-color: rgba(220, 220, 220, 0.6);
+  display: flex;
+  align-items: center;
+  padding: 0px;
+  border-bottom: solid whitesmoke;
+  height: 120px; }
+  .header > p {
+    margin: 0px 100px 0px 50px;
+    padding: auto;
+    font-size: 24px;
+    opacity: 0.5; }
+    .header > p img {
+      height: 30px;
+      width: 30px;
+      border-radius: 50%;
+      top: -2.5px;
+      position: relative; }
+  .header button {
+    color: rgba(255, 100, 0, 0.6);
+    background-color: rgba(245, 245, 245, 0);
+    height: 120px;
+    width: 170px;
+    font-size: 18px;
+    border: none;
+    outline: none; }
+  .header button:hover:not(.active) {
+    animation: mymove 3s;
+    animation-iteration-count: infinite; }
+  .header button.active {
+    color: #ff6400;
+    background-image: linear-gradient(rgba(255, 255, 255, 0), white); }
+
+.jumbo {
+  height: 377px; }
 
 #header-container .navbar {
   margin-bottom: 0px; }
@@ -26,8 +72,8 @@
     user-select: none;
     cursor: default; }
     #header-container .navbar .container .navbar-brand img {
-      height: 25px;
-      width: 25px;
+      height: 30px;
+      width: 30px;
       position: relative;
       top: -2.5px;
       border-radius: 50%; }
@@ -109,7 +155,7 @@
   #home-container .padding-0 {
     padding-right: 5px;
     padding-left: 5px;
-    padding-top: 5px;
+    padding-top: 0px;
     padding-bottom: 0px; }
   #home-container .padding-1 {
     padding-left: 10px;
@@ -186,6 +232,24 @@
       border-color: #C8DFFF;
       color: #68BDFF;
       text-align: center; }
+
+#battle-container {
+  margin: auto 10px auto 10px; }
+  #battle-container .panel .panel-heading img {
+    height: 20px;
+    width: 20px;
+    position: relative;
+    top: -1;
+    border-radius: 50%; }
+
+#character-container {
+  margin: auto 10px auto 10px; }
+  #character-container .panel .panel-heading img {
+    height: 20px;
+    width: 20px;
+    position: relative;
+    top: -1;
+    border-radius: 50%; }
 
 #inventory-container {
   margin: auto 10px auto 10px; }

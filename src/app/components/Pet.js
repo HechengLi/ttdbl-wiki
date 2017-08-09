@@ -1,7 +1,7 @@
 import React from "react";
 import { BrowserRouter as Router, Route, Link } from "react-router-dom";
 
-import "../stylesheets/pet.css"
+import "../stylesheets/style.css"
 
 export class Pet extends React.Component {
     render() {

@@ -1,6 +1,7 @@
 import React from "react";
 import { BrowserRouter as Router, Route, Link } from "react-router-dom";
 import { Panel, Button } from "react-bootstrap";
+import Actives from "./Actives";
 
 import "../stylesheets/style.css"
 import "../stylesheets/font-awesome.css"
@@ -34,6 +35,14 @@ export class Home extends React.Component {
     onCollapse(e) {
         this.setState({ collapse: !this.state.collapse })
     }
+
+	componentWillMount() {
+		Actives.storeKeyValue("header", "gamedata");
+	}
+
+	componentWillUnmount() {
+		Actives.storeKeyValue("header", "");
+	}
 
     render() {
         const hideornot1 = ((this.state.stock)?"inline":"none");

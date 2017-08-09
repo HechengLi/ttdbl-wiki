@@ -1,12 +1,14 @@
 import React from "react";
 import { Route, Link, withRouter, BrowserRouter as Router } from 'react-router-dom';
 import { Switch, Redirect } from 'react-router';
-import PropTypes from 'prop-types';
+import Actives from "./Actives";
 
 import { GamedataHeader } from "./GamedataHeader";
 import { UnderConstruction } from "./UnderConstruction";
 
 import "../stylesheets/style.css"
+
+var initState = "";
 
 export class Header extends React.Component {
 	constructor (props) {
@@ -15,17 +17,25 @@ export class Header extends React.Component {
             active: ""
         }
     }
-
 	activate(e) {
         this.setState({ active: e.target.id });
     }
 
+	componentDidMount() {
+		this.setState({ active: Actives.getValueForKey("header")});
+	}
+
+	componentDidUpdate() {
+	 	console.log(Actives.getValueForKey("header"));
+	}
+
     render() {
+		window.onpopstate = () => (this.setState({ active: Actives.getValueForKey("header")}));
         return(
             <Router>
                 <div id="header-container">
 					<div className="header">
-						<p><img src={"/app/icons/Placeholder.jpg"} />天天打波利</p>
+						<p style={{whiteSpace:"nowrap"}}><img src={"/app/icons/Placeholder.jpg"} />天天打波利</p>
 						<span>
 							<Link to="/gamedata">
 								<button className={(this.state.active === "gamedata")?"active":""}
@@ -53,6 +63,7 @@ export class Header extends React.Component {
 					<Switch>
 						<Redirect exact from="/gamedata" to="/gamedata/home" />
 						<Route exact path="/" component={UnderConstruction} />
+						<Route exact path="/:name" component={UnderConstruction} />
 						<Route path="/gamedata" component={GamedataHeader} />
 						<Route path="/updates" component={UnderConstruction} />
 						<Route path="/contactus" component={UnderConstruction} />

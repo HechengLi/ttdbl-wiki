@@ -30,7 +30,7 @@
   position: relative; }
 
 @keyframes mymove {
-  30% {
+  70% {
     box-shadow: inset 0 -60px 60px -25px white; } }
 .header {
   background-color: rgba(220, 220, 220, 0.6);
@@ -59,7 +59,7 @@
     border: none;
     outline: none; }
   .header button:hover:not(.active) {
-    animation: mymove 3s;
+    animation: mymove 1s;
     animation-iteration-count: infinite; }
   .header button.active {
     color: #ff6400;

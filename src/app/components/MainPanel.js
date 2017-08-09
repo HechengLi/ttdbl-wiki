@@ -17,6 +17,10 @@ export class MainPanel extends React.Component {
 		Actives.storeKeyValue("header", nextProps.match.params.name);
 	}
 
+	componentWillUnmount() {
+		Actives.storeKeyValue("header", "");
+	}
+
     render() {
         return (
 			<div>

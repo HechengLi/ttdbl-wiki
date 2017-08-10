@@ -15,12 +15,12 @@ export class Header extends React.Component {
     }
 	activate(e) {
         this.setState({ active: e.target.id });
-		console.log(e.target);
+		(!this.state.collapsed)?(this.setState({ collapsed: !this.state.collapsed }),
+												(document.getElementsByClassName("collapseBtn")[0].classList.remove("change"))):("");
     }
 	collapse(e) {
 		this.setState({ collapsed: !this.state.collapsed});
 		e.target.classList.toggle("change");
-		console.log(e.target.classList);
 	}
 
 	componentDidMount() {

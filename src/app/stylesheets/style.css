@@ -93,7 +93,13 @@
     right: 10%;
     width: 50px;
     height: 50px;
-    cursor: default; }
+    top: 35px;
+    cursor: default;
+    -webkit-transition: all 0.3s;
+    -moz-transition: all 0.3s;
+    -ms-transition: all 0.3s;
+    -o-transition: all 0.3s;
+    transition: all 0.3s; }
     .header .collapseBtn .bar1, .header .collapseBtn .bar2, .header .collapseBtn .bar3 {
       width: 36px;
       height: 6px;
@@ -110,9 +116,9 @@
     transform: rotate(-45deg) translate(9px, -8px); }
 
 .header.small {
-  height: 45px; }
+  height: 50px; }
   .header.small > div button {
-    height: 45px; }
+    height: 50px; }
     .header.small > div button > span {
       display: none; }
   .header.small > p {
@@ -124,6 +130,10 @@
       border-radius: 50%;
       top: -2.5px;
       position: relative; }
+  .header.small .collapseBtn {
+    top: 0;
+    border-bottom: solid;
+    border-bottom-color: white; }
 
 .background {
   background-image: url("/app/icons/main_background.jpg");

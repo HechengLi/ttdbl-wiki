@@ -69,7 +69,14 @@ $icon-radius-tag: 20px;
 		right: 10%;
 		width: 50px;
 		height: 50px;
+		top: 35px;
 		cursor: default;
+
+		-webkit-transition: all 0.3s;
+		-moz-transition: all 0.3s;
+		-ms-transition: all 0.3s;
+		-o-transition: all 0.3s;
+		transition: all 0.3s;
 		.bar1, .bar2, .bar3 {
 		    width: 36px;
 		    height: 6px;
@@ -94,10 +101,10 @@ $icon-radius-tag: 20px;
 }
 
 .header.small {
-    height: 45px;
+    height: 50px;
 	> div {
 		button {
-			height: 45px;
+			height: 50px;
 			> span {
 				display: none;
 			}
@@ -113,6 +120,11 @@ $icon-radius-tag: 20px;
 			top: -2.5px;
 			position: relative;
 		}
+	}
+	.collapseBtn {
+		top: 0;
+		border-bottom: solid;
+		border-bottom-color: white;
 	}
 }
 

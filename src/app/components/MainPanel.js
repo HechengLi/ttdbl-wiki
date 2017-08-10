@@ -3,7 +3,8 @@ import { Route, Link, withRouter, BrowserRouter as Router } from 'react-router-d
 import { Switch, Redirect } from 'react-router';
 
 import { GamedataHeader } from "./GamedataHeader";
-import { UnderConstruction } from "./UnderConstruction";
+import { Update } from "./Update";
+import { ContactUs } from "./ContactUs";
 
 import Actives from "./Actives";
 
@@ -27,8 +28,8 @@ export class MainPanel extends React.Component {
 				<Switch>
 					<Redirect exact path="/gamedata" to="/gamedata/home" />
 					<Route path="/gamedata" component={GamedataHeader} />
-					<Route path="/updates" component={UnderConstruction} />
-					<Route path="/contactus" component={UnderConstruction} />
+					<Route path="/update" component={Update} />
+					<Route path="/contactus" component={ContactUs} />
 				</Switch>
 			</div>
 		);

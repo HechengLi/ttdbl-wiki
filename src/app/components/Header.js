@@ -4,7 +4,6 @@ import { Switch, Redirect } from 'react-router';
 import Actives from "./Actives";
 
 import { GamedataHeader } from "./GamedataHeader";
-import { UnderConstruction } from "./UnderConstruction";
 
 import "../stylesheets/style.css";
 
@@ -51,9 +50,9 @@ export class Header extends React.Component {
 								基本资料<br/><span>Info</span>
 							</button>
 						</Link>
-						<Link to="/updates" onClick={this.activate.bind(this)}>
-							<button className={(this.state.active === "updates")?"active":""}
-									id="updates" onClick={this.activate.bind(this)}>
+						<Link to="/update" onClick={this.activate.bind(this)}>
+							<button className={(this.state.active === "update")?"active":""}
+									id="update" onClick={this.activate.bind(this)}>
 								版本更新<br/><span>Update</span>
 							</button>
 						</Link>

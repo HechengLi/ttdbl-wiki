@@ -1,0 +1,14 @@
+#gamedataheader-container {
+	@media only screen and (max-width:768px) {
+		.deactivate {
+			display: none;
+		}
+	}
+	img {
+		height: 30px;
+		width: 30px;
+		border-radius: 50%;
+		top: -2.5px;
+		position: relative;
+	}
+}

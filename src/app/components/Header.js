@@ -3,8 +3,6 @@ import { Route, Link, withRouter, BrowserRouter as Router } from 'react-router-d
 import { Switch, Redirect } from 'react-router';
 import Actives from "./Actives";
 
-import { GamedataHeader } from "./GamedataHeader";
-
 import "../stylesheets/style.css";
 
 export class Header extends React.Component {

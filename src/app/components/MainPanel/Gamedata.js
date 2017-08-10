@@ -1,31 +1,22 @@
-import React from 'react'
-import { Route, Link } from 'react-router-dom';
-import { Switch, Redirect } from 'react-router';
+import React from 'react';
+import { Route } from 'react-router-dom';
+import { Switch } from 'react-router';
 
+import { GamedataHeader } from "./gamedata/GamedataHeader";
 import { Home } from "./gamedata/Home";
 import { Inventory } from "./gamedata/Inventory";
 import { Character } from "./gamedata/Character";
 import { Pet } from "./gamedata/Pet";
 import { Battle } from "./gamedata/Battle";
-import Actives from "./Actives";
 
-import "../stylesheets/style.css"
+import "../../stylesheets/style.css"
 
-export class GamedataHeader extends React.Component {
-	constructor (props) {
-        super();
-        this.state = {
-            activeTab: "home"
-        }
-    }
-    activate(e) {
-        this.setState({ activeTab: e.target.id });
-    }
+export class Gamedata extends React.Component {
 
 	render() {
 		return (
 			<div>
-				<h1>Gamedata Header - Under Construction</h1>
+				<GamedataHeader />
 				<Switch>
 					<Route path="/gamedata/home" component={Home} />
 					<Route path="/gamedata/character" component={Character} />

@@ -12,12 +12,18 @@ export class Header extends React.Component {
 	constructor (props) {
         super();
         this.state = {
-            active: ""
+            active: "",
+			collapsed: true
         }
     }
 	activate(e) {
         this.setState({ active: e.target.id });
     }
+	collapse(e) {
+		this.setState({ collapsed: !this.state.collapsed});
+		e.target.classList.toggle("change");
+		console.log(e.target.classList);
+	}
 
 	componentDidMount() {
 		this.setState({ active: Actives.getValueForKey("header")});
@@ -36,8 +42,8 @@ export class Header extends React.Component {
         return(
             <div id="header-container">
 				<div id="main_header" className="header">
-					<p style={{whiteSpace:"nowrap"}}><img src={"/app/icons/Placeholder.jpg"} />天天打波利</p>
-					<span>
+					<p style={{whiteSpace:"nowrap"}}><img src={"/app/icons/Placeholder.jpg"} /><span>天天打波利</span></p>
+					<div className={this.state.collapsed?("collapsed"):("")}>
 						<Link to="/gamedata" onClick={this.activate.bind(this)}>
 							<button className={(this.state.active === "gamedata")?"active":""}
 									id="gamedata">
@@ -56,7 +62,12 @@ export class Header extends React.Component {
 								联系我们<br/><span>Contact Us</span>
 							</button>
 						</Link>
-					</span>
+					</div>
+					<button className="collapseBtn" onClick={this.collapse.bind(this)}>
+						<div className="bar1"></div>
+						<div className="bar2"></div>
+						<div className="bar3"></div>
+					</button>
 				</div>
 				<div className="background">
 				</div>

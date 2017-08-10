@@ -49,7 +49,7 @@ $icon-radius-tag: 20px;
 		-o-transition: height 0.3s;
 		transition: height 0.3s;
 	}
-	button:hover:not(.active) {
+	button:hover:not(.active):not(.collapseBtn) {
     	animation: button_hover 1s;
 		animation-iteration-count: infinite;
 	}
@@ -57,14 +57,47 @@ $icon-radius-tag: 20px;
 		color: rgba(255,100,0,1);
 		background-image: linear-gradient(rgba(255,255,255,0), rgba(255,255,255,1));
 	}
+	.collapseBtn {
+		color: rgba(255,100,0,0.6);
+		background-color: rgba(130,130,130,0.4);
+		position: absolute;
+		border: none;
+		outline: none;
+		right: 10%;
+		width: 50px;
+		height: 50px;
+		cursor: default;
+		.bar1, .bar2, .bar3 {
+		    width: 36px;
+		    height: 6px;
+		    background-color: rgba(100,100,100,0.7);
+		    margin: 7px 0;
+		    transition: 0.4s;
+			border-radius: 25%;
+			pointer-events: none
+		}
+	}
+	.change {
+		.bar1 {
+			transform: rotate(45deg) translate(10px, 9px);
+		}
+		.bar2 {
+			opacity: 0;
+		}
+		.bar3 {
+			transform: rotate(-45deg) translate(9px, -8px);
+		}
+	}
 }
 
 .header.small {
     height: 45px;
-	button {
-		height: 45px;
-		> span {
-			display: none;
+	> div {
+		button {
+			height: 45px;
+			> span {
+				display: none;
+			}
 		}
 	}
 	> p {
@@ -84,12 +117,93 @@ $icon-radius-tag: 20px;
 	background-image: url("/app/icons/main_background.jpg");
 	height: 100vh;
 	width: 100%;
+	z-index: -10;
 	background-repeat: no-repeat;
-	background-size: 1500px 100%;
+	background-size: 1600px 100%;
 	background-position: top center;
 	position: fixed;
 }
 
 .jumbo {
-	height: 480px;
+	padding-top: 120px;
+	height: 420px;
+	width: 100%;
+	font-size: 50px;
+}
+
+@media only screen and (max-width:730px) {
+	.header {
+		> div {
+			position: fixed;
+			left: 0;
+			top: 120px;
+			width: 100%;
+			height: 250px;
+			transition-property: all;
+			transition-duration: 0.3s;
+			overflow-y: hidden;
+			button:not(.collapseBtn) {
+				width: 100%;
+				height: 80px;
+				background-image: none;
+				background-color: rgba(245,245,245,0.6);
+				border-style: inset;
+				border-color: rgba(100,100,100,0.2);
+				border-width: thin;
+			}
+			button:hover:not(.active):not(.collapseBtn) {
+				animation: none;
+			}
+			button.active {
+				background-color: rgba(245,245,245,0.9);
+			}
+		}
+		> div.collapsed {
+			height: 0px;
+			transition-property: all;
+			transition-duration: 0.3s;
+		}
+	}
+	.header.small {
+		> div {
+			top: 45px;
+			height: 130px;
+			transition-property: all;
+			transition-duration: 0.3s;
+			overflow-y: hidden;
+			button:not(.collapseBtn) {
+				height: 40px;
+				span {
+					display: none;
+				}
+			}
+		}
+		> div.collapsed {
+			height: 0px;
+			transition-property: all;
+			transition-duration: 0.3s;
+		}
+	}
+}
+
+@media only screen and (min-width:731px) {
+	.header {
+		.collapseBtn {
+			display: none;
+		}
+	}
+}
+
+@media only screen and (max-width:830px) {
+	.header {
+		> p {
+			> span {
+				display: none;
+			}
+			> img {
+				height: 45px;
+				width: 45px;
+			}
+		}
+	}
 }

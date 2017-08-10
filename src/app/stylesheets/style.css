@@ -76,6 +76,8 @@
     -ms-transition: height 0.3s;
     -o-transition: height 0.3s;
     transition: height 0.3s; }
+    .header button > span {
+      pointer-events: none; }
   .header button:hover:not(.active):not(.collapseBtn) {
     animation: button_hover 1s;
     animation-iteration-count: infinite; }

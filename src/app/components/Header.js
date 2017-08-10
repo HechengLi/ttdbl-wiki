@@ -18,6 +18,7 @@ export class Header extends React.Component {
     }
 	activate(e) {
         this.setState({ active: e.target.id });
+		console.log(e.target);
     }
 	collapse(e) {
 		this.setState({ collapsed: !this.state.collapsed});
@@ -46,19 +47,19 @@ export class Header extends React.Component {
 					<div className={this.state.collapsed?("collapsed"):("")}>
 						<Link to="/gamedata" onClick={this.activate.bind(this)}>
 							<button className={(this.state.active === "gamedata")?"active":""}
-									id="gamedata">
+									id="gamedata" onClick={this.activate.bind(this)}>
 								基本资料<br/><span>Info</span>
 							</button>
 						</Link>
 						<Link to="/updates" onClick={this.activate.bind(this)}>
 							<button className={(this.state.active === "updates")?"active":""}
-									id="updates">
+									id="updates" onClick={this.activate.bind(this)}>
 								版本更新<br/><span>Update</span>
 							</button>
 						</Link>
 						<Link to="/contactus" onClick={this.activate.bind(this)}>
 							<button className={(this.state.active === "contactus")?"active":""}
-									id="contactus">
+									id="contactus" onClick={this.activate.bind(this)}>
 								联系我们<br/><span>Contact Us</span>
 							</button>
 						</Link>

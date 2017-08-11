@@ -10,7 +10,21 @@ export class Home extends React.Component {
 
     render() {
         return (
-            <h1>Home - Under Construction</h1>
+			<div className="data-container">
+				<div className="grid">
+		            <div style={{height:"100%",minHeight:"150px",width:"100%",minWidth:"150px",borderStyle:"solid"}}>TEST</div>
+					<div style={{height:"100%",minHeight:"150px",width:"100%",minWidth:"150px",borderStyle:"solid"}}>TEST</div>
+					<div style={{height:"100%",minHeight:"150px",width:"100%",minWidth:"150px",borderStyle:"solid"}}>TEST</div>
+					<div style={{height:"100%",minHeight:"150px",width:"100%",minWidth:"150px",borderStyle:"solid"}}>TEST</div>
+					<div style={{height:"100%",minHeight:"150px",width:"100%",minWidth:"150px",borderStyle:"solid"}}>TEST</div>
+					<div style={{height:"100%",minHeight:"150px",width:"100%",minWidth:"150px",borderStyle:"solid"}}>TEST</div>
+					<div style={{height:"100%",minHeight:"150px",width:"100%",minWidth:"150px",borderStyle:"solid"}}>TEST</div>
+					<div style={{height:"100%",minHeight:"150px",width:"100%",minWidth:"150px",borderStyle:"solid"}}>TEST</div>
+					<div style={{height:"100%",minHeight:"150px",width:"100%",minWidth:"150px",borderStyle:"solid"}}>TEST</div>
+					<div style={{height:"100%",minHeight:"150px",width:"100%",minWidth:"150px",borderStyle:"solid"}}>TEST</div>
+					<div style={{height:"100%",minHeight:"150px",width:"100%",minWidth:"150px",borderStyle:"solid"}}>TEST</div>
+				</div>
+			</div>
         );
     }
 }

@@ -13,14 +13,17 @@ export class MainPanel extends React.Component {
 
 	componentWillMount() {
 		Actives.storeKeyValue("header", this.props.match.params.name);
+		Actives.storeKeyValue("subheader", this.props.match.params.subname);
 	}
 
 	componentWillUpdate(nextProps) {
 		Actives.storeKeyValue("header", nextProps.match.params.name);
+		Actives.storeKeyValue("subheader", nextProps.match.params.subname);
 	}
 
 	componentWillUnmount() {
 		Actives.storeKeyValue("header", "");
+		Actives.storeKeyValue("subheader", "");
 	}
 
     render() {

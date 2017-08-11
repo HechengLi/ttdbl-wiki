@@ -38,7 +38,7 @@ export class Header extends React.Component {
 
     render() {
         return(
-            <div id="header-container">
+            <div>
 				<div id="main_header" className="header">
 					<p style={{whiteSpace:"nowrap"}}><img src={"/app/icons/Placeholder.jpg"} /><span>天天打波利</span></p>
 					<div className={this.state.collapsed?("collapsed"):("")}>

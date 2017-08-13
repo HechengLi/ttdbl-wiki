@@ -7,29 +7,19 @@ export class GamedataHeader extends React.Component {
 	constructor (props) {
         super();
         this.state = {
-            active: "home",
-			test: false
+            active: "home"
         }
     }
     activate(e) {
         this.setState({ active: e.target.id });
     }
-
 	componentWillMount() {
-		Actives.storeKeyValue("gdh2", true);
-		this.setState({active: Actives.getValueForKey("subheader")});
-		if (!Actives.getValueForKey("gdh1")) {
-			window.addEventListener('popstate', function(e) {
-				if (Actives.getValueForKey("gdh2")) {
-					this.setState({active: Actives.getValueForKey("subheader")});
-				}
-			}.bind(this));
-			Actives.storeKeyValue("gdh1", true);
-		}
+		this.setState({ active: this.props.activeTab});
 	}
-
-	componentWillUnmount() {
-		Actives.storeKeyValue("gdh2", false);
+	componentWillUpdate(nextProps) {
+		if (this.state.active !== nextProps.activeTab) {
+			this.setState({ active: nextProps.activeTab});
+		}
 	}
 
 	render() {

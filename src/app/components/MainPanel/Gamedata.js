@@ -14,7 +14,7 @@ export class Gamedata extends React.Component {
 	render() {
 		return (
 			<div>
-				<GamedataHeader />
+				<GamedataHeader activeTab={this.props.match.params.name}/>
 				<Switch>
 					<Route path="/gamedata/home" component={Home} />
 					<Route path="/gamedata/character" component={Character} />

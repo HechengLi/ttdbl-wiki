@@ -17,7 +17,6 @@ class App extends React.Component {
 	            <div>
 	                <Header homeLink="天天打波利" />
 					<Switch>
-						<Route path="/:name/:subname" component={MainPanel} />
 						<Route path="/:name" component={MainPanel} />
 						<Route path="/" exact component={MainPanel} />
 					</Switch>

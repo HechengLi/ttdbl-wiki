@@ -13,20 +13,19 @@ export class MainPanel extends React.Component {
 
 	componentWillMount() {
 		Actives.storeKeyValue("header", this.props.match.params.name);
-		Actives.storeKeyValue("subheader", this.props.match.params.subname);
 	}
 
 	componentWillUpdate(nextProps) {
 		Actives.storeKeyValue("header", nextProps.match.params.name);
-		Actives.storeKeyValue("subheader", nextProps.match.params.subname);
 	}
 
     render() {
         return (
 			<div>
 				<Switch>
+					<Redirect exact from="/gamedata" to="/gamedata/home" />
 					<Route path="/" exact component={Welcome} />
-					<Route path="/gamedata" component={Gamedata} />
+					<Route path="/gamedata/:name" component={Gamedata} />
 					<Route path="/update" component={Update} />
 					<Route path="/contactus" component={ContactUs} />
 				</Switch>

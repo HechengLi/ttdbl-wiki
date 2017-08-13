@@ -24,7 +24,6 @@ export class Header extends React.Component {
 
 	componentDidMount() {
 		this.setState({active: Actives.getValueForKey("header")});
-		console.log(Actives.getValueForKey("header"));
 		if (!this.state.created) {
 			window.addEventListener('popstate', function(e){
 				this.setState({ active: Actives.getValueForKey("header")});

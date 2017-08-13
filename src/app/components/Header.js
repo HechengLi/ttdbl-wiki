@@ -3,14 +3,13 @@ import { Route, Link, withRouter, BrowserRouter as Router } from 'react-router-d
 import { Switch, Redirect } from 'react-router';
 import Actives from "./Actives";
 
-import "../stylesheets/style.css";
-
 export class Header extends React.Component {
 	constructor (props) {
         super();
         this.state = {
             active: "",
-			collapsed: true
+			collapsed: true,
+			created: false
         }
     }
 	activate(e) {
@@ -24,16 +23,22 @@ export class Header extends React.Component {
 	}
 
 	componentDidMount() {
-		this.setState({ active: Actives.getValueForKey("header")});
-		window.onpopstate = (() => (this.setState({ active: Actives.getValueForKey("header")})));
-		window.addEventListener('scroll', function(e){
-			var h = document.getElementById("main_header");
-	        if (document.body.scrollTop > 200) {
-				h.classList.add("small");
-			} else {
-				h.classList.remove("small");
-			}
-	    });
+		this.setState({active: Actives.getValueForKey("header")});
+		console.log(Actives.getValueForKey("header"));
+		if (!this.state.created) {
+			window.addEventListener('popstate', function(e){
+				this.setState({ active: Actives.getValueForKey("header")});
+			}.bind(this));
+			window.addEventListener('scroll', function(e){
+				var h = document.getElementById("main_header");
+		        if (document.body.scrollTop > 200) {
+					h.classList.add("small");
+				} else {
+					h.classList.remove("small");
+				}
+		    });
+			this.setState({created: true});
+		}
 	}
 
     render() {

@@ -7,6 +7,7 @@ import { Header } from "./components/Header";
 import { Footer } from "./components/Footer";
 import { MainPanel } from "./components/MainPanel";
 
+import './stylesheets/style.css';
 import './stylesheets/font-awesome.css';
 
 class App extends React.Component {
@@ -17,6 +18,8 @@ class App extends React.Component {
 	                <Header homeLink="天天打波利" />
 					<Switch>
 						<Route path="/:name/:subname" component={MainPanel} />
+						<Route path="/:name" component={MainPanel} />
+						<Route path="/" exact component={MainPanel} />
 					</Switch>
 					<Footer />
 	            </div>

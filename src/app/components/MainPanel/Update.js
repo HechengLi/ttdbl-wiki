@@ -1,7 +1,5 @@
 import React from 'react'
 
-import "../../stylesheets/style.css"
-
 export class Update extends React.Component {
 
 	render() {

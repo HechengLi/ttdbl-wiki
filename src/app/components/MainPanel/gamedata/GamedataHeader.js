@@ -3,21 +3,33 @@ import { Link } from 'react-router-dom';
 
 import Actives from "../../Actives";
 
-import "../../../stylesheets/style.css"
-
 export class GamedataHeader extends React.Component {
 	constructor (props) {
         super();
         this.state = {
-            active: "home"
+            active: "home",
+			test: false
         }
     }
     activate(e) {
         this.setState({ active: e.target.id });
     }
 
-	componentDidMount() {
-		window.onpopstate = (() => (this.setState({ active: Actives.getValueForKey("subheader") })));
+	componentWillMount() {
+		Actives.storeKeyValue("gdh2", true);
+		this.setState({active: Actives.getValueForKey("subheader")});
+		if (!Actives.getValueForKey("gdh1")) {
+			window.addEventListener('popstate', function(e) {
+				if (Actives.getValueForKey("gdh2")) {
+					this.setState({active: Actives.getValueForKey("subheader")});
+				}
+			}.bind(this));
+			Actives.storeKeyValue("gdh1", true);
+		}
+	}
+
+	componentWillUnmount() {
+		Actives.storeKeyValue("gdh2", false);
 	}
 
 	render() {

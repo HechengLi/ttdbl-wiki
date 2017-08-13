@@ -1,6 +1,6 @@
 import React from 'react';
 import { Route } from 'react-router-dom';
-import { Switch } from 'react-router';
+import { Switch, Redirect } from 'react-router';
 
 import { GamedataHeader } from "./gamedata/GamedataHeader";
 import { Home } from "./gamedata/Home";
@@ -8,8 +8,6 @@ import { Inventory } from "./gamedata/Inventory";
 import { Character } from "./gamedata/Character";
 import { Pet } from "./gamedata/Pet";
 import { Battle } from "./gamedata/Battle";
-
-import "../../stylesheets/style.css"
 
 export class Gamedata extends React.Component {
 

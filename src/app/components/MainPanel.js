@@ -1,5 +1,5 @@
 import React from "react";
-import { Route, Link, withRouter, BrowserRouter as Router } from 'react-router-dom';
+import { Route } from 'react-router-dom';
 import { Switch, Redirect } from 'react-router';
 
 import { Welcome } from "./MainPanel/Welcome";
@@ -21,16 +21,10 @@ export class MainPanel extends React.Component {
 		Actives.storeKeyValue("subheader", nextProps.match.params.subname);
 	}
 
-	componentWillUnmount() {
-		Actives.storeKeyValue("header", "");
-		Actives.storeKeyValue("subheader", "");
-	}
-
     render() {
         return (
 			<div>
 				<Switch>
-					<Redirect exact path="/gamedata" to="/gamedata/home" />
 					<Route path="/" exact component={Welcome} />
 					<Route path="/gamedata" component={Gamedata} />
 					<Route path="/update" component={Update} />

@@ -2,8 +2,6 @@ import React from "react";
 import { Route, Link, BrowserRouter as Router } from 'react-router-dom';
 import { Switch, Redirect } from 'react-router';
 
-import "../stylesheets/style.css"
-
 export class Footer extends React.Component {
 	componentDidMount() {
 		window.addEventListener('scroll', function(e){

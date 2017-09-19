@@ -5,8 +5,8 @@
     "main": "index.js",
     "scripts": {
         "start": "npm run build",
-        "build": "webpack -d && cp src/index.html dist/index.html && cp -R src/app/icons dist/app && webpack-dev-server --content-base src/ --inline --hot --history-api-fallback",
-        "prod": "webpack -p && cp src/index.html dist/index.html && cp -R src/app/icons dist/app"
+        "build": "webpack -d && xcopy \"src/index.html\" \"dist/index.html\" && xcopy \"src/app/icons\" \"dist/app\" /F /Y && webpack-dev-server --content-base src/ --inline --hot --history-api-fallback",
+        "prod": "webpack -p && xcopy \"src/index.html\" \"dist/index.html\" && xcopy \"src/app/icons\" \"dist/app\" /F /Y"
     },
     "keywords": [
         "reactjs"

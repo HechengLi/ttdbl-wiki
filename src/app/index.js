@@ -14,14 +14,14 @@ class App extends React.Component {
     render() {
         return (
 			<Router>
-	            <div>
-	                <Header homeLink="天天打波利" />
-					<Switch>
-						<Route path="/:name" component={MainPanel} />
-						<Route path="/" exact component={MainPanel} />
-					</Switch>
-					<Footer />
-	            </div>
+          <div>
+              <Header homeLink="天天打波利" />
+    					<Switch>
+    						<Route path="/:name" component={MainPanel} />
+    						<Route path="/" exact component={MainPanel} />
+    					</Switch>
+    					<Footer />
+          </div>
 			</Router>
         );
     }
